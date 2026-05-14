@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+    --radius: 0.5rem;
+
+    /* Brand color vars */
+    --color-bg: #0f0f10;
+    --color-surface: #1a1a1d;
+    --color-gold: #c89b3c;
+    --color-gold-light: #e2b95b;
+    --color-text: #f5f5f5;
+    --color-text-muted: #9a9a9a;
+    --color-border: #2c2c30;
+
+    /* Shadcn tokens (light fallback) */
+    --background: 0.99 0 0;
+    --foreground: 0.15 0 0;
+    --card: 1.0 0 0;
+    --card-foreground: 0.15 0 0;
+    --popover: 1.0 0 0;
+    --popover-foreground: 0.15 0 0;
+    --primary: 0.35 0 0;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.95 0 0;
+    --secondary-foreground: 0.25 0 0;
+    --muted: 0.95 0 0;
+    --muted-foreground: 0.5 0 0;
+    --accent: 0.35 0 0;
+    --accent-foreground: 0.98 0 0;
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+    --border: 0.9 0 0;
+    --input: 0.9 0 0;
+    --ring: 0.35 0 0;
+    --chart-1: 0.65 0.22 40;
+    --chart-2: 0.6 0.12 185;
+    --chart-3: 0.4 0.07 227;
+    --chart-4: 0.83 0.19 84;
+    --chart-5: 0.77 0.19 70;
+    --sidebar: 0.98 0 0;
+    --sidebar-foreground: 0.15 0 0;
+    --sidebar-primary: 0.35 0 0;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.95 0 0;
+    --sidebar-accent-foreground: 0.25 0 0;
+    --sidebar-border: 0.9 0 0;
+    --sidebar-ring: 0.35 0 0;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes goldPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease forwards;
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+
+  .animate-gold-pulse {
+    animation: goldPulse 2s ease infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(200, 155, 60, 0.35);
+  }
+
+  .glow-gold-hover {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .glow-gold-hover:hover {
+    box-shadow: 0 0 25px rgba(200, 155, 60, 0.4);
+  }
+
+  .glass {
+    background: rgba(26, 26, 29, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid #2c2c30;
+  }
+
+  .gold-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #c89b3c, #e2b95b);
+    border-radius: 1px;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #c89b3c, #e2b95b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(200, 155, 60, 0.2);
+  }
+
+  .btn-gold {
+    background: linear-gradient(135deg, #c89b3c, #e2b95b);
+    color: #0f0f10;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+    min-height: 48px;
+    line-height: 1.2;
+  }
+
+  .btn-gold:hover {
+    box-shadow: 0 0 30px rgba(200, 155, 60, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: #c89b3c;
+    border: 1px solid #c89b3c;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+    min-height: 48px;
+    line-height: 1.2;
+  }
+
+  .btn-outline:hover {
+    background: rgba(200, 155, 60, 0.1);
+    box-shadow: 0 0 15px rgba(200, 155, 60, 0.3);
+  }
+
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .section-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .gold-border-hover {
+    border: 1px solid #2c2c30;
+    transition: border-color 0.3s ease;
+  }
+
+  .gold-border-hover:hover {
+    border-color: rgba(200, 155, 60, 0.5);
+  }
+
+  .shimmer-gold {
+    background: linear-gradient(90deg, #c89b3c 0%, #e2b95b 50%, #c89b3c 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2.5s infinite;
+  }
+
+  /* Hide scrollbar on filter tabs (mobile) */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Mobile touch target helpers */
+  @media (max-width: 640px) {
+    .section-reveal {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  }
+}
+
+@keyframes goldLinePulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    height: 40%;
+  }
+  50% {
+    opacity: 1;
+    height: 70%;
+  }
+}
+
+.animate-gold-line-pulse {
+  animation: goldLinePulse 2.5s ease-in-out infinite;
+}
