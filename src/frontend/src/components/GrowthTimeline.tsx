@@ -1,259 +1,268 @@
-import { ChevronRight } from "lucide-react";
+import { Award, HeartHandshake, MapPin, Shield } from "lucide-react";
 import { useEffect, useRef } from "react";
-import { TIMELINE_STEPS } from "../data/siteData";
 
-export default function GrowthTimeline() {
+const VALUES = [
+  {
+    icon: Shield,
+    title: "Trust Over Transactions",
+    desc: "We never push a property that isn't right for you. Our reputation is built on honest advice.",
+  },
+  {
+    icon: MapPin,
+    title: "Deep Local Expertise",
+    desc: "Years of navigating Pune's micro-markets — Baner, Wakad, Kothrud, Hinjewadi, and beyond.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Human-Centered Service",
+    desc: "Every family has a unique story. We listen first and recommend second — always.",
+  },
+];
+
+export default function AboutSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const headingRef = useRef<HTMLDivElement>(null);
+  const leftRef = useRef<HTMLDivElement>(null);
+  const rightRef = useRef<HTMLDivElement>(null);
+  const valueRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            (entry.target as HTMLElement).style.opacity = "1";
+            (entry.target as HTMLElement).style.transform =
+              "translateY(0) translateX(0)";
           }
         }
       },
       { threshold: 0.1 },
     );
 
-    if (headingRef.current) observer.observe(headingRef.current);
-    for (const el of stepRefs.current) {
+    if (leftRef.current) observer.observe(leftRef.current);
+    if (rightRef.current) observer.observe(rightRef.current);
+    for (const el of valueRefs.current) {
       if (el) observer.observe(el);
     }
-
     return () => observer.disconnect();
   }, []);
 
   return (
     <section
-      id="process"
+      id="about"
       ref={sectionRef}
       className="py-16 sm:py-24 px-4 sm:px-6"
-      style={{ background: "var(--color-bg)" }}
-      data-ocid="process.section"
+      style={{ background: "#ffffff" }}
+      data-ocid="about.section"
     >
-      <div className="max-w-6xl mx-auto">
-        {/* Heading */}
-        <div
-          ref={headingRef}
-          className="flex flex-col items-center text-center gap-4 mb-20 section-reveal"
-        >
-          <div className="flex items-center gap-3">
-            <div className="gold-line" />
-            <span
-              className="text-xs font-bold tracking-[0.2em] uppercase"
-              style={{ color: "#C89B3C" }}
-            >
-              HOW IT WORKS
-            </span>
-            <div className="gold-line" />
-          </div>
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-black"
+      <div className="max-w-7xl mx-auto">
+        {/* Two-column desktop layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* LEFT: Visual */}
+          <div
+            ref={leftRef}
+            className="relative rounded-2xl overflow-hidden"
             style={{
-              color: "#F5F5F5",
-              fontFamily: "var(--font-display)",
-              lineHeight: 1.1,
+              opacity: 0,
+              transform: "translateX(-28px)",
+              transition: "opacity 0.6s ease, transform 0.6s ease",
+              minHeight: "420px",
+              background:
+                "linear-gradient(145deg, #009FD4 0%, #00B4E6 40%, #007aaa 80%, #005f8a 100%)",
             }}
+            data-ocid="about.visual"
           >
-            Our <span className="text-gradient-gold">Growth Process</span>
-          </h2>
-          <p
-            className="max-w-xl text-base"
-            style={{ color: "#9A9A9A", lineHeight: 1.7 }}
-          >
-            A structured 5-step approach to finding, evaluating, and executing
-            the right commercial opportunity for your business.
-          </p>
-        </div>
-
-        {/* DESKTOP: Horizontal zigzag timeline */}
-        <div className="hidden lg:block" data-ocid="process.timeline">
-          {/* Connector line */}
-          <div className="relative flex items-center justify-between px-12 mb-0">
+            {/* Decorative grid overlay */}
             <div
-              className="absolute left-12 right-12 top-1/2 h-px"
+              className="absolute inset-0"
               style={{
-                background:
-                  "linear-gradient(to right, rgba(200,155,60,0.1), rgba(200,155,60,0.5), rgba(200,155,60,0.5), rgba(200,155,60,0.5), rgba(200,155,60,0.1))",
+                backgroundImage:
+                  "linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)",
+                backgroundSize: "32px 32px",
               }}
             />
-            {/* Chevron arrows between steps */}
-            {TIMELINE_STEPS.slice(0, -1).map((step, i) => {
-              const positions = [16.6, 33.3, 50, 66.6];
-              return (
-                <div
-                  key={step.step}
-                  className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2"
-                  style={{
-                    left: `${positions[i]}%`,
-                    color: "rgba(200,155,60,0.6)",
-                    zIndex: 2,
-                  }}
-                >
-                  <ChevronRight size={14} strokeWidth={2.5} />
-                </div>
-              );
-            })}
 
-            {/* Step circles */}
-            {TIMELINE_STEPS.map((step, i) => (
+            {/* House icon */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
               <div
-                key={step.step}
-                className="relative z-10 flex items-center justify-center"
+                className="w-24 h-24 rounded-2xl flex items-center justify-center"
+                style={{
+                  background: "rgba(255,255,255,0.15)",
+                  backdropFilter: "blur(8px)",
+                  border: "1.5px solid rgba(255,255,255,0.3)",
+                }}
               >
-                <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center font-black text-xl transition-all duration-300 hover:scale-110"
-                  style={{
-                    background: "linear-gradient(135deg, #C89B3C, #E2B95B)",
-                    color: "#0F0F10",
-                    fontFamily: "var(--font-display)",
-                    boxShadow: "0 0 20px rgba(200,155,60,0.35)",
-                  }}
-                  data-ocid={`process.step.${i + 1}`}
+                <svg
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12"
+                  aria-hidden="true"
                 >
-                  {step.step}
-                </div>
+                  <path
+                    d="M8 28L32 8L56 28V56H40V40H24V56H8V28Z"
+                    fill="rgba(255,255,255,0.9)"
+                  />
+                  <rect
+                    x="27"
+                    y="40"
+                    width="10"
+                    height="16"
+                    fill="rgba(0,159,212,0.6)"
+                  />
+                </svg>
               </div>
-            ))}
+
+              <div className="text-center px-6">
+                <p
+                  className="text-white font-black text-2xl leading-tight"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    textShadow: "0 2px 8px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  Guiding Pune
+                  <br />
+                  Families Home
+                </p>
+                <p className="text-white/70 text-sm mt-2 font-medium">
+                  Since Day One
+                </p>
+              </div>
+            </div>
+
+            {/* Floating badge */}
+            <div
+              className="absolute bottom-6 right-6 rounded-xl px-4 py-3 flex items-center gap-2"
+              style={{
+                background: "rgba(255,255,255,0.18)",
+                backdropFilter: "blur(12px)",
+                border: "1px solid rgba(255,255,255,0.35)",
+              }}
+              data-ocid="about.trust-badge"
+            >
+              <Award size={16} color="#C9A96E" fill="#C9A96E" />
+              <span className="text-white font-semibold text-sm">
+                5.0 ★ Rated
+              </span>
+            </div>
           </div>
 
-          {/* Content cards — alternating top/bottom */}
-          <div className="relative grid grid-cols-5 gap-4 mt-0">
-            {TIMELINE_STEPS.map((step, i) => {
-              const isAbove = i % 2 === 0;
-              return (
-                <div
-                  key={step.step}
-                  ref={(el) => {
-                    stepRefs.current[i] = el;
-                  }}
-                  className={`section-reveal flex flex-col gap-3 ${
-                    isAbove ? "-mt-52 mb-0" : "mt-8"
-                  }`}
-                  style={{ animationDelay: `${i * 0.15}s` }}
-                >
-                  {/* Connector dot to line */}
-                  {!isAbove && (
-                    <div
-                      className="w-px h-8 mx-auto"
-                      style={{
-                        background:
-                          "linear-gradient(to bottom, rgba(200,155,60,0.5), rgba(200,155,60,0.1))",
-                      }}
-                    />
-                  )}
+          {/* RIGHT: Content */}
+          <div
+            ref={rightRef}
+            className="flex flex-col gap-7"
+            style={{
+              opacity: 0,
+              transform: "translateX(28px)",
+              transition: "opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s",
+            }}
+          >
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 self-start">
+              <span
+                className="px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase"
+                style={{
+                  background: "rgba(201,169,110,0.12)",
+                  color: "#C9A96E",
+                  border: "1px solid rgba(201,169,110,0.3)",
+                }}
+                data-ocid="about.badge"
+              >
+                Our Story
+              </span>
+            </div>
 
+            {/* Heading */}
+            <h2
+              className="text-3xl sm:text-4xl font-black leading-tight"
+              style={{ color: "#2D3142", fontFamily: "var(--font-display)" }}
+            >
+              Guiding Pune Families Home{" "}
+              <span style={{ color: "#009FD4" }}>Since Day One</span>
+            </h2>
+
+            {/* Body paragraphs */}
+            <div className="flex flex-col gap-4">
+              <p
+                className="text-base leading-relaxed"
+                style={{ color: "#5A6072" }}
+              >
+                DWELL was founded on one simple belief: every family deserves
+                honest, expert guidance when making the most important financial
+                decision of their lives. Buying or renting a property isn't just
+                a transaction — it's a chapter in your life story.
+              </p>
+              <p
+                className="text-base leading-relaxed"
+                style={{ color: "#5A6072" }}
+              >
+                We combine deep knowledge of Pune's residential and commercial
+                market with a genuinely client-first approach. We don't just
+                show properties — we understand your goals, your timeline, your
+                budget, and your lifestyle, so every recommendation we make is
+                truly right for you.
+              </p>
+            </div>
+
+            {/* Key values row */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              {VALUES.map((val, i) => {
+                const Icon = val.icon;
+                return (
                   <div
-                    className="p-4 rounded-xl transition-all duration-300 hover:scale-[1.02] cursor-default"
-                    style={{
-                      background: "rgba(26,26,29,0.9)",
-                      border: "1px solid #2C2C30",
+                    key={val.title}
+                    ref={(el) => {
+                      valueRefs.current[i] = el;
                     }}
+                    className="flex flex-col gap-2 p-4 rounded-xl"
+                    style={{
+                      background: "#F0F2F5",
+                      opacity: 0,
+                      transform: "translateY(16px)",
+                      transition: `opacity 0.5s ease ${0.35 + i * 0.1}s, transform 0.5s ease ${0.35 + i * 0.1}s`,
+                    }}
+                    data-ocid={`about.value.${i + 1}`}
                   >
-                    <h3
-                      className="font-bold text-sm mb-1"
+                    <div
+                      className="w-9 h-9 rounded-full flex items-center justify-center"
+                      style={{ background: "rgba(0,159,212,0.12)" }}
+                    >
+                      <Icon size={16} style={{ color: "#009FD4" }} />
+                    </div>
+                    <p
+                      className="font-bold text-sm leading-tight"
                       style={{
-                        color: "#F5F5F5",
+                        color: "#2D3142",
                         fontFamily: "var(--font-display)",
                       }}
                     >
-                      {step.title}
-                    </h3>
+                      {val.title}
+                    </p>
                     <p
                       className="text-xs leading-relaxed"
-                      style={{ color: "#9A9A9A" }}
+                      style={{ color: "#5A6072" }}
                     >
-                      {step.description}
+                      {val.desc}
                     </p>
                   </div>
+                );
+              })}
+            </div>
 
-                  {isAbove && (
-                    <div
-                      className="w-px h-8 mx-auto"
-                      style={{
-                        background:
-                          "linear-gradient(to bottom, rgba(200,155,60,0.1), rgba(200,155,60,0.5))",
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* MOBILE: Vertical stacked timeline */}
-        <div
-          className="flex flex-col gap-0 lg:hidden"
-          style={{ paddingLeft: "0" }}
-          data-ocid="process.timeline.mobile"
-        >
-          {/* Vertical connector line */}
-          <div className="relative">
-            <div
-              className="absolute left-[27px] top-6 bottom-6 w-px"
+            {/* Team note */}
+            <p
+              className="text-sm italic leading-relaxed pt-1"
               style={{
-                background:
-                  "linear-gradient(to bottom, rgba(200,155,60,0.6), rgba(200,155,60,0.05))",
+                color: "#8a90a2",
+                borderLeft: "3px solid rgba(0,159,212,0.3)",
+                paddingLeft: "12px",
               }}
-            />
-
-            {TIMELINE_STEPS.map((step, i) => (
-              <div
-                key={step.step}
-                ref={(el) => {
-                  stepRefs.current[5 + i] = el;
-                }}
-                className="relative flex gap-4 pb-8 last:pb-0 section-reveal"
-                style={{ animationDelay: `${i * 0.15}s` }}
-                data-ocid={`process.step.mobile.${i + 1}`}
-              >
-                {/* Step badge */}
-                <div className="flex-shrink-0 relative z-10">
-                  <div
-                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center font-black text-base sm:text-lg"
-                    style={{
-                      background: "linear-gradient(135deg, #C89B3C, #E2B95B)",
-                      color: "#0F0F10",
-                      fontFamily: "var(--font-display)",
-                      boxShadow: "0 0 16px rgba(200,155,60,0.3)",
-                    }}
-                  >
-                    {step.step}
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div
-                  className="flex-1 rounded-xl p-4 sm:p-5"
-                  style={{
-                    background: "rgba(26,26,29,0.9)",
-                    border: "1px solid #2C2C30",
-                    marginTop: "10px",
-                  }}
-                >
-                  <h3
-                    className="font-bold text-sm mb-2"
-                    style={{
-                      color: "#F5F5F5",
-                      fontFamily: "var(--font-display)",
-                    }}
-                  >
-                    {step.title}
-                  </h3>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: "#9A9A9A" }}
-                  >
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+            >
+              Our advisors bring years of on-ground experience in Pune's most
+              sought-after micro-markets — so you're always guided by someone
+              who truly knows the area.
+            </p>
           </div>
         </div>
       </div>

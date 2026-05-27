@@ -1,28 +1,178 @@
-export const BUSINESS_INFO = {
-  name: "Grow Big Leasing & Real Estate",
-  tagline: "Helping Businesses Expand Through Smart Real Estate",
-  phone: "7572905655",
-  whatsapp: "7572905655",
-  address: "Near Ice Factory, road, Udaipur, Rajasthan 313001",
+// DWELL Homes & Services — Site Data
+// Pune-focused premium real estate advisory
+
+export const BRAND = {
+  name: "DWELL Homes & Services",
+  tagline: "Trusted Property Advisory in Pune",
+  subTagline:
+    "Helping families, professionals, and investors across Pune discover residential and commercial properties with transparency, expertise, and personalized consultation.",
+  phone: "+91 75729 05655",
+  phoneRaw: "7572905655",
+  whatsapp: "+91 75729 05655",
+  whatsappRaw: "7572905655",
+  email: "info@dwellhomes.in",
+  address: "Baner Road, Pune 411045, Maharashtra",
   rating: 5.0,
-  ownerName: "Deepak Gahrani",
   googleRating: "5.0",
+  mapEmbedUrl:
+    "https://maps.google.com/maps?q=Baner+Road,+Pune,+Maharashtra+411045&t=m&z=14&output=embed&iwloc=near",
 };
 
 export const NAV_LINKS = [
-  { label: "Services", href: "#sectors" },
+  { label: "Home", href: "#home" },
   { label: "Properties", href: "#properties" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#why" },
+  { label: "Commercial", href: "#commercial" },
+  { label: "Residential", href: "#residential" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const TRUST_ITEMS = [
-  "🏢 Commercial Leasing Experts",
-  "📈 Franchise Expansion Consulting",
-  "🏨 Hospitality & Retail Spaces",
-  "🏭 Industrial & Warehouse Properties",
-  "💼 Investment Consulting",
+  "✔ 5.0 Rated Property Advisory",
+  "✔ Residential & Commercial Expertise",
+  "✔ Transparent Consultation",
+  "✔ Trusted Across Pune",
+];
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  quote: string;
+  rating: number;
+  avatar: string;
+  source?: string;
+  company?: string;
+}
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 1,
+    name: "Priya & Rahul Sharma",
+    role: "First-time Homebuyers, Baner",
+    quote:
+      "DWELL completely transformed our home-buying journey. We were overwhelmed as first-timers, but their team patiently guided us through every step — from shortlisting to documentation. We found our dream 3 BHK in Baner within our budget. Truly transparent and genuinely caring!",
+    rating: 5,
+    avatar: "PR",
+    source: "Google Review",
+  },
+  {
+    id: 2,
+    name: "Vikram Iyer",
+    role: "IT Professional, Relocated from Bengaluru",
+    quote:
+      "Relocating to Pune for work was stressful until I connected with DWELL. They understood my priorities — commute time to Hinjewadi, school proximity, and budget — and presented perfectly matched options. Moved in within 6 weeks of my first call. Outstanding service!",
+    rating: 5,
+    avatar: "VI",
+    source: "Google Review",
+  },
+  {
+    id: 3,
+    name: "Anjali Deshmukh",
+    role: "Investor, Commercial Properties",
+    quote:
+      "I've worked with multiple property consultants in Pune but DWELL stands apart in their depth of market knowledge. Their advice on commercial spaces in Hinjewadi proved spot-on — rental yield has been excellent. They are my first call for any property decision.",
+    rating: 5,
+    avatar: "AD",
+    source: "Google Review",
+  },
+  {
+    id: 4,
+    name: "Suresh & Meena Kulkarni",
+    role: "Retired Couple, Kothrud Villa",
+    quote:
+      "We wanted to downsize thoughtfully and DWELL's space planning guidance was invaluable. They helped us see possibilities we hadn't considered and found us a beautiful villa that perfectly suits our lifestyle. Their warmth and patience made all the difference.",
+    rating: 5,
+    avatar: "SK",
+    source: "Google Review",
+  },
+  {
+    id: 5,
+    name: "Neha Joshi",
+    role: "Startup Founder, Office Space",
+    quote:
+      "Finding the right commercial space for my startup was critical. DWELL's consultant understood exactly what a growing business needs and found us an ideal space in Bavdhan that we could scale into. Professional, fast, and remarkably straightforward about pricing.",
+    rating: 5,
+    avatar: "NJ",
+    source: "Google Review",
+  },
+  {
+    id: 6,
+    name: "Aditya & Swati Pawar",
+    role: "Young Family, Wakad",
+    quote:
+      "We were juggling tight timelines and a young child when we needed to relocate. DWELL not only found us a wonderful apartment in Wakad within 3 weeks but also helped with school mapping in the area. That personal touch sets them apart from every broker we'd tried.",
+    rating: 5,
+    avatar: "AP",
+    source: "Google Review",
+  },
+];
+
+export interface PuneArea {
+  id: string;
+  name: string;
+  insight: string;
+  highlight: string;
+  type: string;
+}
+
+export const PUNE_AREAS: PuneArea[] = [
+  {
+    id: "baner",
+    name: "Baner",
+    insight:
+      "Premium residential hub with excellent connectivity to Hinjewadi IT Park. High demand from IT professionals and families.",
+    highlight: "High Demand",
+    type: "Residential + Commercial",
+  },
+  {
+    id: "wakad",
+    name: "Wakad",
+    insight:
+      "Fast-growing suburb offering quality apartments at competitive prices. Excellent expressway access and social infrastructure.",
+    highlight: "Best Value",
+    type: "Residential",
+  },
+  {
+    id: "warje",
+    name: "Warje",
+    insight:
+      "Emerging residential destination with serene environment and rising property values. Upcoming metro connectivity.",
+    highlight: "High Growth",
+    type: "Residential",
+  },
+  {
+    id: "kothrud",
+    name: "Kothrud",
+    insight:
+      "Pune's most prestigious residential address. Mature neighbourhood with top schools, hospitals, and premium lifestyle.",
+    highlight: "Premium Address",
+    type: "Residential + Villas",
+  },
+  {
+    id: "hinjewadi",
+    name: "Hinjewadi",
+    insight:
+      "Pune's IT capital with 3.5L+ tech workforce. Strongest commercial and residential demand from India's top IT companies.",
+    highlight: "IT Corridor",
+    type: "Commercial + Residential",
+  },
+  {
+    id: "aundh",
+    name: "Aundh",
+    insight:
+      "Vibrant commercial and residential blend. High-street retail, cafés, and premium apartments. Strong rental demand.",
+    highlight: "Prime Location",
+    type: "Commercial + Residential",
+  },
+  {
+    id: "bavdhan",
+    name: "Bavdhan",
+    insight:
+      "Strategic location connecting Baner, Kothrud, and Warje. Rapidly developing with affordable commercial spaces.",
+    highlight: "Strategic Hub",
+    type: "Commercial",
+  },
 ];
 
 export interface Service {
@@ -30,59 +180,102 @@ export interface Service {
   name: string;
   icon: string;
   description: string;
-  cta: string;
+  cta?: string;
 }
 
 export const SERVICES: Service[] = [
   {
-    id: "franchise",
-    name: "Franchise Leasing",
-    icon: "Store",
-    description:
-      "Strategic locations for franchise businesses across Rajasthan",
-    cta: "Explore",
-  },
-  {
-    id: "hotels",
-    name: "Hotels & Restaurants",
-    icon: "Building2",
-    description: "Premium hospitality spaces — lease or acquire",
-    cta: "Explore",
-  },
-  {
-    id: "warehouses",
-    name: "Warehouses",
-    icon: "Warehouse",
-    description: "Industrial and storage facilities for logistics operations",
-    cta: "Explore",
-  },
-  {
-    id: "restaurants",
-    name: "Restaurant Setup",
-    icon: "UtensilsCrossed",
-    description: "Complete F&B venue consulting and space acquisition",
-    cta: "Explore",
-  },
-  {
-    id: "industrial",
-    name: "Industrial Plots",
-    icon: "Factory",
-    description: "Prime industrial land for manufacturing and production",
-    cta: "Explore",
-  },
-  {
-    id: "farmhouses",
-    name: "Farm Houses",
+    id: "residential",
+    name: "Residential Advisory",
     icon: "Home",
-    description: "Luxury farm estates for investment and leisure",
-    cta: "Explore",
+    description:
+      "Expert guidance on apartments, villas, and homes across Pune's best neighbourhoods.",
   },
   {
     id: "commercial",
     name: "Commercial Leasing",
-    icon: "Briefcase",
-    description: "Premium commercial spaces for businesses and brands",
-    cta: "Explore",
+    icon: "Building2",
+    description:
+      "Premium office spaces, retail shops, and commercial properties for businesses of all sizes.",
+  },
+  {
+    id: "investment",
+    name: "Investment Consulting",
+    icon: "TrendingUp",
+    description:
+      "Data-driven insights and strategic advice to maximise your property investment returns.",
+  },
+  {
+    id: "spaceplanning",
+    name: "Space Planning Guidance",
+    icon: "Layout",
+    description:
+      "Professional space optimisation advice to help you make the most of your property.",
+  },
+  {
+    id: "resale",
+    name: "Resale & Rental",
+    icon: "RefreshCw",
+    description:
+      "Transparent assistance for resale transactions and rental property management.",
+  },
+  {
+    id: "consultation",
+    name: "Free Consultation",
+    icon: "MessageCircle",
+    description:
+      "Start with a free one-on-one consultation to understand your needs and map the right path.",
+  },
+];
+
+export const WHY_DWELL = [
+  {
+    id: "advisory",
+    title: "Trusted Property Advisory",
+    description:
+      "Unlike traditional brokers, we prioritise your long-term interests over quick transactions. Every recommendation is honest, data-backed, and personalised.",
+    icon: "Shield",
+    color: "teal",
+  },
+  {
+    id: "expertise",
+    title: "Residential & Commercial Expertise",
+    description:
+      "Deep market knowledge spanning Pune's best residential neighbourhoods and prime commercial corridors — from apartments to office spaces.",
+    icon: "Award",
+    color: "gold",
+  },
+  {
+    id: "transparent",
+    title: "Transparent Consultation",
+    description:
+      "No hidden costs, no pressure tactics. We provide clear, honest guidance so you make informed decisions with full confidence.",
+    icon: "Eye",
+    color: "emerald",
+  },
+  {
+    id: "client",
+    title: "Client-Centered Approach",
+    description:
+      "We listen first. Your lifestyle, budget, and future goals shape every recommendation we make — not our commission targets.",
+    icon: "Heart",
+    color: "teal",
+  },
+  {
+    id: "matching",
+    title: "Personalised Property Matching",
+    description:
+      "Advanced matching process that considers commute, schools, investment potential, and neighbourhood lifestyle — not just price and size.",
+    icon: "Target",
+    color: "gold",
+  },
+  {
+    id: "spaceplanning",
+    title: "Space Planning Guidance",
+    description:
+      "Expert advice on how to optimise your property layout for maximum comfort, functionality, and future resale value.",
+    icon: "LayoutGrid",
+    color: "emerald",
   },
 ];
 
@@ -90,237 +283,148 @@ export interface Property {
   id: number;
   title: string;
   type: string;
+  category: "Residential" | "Commercial";
   location: string;
   area: string;
+  bedrooms?: string;
   price: string;
-  roi: string;
+  status: "Available" | "Featured" | "Sold Out";
   description: string;
-  features: string[];
-  investmentType: string;
-  status: string;
+  amenities: string[];
   imageUrl: string;
 }
 
-export const PROPERTIES: Property[] = [
+export const properties: Property[] = [
   {
     id: 1,
-    title: "Prime Retail Complex — Hiran Magri",
-    type: "Commercial",
-    location: "Hiran Magri, Udaipur",
-    area: "3,200 sq ft",
-    price: "₹1.8L/mo",
-    roi: "9.2% ROI",
+    title: "Skyline Residences — Baner",
+    type: "2 & 3 BHK Apartments",
+    category: "Residential",
+    location: "Baner, Pune",
+    area: "1,050 – 1,680 sq ft",
+    bedrooms: "2–3 BHK",
+    price: "₹82 Lakhs onwards",
+    status: "Featured",
     description:
-      "A premium retail complex in the heart of Udaipur's busiest commercial hub. Suitable for national brands, showrooms, and franchise operations. Ground floor with high visibility.",
-    features: [
-      "High Footfall Location",
-      "Ample Parking",
-      "Power Backup",
+      "Premium gated community in the heart of Baner with lush landscaped gardens, modern clubhouse, and excellent connectivity to IT corridors. Spacious sun-drenched apartments with premium finishes.",
+    amenities: [
+      "Clubhouse",
+      "Swimming Pool",
+      "Gym",
       "24/7 Security",
+      "Power Backup",
+      "Kids Play Area",
     ],
-    investmentType: "Retail Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-retail.dim_800x600.jpg",
+    imageUrl: "/assets/generated/dwell-gated-community.dim_800x560.jpg",
   },
   {
     id: 2,
-    title: "Boutique Hotel Property — Lake View",
-    type: "Hospitality",
-    location: "Lake Pichola Area, Udaipur",
-    area: "8,000 sq ft",
-    price: "₹2.5Cr",
-    roi: "11% ROI",
-    description:
-      "A stunning heritage-style boutique hotel property with lake views. 24 rooms, restaurant space, and event lawn included. Prime tourist destination location.",
-    features: ["Lake View", "24 Rooms", "Restaurant Space", "Event Lawn"],
-    investmentType: "Sale",
+    title: "Prestige Green Villas — Wakad",
+    type: "Independent Villa",
+    category: "Residential",
+    location: "Wakad, Pune",
+    area: "2,400 sq ft",
+    bedrooms: "4 BHK",
+    price: "₹1.85 Crores",
     status: "Available",
-    imageUrl: "/assets/generated/property-hotel.dim_800x600.jpg",
+    description:
+      "Elegant independent villas with private gardens and premium interiors in the sought-after Wakad locale. Ideal for families wanting space, privacy, and proximity to Hinjewadi IT Park.",
+    amenities: [
+      "Private Garden",
+      "Covered Parking",
+      "Home Automation",
+      "Solar Panels",
+      "CCTV",
+    ],
+    imageUrl: "/assets/generated/dwell-luxury-villa.dim_800x560.jpg",
   },
   {
     id: 3,
-    title: "Modern Warehouse — Industrial Zone",
-    type: "Warehouse",
-    location: "RIICO Industrial Area, Udaipur",
-    area: "15,000 sq ft",
-    price: "₹95K/mo",
-    roi: "8.5% ROI",
+    title: "Boulevard Heights — Kothrud",
+    type: "3 BHK Apartment",
+    category: "Residential",
+    location: "Kothrud, Pune",
+    area: "1,450 sq ft",
+    bedrooms: "3 BHK",
+    price: "₹1.15 Crores",
+    status: "Featured",
     description:
-      "State-of-the-art warehouse with loading docks, fire suppression system, and 24-hour access. Ideal for e-commerce fulfillment, FMCG distribution, or manufacturing.",
-    features: [
-      "Loading Docks",
-      "Fire Suppression",
-      "24Hr Access",
-      "Office Space",
+      "Thoughtfully designed 3 BHK apartments in Kothrud with panoramic city views. Walking distance to schools, hospitals, and civic amenities. Ideal for established families.",
+    amenities: [
+      "Terrace Garden",
+      "Indoor Games",
+      "Yoga Deck",
+      "EV Charging",
+      "Visitor Parking",
     ],
-    investmentType: "Warehouse Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-warehouse.dim_800x600.jpg",
+    imageUrl: "/assets/generated/dwell-residential-apt.dim_800x560.jpg",
   },
   {
     id: 4,
-    title: "Franchise Restaurant Space",
-    type: "F&B",
-    location: "City Center, Udaipur",
-    area: "1,800 sq ft",
-    price: "₹75K/mo",
-    roi: "12% ROI",
-    description:
-      "Ready-to-fit restaurant and franchise space in Udaipur's commercial center. Walk-in cold storage, kitchen infrastructure, and outdoor seating included.",
-    features: [
-      "Kitchen Infrastructure",
-      "Cold Storage",
-      "Outdoor Seating",
-      "High Visibility",
-    ],
-    investmentType: "F&B Lease",
+    title: "Serene Living — Aundh",
+    type: "2 BHK Apartment",
+    category: "Residential",
+    location: "Aundh, Pune",
+    area: "980 sq ft",
+    bedrooms: "2 BHK",
+    price: "₹78 Lakhs",
     status: "Available",
-    imageUrl: "/assets/generated/property-franchise.dim_800x600.jpg",
+    description:
+      "Modern 2 BHK apartments in prime Aundh location, perfect for IT professionals and young families. Quality construction, excellent ventilation, and convenient access to malls and business districts.",
+    amenities: [
+      "Gym",
+      "Kids Pool",
+      "Co-working Space",
+      "Jogging Track",
+      "Security",
+    ],
+    imageUrl: "/assets/generated/dwell-apartment-interior.dim_800x560.jpg",
   },
   {
     id: 5,
-    title: "Industrial Plot — Nathdwara Road",
-    type: "Industrial",
-    location: "Nathdwara Road, Udaipur",
-    area: "2 Acres",
-    price: "₹4.2Cr",
-    roi: "10% ROI",
-    description:
-      "Premium industrial plot with excellent road connectivity on Nathdwara Road. RIICO approved, utilities available, ideal for manufacturing or logistics hub.",
-    features: [
-      "RIICO Approved",
-      "Road Connectivity",
-      "Utility Ready",
-      "Expandable",
-    ],
-    investmentType: "Land Sale",
+    title: "Trade Hub Commercial — Hinjewadi",
+    type: "Office Space",
+    category: "Commercial",
+    location: "Hinjewadi, Pune",
+    area: "800 – 5,000 sq ft",
+    price: "₹55 – ₹65 / sq ft / mo",
     status: "Available",
-    imageUrl: "/assets/generated/property-industrial.dim_800x600.jpg",
-  },
-  {
-    id: 6,
-    title: "Luxury Farm House Estate",
-    type: "Farm House",
-    location: "Badi Lake Area, Udaipur",
-    area: "1.5 Acres",
-    price: "₹2.8Cr",
-    roi: "8% ROI",
     description:
-      "Sprawling luxury farmhouse estate near the serene Badi Lake. Beautifully landscaped gardens, private pool, and luxury residence. Perfect for investment or exclusive retreat.",
-    features: [
-      "Private Pool",
-      "Landscaped Gardens",
-      "Lake Proximity",
-      "Security",
-    ],
-    investmentType: "Sale",
-    status: "Available",
-    imageUrl: "/assets/generated/property-hotel.dim_800x600.jpg",
-  },
-  {
-    id: 7,
-    title: "Corporate Office Tower",
-    type: "Commercial",
-    location: "Sector 11, Udaipur",
-    area: "5,400 sq ft",
-    price: "₹1.2L/mo",
-    roi: "9.8% ROI",
-    description:
-      "Modern corporate office space across two floors in an A-grade commercial tower. Suitable for IT companies, consulting firms, or regional headquarters.",
-    features: [
+      "Grade-A commercial office spaces in Pune's leading IT hub. Flexible configurations from startup suites to full-floor enterprise setups. Excellent ITES infrastructure and transport access.",
+    amenities: [
       "Central AC",
       "High-Speed Internet",
       "Conference Rooms",
       "Cafeteria",
+      "Parking",
+      "24/7 Access",
     ],
-    investmentType: "Office Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-retail.dim_800x600.jpg",
+    imageUrl: "/assets/generated/dwell-commercial-office.dim_800x560.jpg",
   },
   {
-    id: 8,
-    title: "Mixed-Use Commercial Complex",
-    type: "Commercial",
-    location: "Sukher, Udaipur",
-    area: "12,000 sq ft",
-    price: "₹3.5Cr",
-    roi: "13% ROI",
+    id: 6,
+    title: "Retail Plaza — Bavdhan",
+    type: "Retail / Commercial",
+    category: "Commercial",
+    location: "Bavdhan, Pune",
+    area: "450 – 2,200 sq ft",
+    price: "₹1.20 Crores onwards",
+    status: "Featured",
     description:
-      "High-potential mixed-use development in rapidly growing Sukher area. Ground retail, upper floors commercial. Excellent investment with strong rental yield projections.",
-    features: [
-      "Mixed Use Zoning",
-      "High Growth Area",
-      "Rental Yield",
-      "Modern Construction",
+      "Premium retail and commercial units in the rapidly developing Bavdhan micro-market. High footfall catchment, ideal for F&B, showrooms, clinics, and services. Strong rental appreciation potential.",
+    amenities: [
+      "High Footfall",
+      "Ample Parking",
+      "Power Backup",
+      "CCTV",
+      "Loading Zone",
     ],
-    investmentType: "Investment",
-    status: "Available",
-    imageUrl: "/assets/generated/property-warehouse.dim_800x600.jpg",
+    imageUrl: "/assets/generated/dwell-commercial-retail.dim_800x560.jpg",
   },
 ];
 
-export interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  quote: string;
-  rating: number;
-  avatar: string;
-}
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 1,
-    name: "Rajesh Sharma",
-    role: "Franchise Owner",
-    company: "Domino's Franchisee, Udaipur",
-    quote:
-      "Grow Big helped us find the perfect location for our franchise. Their commercial expertise and market knowledge saved us months of searching. Highly recommended for any serious business expansion.",
-    rating: 5,
-    avatar: "RS",
-  },
-  {
-    id: 2,
-    name: "Priya Mehta",
-    role: "Hotel Developer",
-    company: "Meridian Hospitality Group",
-    quote:
-      "We were looking for a boutique hotel property in Udaipur for over a year. Grow Big identified an opportunity that perfectly matched our vision, and the deal was structured flawlessly.",
-    rating: 5,
-    avatar: "PM",
-  },
-  {
-    id: 3,
-    name: "Vikram Singh",
-    role: "Managing Director",
-    company: "SVS Industrial Pvt. Ltd.",
-    quote:
-      "Their understanding of industrial real estate is exceptional. They found us an RIICO-approved plot with all clearances within 3 weeks. A truly professional consultancy.",
-    rating: 5,
-    avatar: "VS",
-  },
-  {
-    id: 4,
-    name: "Anita Joshi",
-    role: "Restaurant Chain Owner",
-    company: "Spice Trail Restaurants",
-    quote:
-      "Deepak's team understands the F&B business deeply. They know what makes a restaurant location work. Our new outlet is performing 40% better than our previous location.",
-    rating: 5,
-    avatar: "AJ",
-  },
-  {
-    id: 5,
-    name: "Suresh Patel",
-    role: "Investment Director",
-    company: "Patel Commercial Ventures",
-    quote:
-      "Grow Big's market insights on Udaipur's growth corridors were spot-on. We invested in a commercial complex they recommended and ROI has exceeded projections.",
-    rating: 5,
-    avatar: "SP",
-  },
-];
+// Legacy alias for older components that may import PROPERTIES
+export const PROPERTIES = properties;
 
 export interface Sector {
   id: string;
@@ -422,7 +526,7 @@ export const MARKET_INSIGHTS: MarketInsight[] = [
     title: "Growth Zones",
     value: "6",
     unit: "Active Corridors",
-    description: "Emerging commercial micro-markets in Udaipur",
+    description: "Emerging commercial micro-markets in Pune",
     trend: "+18% YoY",
   },
   {
@@ -430,7 +534,7 @@ export const MARKET_INSIGHTS: MarketInsight[] = [
     title: "Retail Demand",
     value: "340K",
     unit: "sq ft Vacant",
-    description: "Available premium retail inventory across Udaipur",
+    description: "Available premium retail inventory across Pune",
     trend: "High Absorption",
   },
   {
@@ -438,7 +542,7 @@ export const MARKET_INSIGHTS: MarketInsight[] = [
     title: "Franchise Opportunities",
     value: "25+",
     unit: "Brands Seeking",
-    description: "National franchise brands actively seeking Udaipur locations",
+    description: "National franchise brands actively seeking Pune locations",
     trend: "Growing",
   },
   {
@@ -446,8 +550,7 @@ export const MARKET_INSIGHTS: MarketInsight[] = [
     title: "Industrial Expansion",
     value: "₹850Cr",
     unit: "Planned Investment",
-    description:
-      "Committed industrial investment in Udaipur region through 2026",
+    description: "Committed industrial investment in Pune region through 2026",
     trend: "+24% Growth",
   },
 ];

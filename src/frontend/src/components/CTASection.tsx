@@ -1,186 +1,189 @@
-import { MapPin, MessageSquare, Phone } from "lucide-react";
+import { Calendar, MessageCircle, Phone } from "lucide-react";
 
-export default function CTASection() {
+const TRUST_ITEMS = [
+  "5.0 Rated",
+  "200+ Families Helped",
+  "Transparent Advisory",
+  "Pune Specialists",
+];
+
+export default function ConsultationCTA() {
   return (
     <section
       id="contact"
-      className="relative py-20 sm:py-32 px-4 sm:px-6 overflow-hidden"
+      className="relative overflow-hidden"
       style={{
         background:
-          "linear-gradient(135deg, #0F0F10 0%, #1A1A1D 50%, #0F0F10 100%)",
+          "linear-gradient(110deg, #009FD4 0%, #007EB3 40%, #2D3142 100%)",
       }}
       data-ocid="contact.section"
     >
-      {/* Radial glow */}
       <div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
-        aria-hidden="true"
-      >
-        <div
-          style={{
-            width: "700px",
-            height: "500px",
-            background:
-              "radial-gradient(ellipse at center, rgba(200,155,60,0.07) 0%, transparent 70%)",
-            borderRadius: "50%",
-          }}
-        />
-      </div>
-      <div
-        className="absolute -top-40 -right-40 w-96 h-96 rounded-full opacity-5 pointer-events-none"
-        style={{ background: "radial-gradient(circle, #C89B3C, transparent)" }}
+        className="absolute -top-24 -left-24 w-64 h-64 rounded-full pointer-events-none"
+        style={{ background: "rgba(255,255,255,0.05)" }}
         aria-hidden="true"
       />
       <div
-        className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full opacity-5 pointer-events-none"
-        style={{ background: "radial-gradient(circle, #E2B95B, transparent)" }}
-        aria-hidden="true"
-      />
-      {/* Accent lines */}
-      <div
-        className="absolute top-0 left-0 right-0 h-[2px] pointer-events-none"
+        className="absolute bottom-0 right-0 w-96 h-96 rounded-full pointer-events-none"
         style={{
           background:
-            "linear-gradient(90deg, transparent 0%, #C89B3C 50%, transparent 100%)",
+            "radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 70%)",
+          transform: "translate(30%, 30%)",
         }}
         aria-hidden="true"
       />
       <div
-        className="absolute top-1/4 left-0 right-0 h-px opacity-5 pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background:
-            "linear-gradient(90deg, transparent, #C89B3C, transparent)",
-        }}
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-1/4 left-0 right-0 h-px opacity-5 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(90deg, transparent, #C89B3C, transparent)",
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
         }}
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-3xl mx-auto text-center flex flex-col gap-10">
-        <div className="flex flex-col gap-5 section-reveal">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <div className="flex flex-col items-center text-center gap-6 sm:gap-8">
           <span
-            className="mx-auto text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full"
+            className="text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full"
             style={{
-              color: "#C89B3C",
-              background: "rgba(200,155,60,0.1)",
-              border: "1px solid rgba(200,155,60,0.25)",
-              fontFamily: "var(--font-display)",
+              color: "rgba(255,255,255,0.9)",
+              background: "rgba(255,255,255,0.12)",
+              border: "1px solid rgba(255,255,255,0.25)",
             }}
           >
-            GET IN TOUCH
+            GET PERSONALIZED GUIDANCE
           </span>
-          <h2
-            className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold"
-            style={{
-              color: "#F5F5F5",
-              fontFamily: "var(--font-display)",
-              lineHeight: 1.15,
-            }}
-          >
-            Looking to <span className="text-gradient-gold">Expand</span>
-            <br />
-            Your Business?
-          </h2>
-          <p
-            className="text-base sm:text-lg max-w-xl mx-auto"
-            style={{ color: "#9A9A9A" }}
-          >
-            Find the right commercial opportunity with strategic real estate
-            guidance.
-          </p>
-        </div>
 
-        {/* 3 CTAs */}
-        <div
-          className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 section-reveal"
-          data-ocid="contact.cta_group"
-        >
-          <a
-            href="tel:7572905655"
-            className="btn-gold flex items-center justify-center gap-2 w-full sm:w-auto"
-            data-ocid="contact.strategy_button"
-          >
-            <Phone size={18} />
-            Schedule Strategy Call
-          </a>
-          <a
-            href="tel:7572905655"
-            className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto"
-            data-ocid="contact.call_button"
-          >
-            <Phone size={18} />
-            Call Now: 7572905655
-          </a>
-          <a
-            href="https://wa.me/917572905655"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 font-semibold transition-all duration-300 w-full sm:w-auto"
-            style={{
-              color: "#25D366",
-              border: "1px solid #25D366",
-              padding: "0.75rem 1.75rem",
-              borderRadius: "4px",
-              fontFamily: "var(--font-display)",
-              letterSpacing: "0.02em",
-            }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.background =
-                "rgba(37,211,102,0.1)";
-              (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                "0 0 18px rgba(37,211,102,0.25)";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.background =
-                "transparent";
-              (e.currentTarget as HTMLAnchorElement).style.boxShadow = "none";
-            }}
-            data-ocid="contact.whatsapp_button"
-          >
-            <MessageSquare size={18} />
-            WhatsApp Us
-          </a>
-        </div>
+          <div className="flex flex-col gap-3">
+            <h2
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white"
+              style={{ lineHeight: 1.2 }}
+            >
+              Ready to Find Your
+              <br />
+              <span style={{ color: "#C9A96E" }}>Perfect Property?</span>
+            </h2>
+            <p
+              className="max-w-xl mx-auto text-base sm:text-lg"
+              style={{ color: "rgba(255,255,255,0.78)" }}
+            >
+              Talk to our Pune property experts and get personalized guidance
+              within 24 hours. No pressure, just honest advice.
+            </p>
+          </div>
 
-        {/* Contact info */}
-        <div
-          className="flex flex-wrap justify-center gap-6 pt-6 section-reveal"
-          style={{ borderTop: "1px solid #2C2C30" }}
-        >
           <div
-            className="flex items-center gap-2 text-sm"
-            style={{ color: "#9A9A9A" }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full"
+            data-ocid="contact.cta_group"
           >
-            <Phone size={14} style={{ color: "#C89B3C", flexShrink: 0 }} />
-            <a
-              href="tel:7572905655"
-              className="transition-colors duration-200"
-              style={{ color: "#9A9A9A" }}
+            <button
+              type="button"
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="flex items-center justify-center gap-2 w-full sm:w-auto text-sm font-semibold px-6 py-3.5 rounded-xl transition-all duration-200"
+              style={{
+                background: "#FFFFFF",
+                color: "#009FD4",
+                minWidth: "200px",
+              }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.color = "#C89B3C";
+                (e.currentTarget as HTMLButtonElement).style.background =
+                  "#F0F9FE";
+                (e.currentTarget as HTMLButtonElement).style.boxShadow =
+                  "0 6px 20px rgba(0,0,0,0.15)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.color = "#9A9A9A";
+                (e.currentTarget as HTMLButtonElement).style.background =
+                  "#FFFFFF";
+                (e.currentTarget as HTMLButtonElement).style.boxShadow = "none";
               }}
+              data-ocid="contact.book_consultation_button"
             >
-              7572905655
+              <Calendar size={17} />
+              Book Free Consultation
+            </button>
+
+            <a
+              href="tel:+917572905655"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto text-sm font-semibold px-6 py-3.5 rounded-xl transition-all duration-200"
+              style={{
+                color: "#FFFFFF",
+                border: "1px solid rgba(255,255,255,0.45)",
+                background: "rgba(255,255,255,0.08)",
+                minWidth: "200px",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "rgba(255,255,255,0.15)";
+                (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                  "rgba(255,255,255,0.65)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "rgba(255,255,255,0.08)";
+                (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                  "rgba(255,255,255,0.45)";
+              }}
+              data-ocid="contact.schedule_visit_button"
+            >
+              <Phone size={17} />
+              Schedule Site Visit
+            </a>
+
+            <a
+              href="https://wa.me/917572905655?text=Hi%20DWELL%20Homes%2C%20I%20am%20looking%20for%20property%20guidance%20in%20Pune."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto text-sm font-semibold px-6 py-3.5 rounded-xl transition-all duration-200"
+              style={{
+                color: "#FFFFFF",
+                border: "1px solid rgba(37,211,102,0.5)",
+                background: "rgba(37,211,102,0.12)",
+                minWidth: "200px",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "rgba(37,211,102,0.22)";
+                (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                  "rgba(37,211,102,0.7)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "rgba(37,211,102,0.12)";
+                (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                  "rgba(37,211,102,0.5)";
+              }}
+              data-ocid="contact.whatsapp_button"
+            >
+              <MessageCircle size={17} />
+              WhatsApp Expert
             </a>
           </div>
+
           <div
-            className="flex items-start gap-2 text-sm"
-            style={{ color: "#9A9A9A" }}
+            className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 pt-2"
+            data-ocid="contact.trust_strip"
           >
-            <MapPin
-              size={14}
-              style={{ color: "#C89B3C", flexShrink: 0, marginTop: "2px" }}
-            />
-            <span>Near Ice Factory, road, Udaipur, Rajasthan 313001</span>
+            {TRUST_ITEMS.map((item, i) => (
+              <span
+                key={item}
+                className="flex items-center gap-2 text-xs sm:text-sm"
+                style={{ color: "rgba(255,255,255,0.65)" }}
+              >
+                {i > 0 && (
+                  <span
+                    className="w-1 h-1 rounded-full"
+                    style={{ background: "rgba(255,255,255,0.35)" }}
+                    aria-hidden="true"
+                  />
+                )}
+                {item}
+              </span>
+            ))}
           </div>
         </div>
       </div>

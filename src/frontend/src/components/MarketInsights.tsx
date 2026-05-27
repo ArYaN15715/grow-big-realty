@@ -1,169 +1,207 @@
-import { TrendingUp } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { MARKET_INSIGHTS } from "../data/siteData";
-
-function useCountUp(target: number, active: boolean, duration = 1800) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    if (!active) return;
-    let current = 0;
-    const step = target / (duration / 16);
-    const timer = setInterval(() => {
-      current += step;
-      if (current >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, 16);
-    return () => clearInterval(timer);
-  }, [target, active, duration]);
-  return count;
+interface AreaCard {
+  id: string;
+  name: string;
+  insight: string;
+  tag: string;
+  tagColor: string;
+  tagBg: string;
 }
 
-function parseValue(raw: string): {
-  prefix: string;
-  num: number;
-  suffix: string;
-} {
-  const match = raw.match(/^([^\d]*)(\d+(?:\.\d+)?)([^\d]*)$/);
-  if (!match) return { prefix: "", num: 0, suffix: raw };
-  return {
-    prefix: match[1],
-    num: Number.parseFloat(match[2]),
-    suffix: match[3],
-  };
-}
+const PUNE_AREAS: AreaCard[] = [
+  {
+    id: "baner",
+    name: "Baner",
+    insight:
+      "Premium residential hub with excellent connectivity to IT parks and top schools.",
+    tag: "Trending",
+    tagColor: "#10B981",
+    tagBg: "rgba(16,185,129,0.1)",
+  },
+  {
+    id: "wakad",
+    name: "Wakad",
+    insight:
+      "Rapidly growing IT corridor with strong rental demand and new residential projects.",
+    tag: "High Demand",
+    tagColor: "#009FD4",
+    tagBg: "rgba(0,159,212,0.1)",
+  },
+  {
+    id: "warje",
+    name: "Warje",
+    insight:
+      "Affordable family zone with improving infrastructure and good civic amenities.",
+    tag: "Affordable",
+    tagColor: "#C9A96E",
+    tagBg: "rgba(201,169,110,0.1)",
+  },
+  {
+    id: "kothrud",
+    name: "Kothrud",
+    insight:
+      "Established residential neighborhood loved by families for its culture and connectivity.",
+    tag: "Established",
+    tagColor: "#6366F1",
+    tagBg: "rgba(99,102,241,0.1)",
+  },
+  {
+    id: "hinjewadi",
+    name: "Hinjewadi",
+    insight:
+      "Pune's premier IT hub — prime commercial zones and investor-grade residential options.",
+    tag: "IT Hub",
+    tagColor: "#009FD4",
+    tagBg: "rgba(0,159,212,0.1)",
+  },
+  {
+    id: "aundh",
+    name: "Aundh",
+    insight:
+      "Upscale family neighborhood with premium apartments, restaurants, and lifestyle amenities.",
+    tag: "Premium",
+    tagColor: "#C9A96E",
+    tagBg: "rgba(201,169,110,0.1)",
+  },
+  {
+    id: "bavdhan",
+    name: "Bavdhan",
+    insight:
+      "Emerging premium zone with rapid development and strong long-term appreciation potential.",
+    tag: "Emerging",
+    tagColor: "#10B981",
+    tagBg: "rgba(16,185,129,0.1)",
+  },
+];
 
-function InsightCard({
-  insight,
-  index,
-}: { insight: (typeof MARKET_INSIGHTS)[0]; index: number }) {
-  const [visible, setVisible] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const { prefix, num, suffix } = parseValue(insight.value);
-  const count = useCountUp(num, visible);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          obs.disconnect();
-        }
-      },
-      { threshold: 0.4 },
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className="rounded-xl overflow-hidden card-lift"
-      style={{
-        background: "#1A1A1D",
-        border: "1px solid #2C2C30",
-        transitionDelay: `${index * 0.08}s`,
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(24px)",
-        transition:
-          "opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease",
-      }}
-      data-ocid={`insights.card.${index + 1}`}
-    >
-      <div
-        className="h-1 w-full"
-        style={{ background: "linear-gradient(90deg, #C89B3C, #E2B95B)" }}
-      />
-      <div className="p-6 flex flex-col gap-4">
-        <span
-          className="self-start flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full"
-          style={{
-            background: "rgba(74,222,128,0.1)",
-            color: "#4ADE80",
-            border: "1px solid rgba(74,222,128,0.25)",
-          }}
-        >
-          <TrendingUp size={11} />
-          {insight.trend}
-        </span>
-        <div className="flex flex-col gap-0.5">
-          <span
-            className="text-3xl sm:text-5xl font-bold text-gradient-gold"
-            style={{ fontFamily: "var(--font-display)", lineHeight: 1.1 }}
-          >
-            {prefix}
-            {count}
-            {suffix}
-          </span>
-          <span className="text-xs font-medium" style={{ color: "#9A9A9A" }}>
-            {insight.unit}
-          </span>
-        </div>
-        <div
-          className="flex flex-col gap-1 pt-3"
-          style={{ borderTop: "1px solid #2C2C30" }}
-        >
-          <h3
-            className="font-bold text-sm"
-            style={{ color: "#F5F5F5", fontFamily: "var(--font-display)" }}
-          >
-            {insight.title}
-          </h3>
-          <p className="text-xs leading-relaxed" style={{ color: "#9A9A9A" }}>
-            {insight.description}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default function MarketInsights() {
+export default function PuneMarketAuthority() {
   return (
     <section
-      id="insights"
+      id="pune-market"
       className="py-16 sm:py-24 px-4 sm:px-6"
-      style={{ background: "#0A0A0B" }}
-      data-ocid="insights.section"
+      style={{
+        background:
+          "linear-gradient(160deg, #E6F7FD 0%, #F7FBFE 50%, #FFFFFF 100%)",
+      }}
+      data-ocid="pune-market.section"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center gap-4 mb-16 section-reveal">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col items-center text-center gap-3 mb-12 sm:mb-16">
           <span
-            className="text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full"
+            className="text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full"
             style={{
-              color: "#C89B3C",
-              background: "rgba(200,155,60,0.1)",
-              border: "1px solid rgba(200,155,60,0.25)",
-              fontFamily: "var(--font-display)",
+              color: "#009FD4",
+              background: "rgba(0,159,212,0.08)",
+              border: "1px solid rgba(0,159,212,0.2)",
             }}
           >
-            MARKET INTELLIGENCE
+            PUNE MARKET EXPERTISE
           </span>
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold"
-            style={{ color: "#F5F5F5", fontFamily: "var(--font-display)" }}
+            className="text-3xl sm:text-4xl font-bold"
+            style={{ color: "#2D3142", lineHeight: 1.25 }}
           >
-            Udaipur Commercial Overview
+            Deep Understanding of Pune&apos;s Evolving Property Market
           </h2>
-          <div className="gold-line" />
-          <p className="max-w-xl text-base" style={{ color: "#9A9A9A" }}>
-            Real-time commercial real estate insights for Udaipur&#39;s
-            fastest-growing zones.
+          <p className="max-w-2xl text-base" style={{ color: "#64748B" }}>
+            DWELL has cultivated hands-on expertise across Pune&apos;s key
+            residential and commercial zones — so you get hyper-local guidance,
+            not generic advice.
           </p>
         </div>
+
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
-          data-ocid="insights.grid"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5"
+          data-ocid="pune-market.grid"
         >
-          {MARKET_INSIGHTS.map((insight, i) => (
-            <InsightCard key={insight.id} insight={insight} index={i} />
+          {PUNE_AREAS.map((area, i) => (
+            <div
+              key={area.id}
+              className="bg-white rounded-xl p-5 flex flex-col gap-3 transition-all duration-300 cursor-default"
+              style={{
+                border: "1px solid rgba(0,159,212,0.12)",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLDivElement;
+                el.style.transform = "translateY(-3px)";
+                el.style.boxShadow = "0 8px 24px rgba(0,159,212,0.1)";
+                el.style.borderColor = "rgba(0,159,212,0.3)";
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLDivElement;
+                el.style.transform = "translateY(0)";
+                el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
+                el.style.borderColor = "rgba(0,159,212,0.12)";
+              }}
+              data-ocid={`pune-market.card.${i + 1}`}
+            >
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="text-lg font-bold" style={{ color: "#009FD4" }}>
+                  {area.name}
+                </h3>
+                <span
+                  className="text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0"
+                  style={{
+                    color: area.tagColor,
+                    background: area.tagBg,
+                    border: `1px solid ${area.tagColor}40`,
+                  }}
+                >
+                  {area.tag}
+                </span>
+              </div>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "#64748B" }}
+              >
+                {area.insight}
+              </p>
+            </div>
           ))}
+
+          <div
+            className="relative flex flex-col items-center justify-center gap-3 rounded-xl p-5 sm:col-span-2 lg:col-span-1"
+            style={{
+              background: "linear-gradient(135deg, #009FD4 0%, #007EB3 100%)",
+              minHeight: "140px",
+            }}
+            data-ocid="pune-market.explore_card"
+          >
+            <div
+              className="absolute inset-0 rounded-xl pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(ellipse at 70% 30%, rgba(255,255,255,0.12) 0%, transparent 60%)",
+              }}
+              aria-hidden="true"
+            />
+            <p
+              className="text-white text-center text-sm font-medium relative z-10"
+              style={{ opacity: 0.9 }}
+            >
+              Explore properties in these areas with DWELL&apos;s guidance
+            </p>
+            <a
+              href="#contact"
+              className="relative z-10 text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200"
+              style={{
+                background: "rgba(255,255,255,0.15)",
+                border: "1px solid rgba(255,255,255,0.4)",
+                color: "#FFFFFF",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "rgba(255,255,255,0.25)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background =
+                  "rgba(255,255,255,0.15)";
+              }}
+              data-ocid="pune-market.explore_button"
+            >
+              Book Area Consultation
+            </a>
+          </div>
         </div>
       </div>
     </section>

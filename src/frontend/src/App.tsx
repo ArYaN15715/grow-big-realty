@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import BusinessSectors from "./components/BusinessSectors";
 import CTASection from "./components/CTASection";
 import FloatingActions from "./components/FloatingActions";
 import Footer from "./components/Footer";
@@ -23,7 +22,7 @@ export default function App() {
           }
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
     );
 
     const revealEls = document.querySelectorAll(".section-reveal");
@@ -35,19 +34,30 @@ export default function App() {
   return (
     <div
       className="min-h-screen"
-      style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}
+      style={{ backgroundColor: "#F8F9FA", color: "#2D3142" }}
     >
       <Navbar />
-      <HeroSection />
-      <BusinessSectors />
-      <PropertyShowcase />
-      <WhyGrowBig />
-      <GrowthTimeline />
-      <IndustrySectors />
-      <Testimonials />
-      <MarketInsights />
-      <CTASection />
-      <LocationMap />
+      <main>
+        <section id="home">
+          <HeroSection />
+        </section>
+        <section id="properties">
+          <PropertyShowcase />
+        </section>
+        <section id="commercial">
+          <WhyGrowBig />
+        </section>
+        <section id="residential">
+          <IndustrySectors />
+        </section>
+        <section id="about">
+          <MarketInsights />
+          <Testimonials />
+          <GrowthTimeline />
+        </section>
+        <CTASection />
+        <LocationMap />
+      </main>
       <Footer />
       <FloatingActions />
     </div>

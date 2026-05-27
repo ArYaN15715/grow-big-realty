@@ -1,261 +1,313 @@
-import { Building2, LineChart, Target, TrendingUp } from "lucide-react";
+import { CheckCircle, Home, MapPin, Star, Users } from "lucide-react";
 import { useEffect, useRef } from "react";
 
-const AUTHORITY_POINTS = [
+const LEFT_ADVANTAGES = [
   {
-    icon: TrendingUp,
-    title: "Expansion-Focused Consulting",
-    desc: "We think like business strategists, not property dealers. Every recommendation is aligned to your growth goals.",
+    icon: Home,
+    title: "Space Optimization Expertise",
+    desc: "We analyze your actual space needs before recommending any property — room layout, natural light, vastu, storage, and future-proofing.",
   },
   {
-    icon: Building2,
-    title: "Commercial Leasing Expertise",
-    desc: "Deep expertise in commercial, industrial, and hospitality real estate across Udaipur and Rajasthan.",
+    icon: CheckCircle,
+    title: "Transparent Advisory",
+    desc: "No hidden fees, no pressure tactics, no rushed closings. Just honest guidance aligned 100% with your best interest.",
   },
   {
-    icon: Target,
-    title: "Brand Growth Strategy",
-    desc: "We understand what a brand needs to succeed — footfall, visibility, infrastructure, and competitive positioning.",
+    icon: Users,
+    title: "Client-First Matching",
+    desc: "We understand your lifestyle, commute, budget, and family needs before suggesting a single property.",
+  },
+];
+
+const RIGHT_ADVANTAGES = [
+  {
+    title: "Property Matching",
+    desc: "Data-driven shortlisting — only properties that genuinely fit your brief.",
   },
   {
-    icon: LineChart,
-    title: "Investment Opportunities",
-    desc: "Access to exclusive off-market properties and investment-grade commercial assets.",
+    title: "Commercial + Residential",
+    desc: "Full-spectrum expertise from family homes to office spaces.",
+  },
+  {
+    title: "Smarter Decisions",
+    desc: "Backed by deep, current knowledge of Pune's evolving property market.",
   },
 ];
 
 const STATS = [
-  { value: "200+", label: "Deals Closed" },
-  { value: "8+", label: "Years Active" },
-  { value: "100%", label: "Satisfaction" },
+  {
+    value: "200+",
+    label: "Families Guided",
+    icon: undefined as typeof Star | undefined,
+  },
+  { value: "5.0", label: "Google Rating", icon: Star },
+  {
+    value: "100%",
+    label: "Transparent Process",
+    icon: undefined as typeof Star | undefined,
+  },
 ];
 
-export default function WhyGrowBig() {
+export default function ConsultationAdvantage() {
   const sectionRef = useRef<HTMLElement>(null);
-  const leftRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const headingRef = useRef<HTMLDivElement>(null);
-  const pointRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
+            (entry.target as HTMLElement).style.opacity = "1";
+            (entry.target as HTMLElement).style.transform = "translateY(0)";
           }
         }
       },
-      { threshold: 0.15 },
+      { threshold: 0.12 },
     );
 
-    if (leftRef.current) observer.observe(leftRef.current);
     if (headingRef.current) observer.observe(headingRef.current);
-    for (const el of pointRefs.current) {
+    for (const el of itemRefs.current) {
       if (el) observer.observe(el);
     }
-
     return () => observer.disconnect();
   }, []);
 
+  const fadeInStyle = {
+    opacity: 0,
+    transform: "translateY(24px)",
+    transition: "opacity 0.55s ease, transform 0.55s ease",
+  };
+
   return (
     <section
-      id="why"
+      id="about-advisory"
       ref={sectionRef}
       className="py-16 sm:py-24 px-4 sm:px-6"
-      style={{ background: "#0A0A0B" }}
-      data-ocid="why.section"
+      style={{ background: "#F0F2F5" }}
+      data-ocid="advisory.section"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* LEFT: Decorative visual */}
-          <div
-            ref={leftRef}
-            className="relative hidden lg:flex flex-col items-center justify-center section-reveal"
-            data-ocid="why.visual"
-          >
-            {/* Concentric rings */}
-            <div className="relative w-80 h-80 flex items-center justify-center">
-              {[1, 2, 3, 4].map((ring) => (
-                <div
-                  key={ring}
-                  className="absolute rounded-full animate-gold-pulse"
-                  style={{
-                    width: `${ring * 72}px`,
-                    height: `${ring * 72}px`,
-                    border: `1px solid rgba(200,155,60,${0.3 - ring * 0.06})`,
-                    animationDelay: `${ring * 0.4}s`,
-                  }}
-                />
-              ))}
-
-              {/* Animated vertical gold lines */}
-              <div className="absolute inset-0 flex items-center justify-center gap-4 overflow-hidden rounded-full">
-                {(
-                  [
-                    "left-outer",
-                    "left-inner",
-                    "center",
-                    "right-inner",
-                    "right-outer",
-                  ] as const
-                ).map((pos, i) => {
-                  const opacityVal = [0.15, 0.35, 0.7, 0.35, 0.15][i];
-                  return (
-                    <div
-                      key={pos}
-                      className="rounded-full"
-                      style={{
-                        width: "1px",
-                        height: "60%",
-                        background: `linear-gradient(to bottom, transparent, rgba(200,155,60,${opacityVal}), transparent)`,
-                        animation: `goldLinePulse ${2 + i * 0.3}s ease-in-out infinite alternate`,
-                        animationDelay: `${i * 0.25}s`,
-                      }}
-                    />
-                  );
-                })}
-              </div>
-
-              {/* Monogram center */}
-              <div
-                className="relative z-10 w-28 h-28 rounded-full flex items-center justify-center"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(200,155,60,0.15), rgba(226,185,91,0.08))",
-                  border: "1px solid rgba(200,155,60,0.4)",
-                  boxShadow:
-                    "0 0 40px rgba(200,155,60,0.15), inset 0 0 20px rgba(200,155,60,0.05)",
-                }}
-              >
-                <span
-                  className="text-5xl font-black text-gradient-gold"
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    letterSpacing: "-0.04em",
-                  }}
-                >
-                  GB
-                </span>
-              </div>
-            </div>
-
-            {/* Stats strip */}
+        {/* Section heading */}
+        <div ref={headingRef} className="mb-12 sm:mb-16" style={fadeInStyle}>
+          <div className="flex items-center gap-2 mb-3">
             <div
-              className="flex gap-8 mt-10 pt-8"
-              style={{ borderTop: "1px solid rgba(200,155,60,0.2)" }}
+              className="w-8 h-0.5 rounded-full"
+              style={{ background: "#009FD4" }}
+            />
+            <span
+              className="text-xs font-semibold tracking-widest uppercase"
+              style={{ color: "#009FD4" }}
             >
-              {STATS.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div
-                    className="text-2xl font-black text-gradient-gold"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {stat.value}
-                  </div>
-                  <div
-                    className="text-xs mt-1"
-                    style={{ color: "#9A9A9A", letterSpacing: "0.08em" }}
-                  >
-                    {stat.label.toUpperCase()}
-                  </div>
-                </div>
-              ))}
-            </div>
+              Our Advisory Edge
+            </span>
           </div>
+          <h2
+            className="text-3xl sm:text-4xl font-black leading-tight"
+            style={{ color: "#2D3142", fontFamily: "var(--font-display)" }}
+          >
+            More Than Property Deals —{" "}
+            <span style={{ color: "#009FD4" }}>
+              Expert Real Estate Guidance
+            </span>
+          </h2>
+        </div>
 
-          {/* RIGHT: Authority points */}
-          <div className="flex flex-col gap-6 sm:gap-8">
-            {/* Heading */}
+        {/* 60/40 split layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
+          {/* LEFT — 60% */}
+          <div className="lg:col-span-3 flex flex-col gap-8">
+            {/* Bold statement */}
             <div
-              ref={headingRef}
-              className="section-reveal flex flex-col gap-4"
+              ref={(el) => {
+                itemRefs.current[0] = el;
+              }}
+              style={{ ...fadeInStyle, transitionDelay: "0.05s" }}
             >
-              <div className="flex items-center gap-3">
-                <div className="gold-line" />
-                <span
-                  className="text-xs font-bold tracking-[0.2em] uppercase"
-                  style={{ color: "#C89B3C" }}
-                >
-                  WHY CHOOSE US
-                </span>
-              </div>
-              <h2
-                className="text-2xl sm:text-3xl sm:text-3xl lg:text-5xl font-black"
-                style={{
-                  color: "#F5F5F5",
-                  fontFamily: "var(--font-display)",
-                  lineHeight: 1.1,
-                }}
-              >
-                Why <span className="text-gradient-gold">Grow Big?</span>
-              </h2>
               <p
-                className="text-base max-w-md"
-                style={{ color: "#9A9A9A", lineHeight: 1.7 }}
+                className="text-lg sm:text-xl font-semibold leading-relaxed"
+                style={{ color: "#2D3142" }}
               >
-                Not a brokerage. A commercial expansion consultancy with the
-                expertise to help your business find the right space, at the
-                right terms.
+                DWELL is not a broker who shows you flats and collects
+                commission. We are your property advisor — the expert in your
+                corner who helps you understand the market, evaluate your
+                options objectively, and make a decision you'll feel confident
+                about for years to come.
               </p>
             </div>
 
-            {/* Points list */}
-            <div className="relative flex flex-col">
-              {/* Connecting vertical gold line */}
-              <div
-                className="absolute left-[21px] top-12 bottom-12 w-px"
-                style={{
-                  background:
-                    "linear-gradient(to bottom, rgba(200,155,60,0.5), rgba(200,155,60,0.05))",
-                }}
-              />
-
-              {AUTHORITY_POINTS.map((point, i) => {
-                const Icon = point.icon;
+            {/* Advantage items */}
+            <div className="flex flex-col gap-6">
+              {LEFT_ADVANTAGES.map((item, i) => {
+                const Icon = item.icon;
                 return (
                   <div
-                    key={point.title}
+                    key={item.title}
                     ref={(el) => {
-                      pointRefs.current[i] = el;
+                      itemRefs.current[i + 1] = el;
                     }}
-                    className="group flex gap-5 py-5 section-reveal"
-                    style={{ animationDelay: `${i * 0.12}s` }}
-                    data-ocid={`why.point.${i + 1}`}
+                    className="flex gap-4 group"
+                    style={{
+                      ...fadeInStyle,
+                      transitionDelay: `${(i + 1) * 0.1 + 0.05}s`,
+                    }}
+                    data-ocid={`advisory.advantage.${i + 1}`}
                   >
-                    {/* Icon circle */}
+                    {/* Teal icon circle */}
                     <div
-                      className="relative z-10 w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(200,155,60,0.4)]"
+                      className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
                       style={{
-                        background:
-                          "linear-gradient(135deg, rgba(200,155,60,0.15), rgba(200,155,60,0.05))",
-                        border: "1px solid rgba(200,155,60,0.35)",
-                        color: "#C89B3C",
+                        background: "linear-gradient(135deg, #009FD4, #00B4E6)",
+                        boxShadow: "0 4px 14px rgba(0,159,212,0.3)",
                       }}
                     >
-                      <Icon size={18} />
+                      <Icon size={18} color="#fff" strokeWidth={2} />
                     </div>
-
-                    {/* Text */}
-                    <div className="flex flex-col gap-1 pt-1">
+                    <div className="flex flex-col gap-1 pt-0.5">
                       <h3
-                        className="font-bold text-sm transition-colors duration-200 group-hover:text-[#E2B95B]"
+                        className="font-bold text-base"
                         style={{
-                          color: "#F5F5F5",
+                          color: "#2D3142",
                           fontFamily: "var(--font-display)",
                         }}
                       >
-                        {point.title}
+                        {item.title}
                       </h3>
                       <p
                         className="text-sm leading-relaxed"
-                        style={{ color: "#9A9A9A" }}
+                        style={{ color: "#5A6072" }}
                       >
-                        {point.desc}
+                        {item.desc}
                       </p>
                     </div>
                   </div>
                 );
               })}
+            </div>
+          </div>
+
+          {/* RIGHT — 40% */}
+          <div
+            className="lg:col-span-2"
+            ref={(el) => {
+              itemRefs.current[4] = el;
+            }}
+            style={{ ...fadeInStyle, transitionDelay: "0.35s" }}
+          >
+            {/* Glassmorphism card */}
+            <div
+              className="rounded-2xl p-6 sm:p-8"
+              style={{
+                background:
+                  "linear-gradient(145deg, rgba(0,159,212,0.08), rgba(0,180,230,0.04))",
+                border: "1.5px solid rgba(0,159,212,0.2)",
+                boxShadow:
+                  "0 8px 40px rgba(0,159,212,0.1), 0 2px 8px rgba(0,0,0,0.06)",
+                backdropFilter: "blur(12px)",
+              }}
+              data-ocid="advisory.stats-card"
+            >
+              {/* Stats row */}
+              <div
+                className="flex justify-between gap-2 pb-6 mb-6"
+                style={{ borderBottom: "1px solid rgba(0,159,212,0.18)" }}
+              >
+                {STATS.map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <div className="flex items-center gap-1">
+                      <span
+                        className="text-2xl font-black"
+                        style={{
+                          color: "#009FD4",
+                          fontFamily: "var(--font-display)",
+                        }}
+                      >
+                        {stat.value}
+                      </span>
+                      {stat.icon && (
+                        <stat.icon
+                          size={14}
+                          style={{ color: "#C9A96E" }}
+                          fill="#C9A96E"
+                        />
+                      )}
+                    </div>
+                    <span
+                      className="text-xs mt-0.5 font-medium"
+                      style={{ color: "#5A6072" }}
+                    >
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Right advantage points */}
+              <div className="flex flex-col gap-5">
+                <h4
+                  className="text-sm font-bold uppercase tracking-wider"
+                  style={{ color: "#009FD4" }}
+                >
+                  What sets us apart
+                </h4>
+                {RIGHT_ADVANTAGES.map((item, i) => (
+                  <div
+                    key={item.title}
+                    className="flex gap-3"
+                    data-ocid={`advisory.right-advantage.${i + 1}`}
+                  >
+                    <div
+                      className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
+                      style={{ background: "rgba(0,159,212,0.15)" }}
+                    >
+                      <div
+                        className="w-2 h-2 rounded-full"
+                        style={{ background: "#009FD4" }}
+                      />
+                    </div>
+                    <div>
+                      <p
+                        className="font-semibold text-sm"
+                        style={{
+                          color: "#2D3142",
+                          fontFamily: "var(--font-display)",
+                        }}
+                      >
+                        {item.title}
+                      </p>
+                      <p
+                        className="text-xs leading-relaxed mt-0.5"
+                        style={{ color: "#5A6072" }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Teal gradient accent bar */}
+              <div
+                className="mt-6 rounded-xl px-4 py-3"
+                style={{
+                  background:
+                    "linear-gradient(90deg, rgba(0,159,212,0.15), rgba(0,180,230,0.05))",
+                  borderLeft: "3px solid #009FD4",
+                }}
+              >
+                <div className="flex items-center gap-2">
+                  <MapPin size={14} style={{ color: "#009FD4" }} />
+                  <p
+                    className="text-xs font-medium"
+                    style={{ color: "#2D3142" }}
+                  >
+                    Serving families and professionals across Pune
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

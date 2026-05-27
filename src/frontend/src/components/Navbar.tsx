@@ -4,190 +4,184 @@ import { NAV_LINKS } from "../data/siteData";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleNavClick = useCallback((href: string) => {
-    setMenuOpen(false);
+    setMobileOpen(false);
     const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    el?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
   return (
     <header
+      data-ocid="navbar"
       className="fixed top-0 left-0 right-0 z-50"
       style={{
         transition:
-          "background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease, padding 0.3s ease",
-        background: scrolled ? "rgba(15,15,16,0.88)" : "transparent",
-        backdropFilter: scrolled ? "blur(18px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(18px)" : "none",
+          "background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease",
+        background: scrolled
+          ? "rgba(255,255,255,0.92)"
+          : "rgba(255,255,255,0.4)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
         borderBottom: scrolled
-          ? "1px solid rgba(44,44,48,0.8)"
-          : "1px solid transparent",
-        padding: scrolled ? "10px 0" : "18px 0",
+          ? "1px solid rgba(229,231,235,0.9)"
+          : "1px solid rgba(229,231,235,0.3)",
+        boxShadow: scrolled ? "0 1px 20px rgba(0,0,0,0.06)" : "none",
       }}
-      data-ocid="navbar"
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8">
-        {/* Logo */}
-        <button
-          type="button"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="flex items-center shrink-0"
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            padding: 0,
-          }}
-          data-ocid="navbar.logo"
-        >
-          <img
-            src="/assets/images/logo.webp"
-            alt="Grow Big Leasing & Real Estate"
-            className="h-10 w-auto object-contain"
-            style={{ transition: "opacity 0.3s ease" }}
-          />
-        </button>
-
-        {/* Desktop nav */}
-        <nav
-          className="hidden md:flex items-center gap-8 flex-1 justify-center"
-          data-ocid="navbar.nav"
-        >
-          {NAV_LINKS.map((link) => (
-            <button
-              key={link.label}
-              type="button"
-              onClick={() => handleNavClick(link.href)}
-              className="relative text-sm font-medium tracking-wide group"
-              style={{
-                color: "#9A9A9A",
-                fontFamily: "var(--font-display)",
-                transition: "color 0.25s ease",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                padding: "4px 0",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = "#C89B3C";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = "#9A9A9A";
-              }}
-              data-ocid={`navbar.link.${link.label.toLowerCase()}`}
-            >
-              {link.label}
-              {/* Gold underline on hover */}
-              <span
-                className="absolute bottom-0 left-0 w-0 h-[1px] group-hover:w-full"
-                style={{
-                  background: "linear-gradient(90deg, #C89B3C, #E2B95B)",
-                  transition: "width 0.3s ease",
-                }}
-              />
-            </button>
-          ))}
-        </nav>
-
-        {/* CTA */}
-        <button
-          type="button"
-          onClick={() => handleNavClick("#contact")}
-          className="hidden md:block btn-gold text-sm shrink-0"
-          data-ocid="navbar.cta_button"
-        >
-          Book Consultation
-        </button>
-
-        {/* Mobile hamburger */}
-        <button
-          type="button"
-          onClick={() => setMenuOpen((o) => !o)}
-          className="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
-          style={{
-            color: "#C89B3C",
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-          }}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          data-ocid="navbar.hamburger"
-        >
-          <span
-            style={{
-              display: "block",
-              transition: "transform 0.3s ease, opacity 0.3s ease",
-            }}
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </span>
-        </button>
-      </div>
-
-      {/* Mobile menu — slide down */}
-      <div
-        className="md:hidden overflow-hidden"
-        style={{
-          maxHeight: menuOpen ? "400px" : "0",
-          transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-          background: "rgba(15,15,16,0.97)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-        }}
-        data-ocid="navbar.mobile_menu"
-      >
-        <div
-          style={{
-            borderTop: "1px solid rgba(44,44,48,0.8)",
-            padding: "1.25rem 1.5rem 1.5rem",
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.25rem",
-          }}
-        >
-          {NAV_LINKS.map((link) => (
-            <button
-              key={link.label}
-              type="button"
-              onClick={() => handleNavClick(link.href)}
-              className="text-left text-base font-medium transition-colors duration-200 py-4 w-full"
-              style={{
-                color: "#9A9A9A",
-                fontFamily: "var(--font-display)",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                borderBottom: "1px solid rgba(44,44,48,0.4)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = "#C89B3C";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = "#9A9A9A";
-              }}
-              data-ocid={`navbar.mobile.${link.label.toLowerCase()}`}
-            >
-              {link.label}
-            </button>
-          ))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           <button
             type="button"
-            onClick={() => handleNavClick("#contact")}
-            className="btn-gold text-sm mt-4 text-center w-full"
-            data-ocid="navbar.mobile.cta_button"
+            data-ocid="navbar.logo"
+            onClick={() => handleNavClick("#home")}
+            className="flex items-center flex-shrink-0"
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              padding: 0,
+            }}
+            aria-label="DWELL Homes & Services"
           >
-            Book Consultation
+            <img
+              src="/assets/images/dwell-logo.jpg"
+              alt="DWELL Homes & Services"
+              className="h-10 w-auto object-contain rounded"
+            />
           </button>
+
+          <nav
+            className="hidden lg:flex items-center gap-1"
+            aria-label="Main navigation"
+          >
+            {NAV_LINKS.map((link) => (
+              <button
+                key={link.href}
+                type="button"
+                onClick={() => handleNavClick(link.href)}
+                data-ocid={`navbar.link.${link.label.toLowerCase()}`}
+                className="relative px-4 py-2 text-sm font-medium transition-colors duration-200 group rounded"
+                style={{
+                  color: "#2D3142",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  fontFamily: "var(--font-display)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = "#009FD4";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = "#2D3142";
+                }}
+              >
+                {link.label}
+                <span
+                  className="absolute bottom-0 left-4 right-4 h-0.5 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                  style={{ backgroundColor: "#009FD4" }}
+                />
+              </button>
+            ))}
+          </nav>
+
+          <div className="hidden lg:flex items-center">
+            <button
+              type="button"
+              data-ocid="navbar.cta_button"
+              onClick={() => handleNavClick("#contact")}
+              className="px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
+              style={{
+                backgroundColor: "#009FD4",
+                fontFamily: "var(--font-display)",
+              }}
+            >
+              Book Consultation
+            </button>
+          </div>
+
+          <button
+            type="button"
+            data-ocid="navbar.hamburger"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen((o) => !o)}
+            className="lg:hidden flex flex-col justify-center items-center w-11 h-11 gap-1.5 rounded-lg transition-colors hover:bg-black/5"
+            style={{ background: "none", border: "none", cursor: "pointer" }}
+          >
+            <span
+              className={`block h-0.5 w-6 rounded-full transition-all duration-300 ${
+                mobileOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+              style={{ backgroundColor: "#2D3142" }}
+            />
+            <span
+              className={`block h-0.5 w-6 rounded-full transition-all duration-300 ${
+                mobileOpen ? "opacity-0 scale-x-0" : ""
+              }`}
+              style={{ backgroundColor: "#2D3142" }}
+            />
+            <span
+              className={`block h-0.5 w-6 rounded-full transition-all duration-300 ${
+                mobileOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+              style={{ backgroundColor: "#2D3142" }}
+            />
+          </button>
+        </div>
+      </div>
+
+      <div
+        data-ocid="navbar.mobile_menu"
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          mobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
+        style={{
+          background: "rgba(255,255,255,0.97)",
+          backdropFilter: "blur(16px)",
+          borderTop: "1px solid rgba(229,231,235,0.8)",
+        }}
+      >
+        <div className="px-4 py-4 space-y-1">
+          {NAV_LINKS.map((link) => (
+            <button
+              key={link.href}
+              type="button"
+              onClick={() => handleNavClick(link.href)}
+              data-ocid={`navbar.mobile.${link.label.toLowerCase()}`}
+              className="w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-black/5"
+              style={{
+                color: "#2D3142",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "var(--font-display)",
+              }}
+            >
+              {link.label}
+            </button>
+          ))}
+          <div className="pt-2">
+            <button
+              type="button"
+              data-ocid="navbar.mobile.cta_button"
+              onClick={() => handleNavClick("#contact")}
+              className="w-full px-4 py-3.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-90"
+              style={{
+                backgroundColor: "#009FD4",
+                fontFamily: "var(--font-display)",
+              }}
+            >
+              Book Consultation
+            </button>
+          </div>
         </div>
       </div>
     </header>

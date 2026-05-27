@@ -1,17 +1,50 @@
-import { MapPin, Maximize2, TrendingUp } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { PROPERTIES, type Property } from "../data/siteData";
+import {
+  Bed,
+  Building2,
+  Home,
+  MapPin,
+  Maximize2,
+  SlidersHorizontal,
+} from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { properties } from "../data/siteData";
+import type { Property } from "../data/siteData";
 import PropertyModal from "./PropertyModal";
 
-const FILTERS = [
-  "All",
-  "Commercial",
-  "Hospitality",
-  "Warehouse",
-  "F&B",
-  "Industrial",
-  "Farm House",
-];
+const FILTERS = ["All", "Residential", "Commercial"] as const;
+type Filter = (typeof FILTERS)[number];
+
+function StatusBadge({ status }: { status: Property["status"] }) {
+  const styles: Record<
+    Property["status"],
+    { bg: string; text: string; border: string }
+  > = {
+    Featured: {
+      bg: "rgba(201,169,110,0.15)",
+      text: "#C9A96E",
+      border: "1px solid rgba(201,169,110,0.4)",
+    },
+    Available: {
+      bg: "rgba(16,185,129,0.12)",
+      text: "#10B981",
+      border: "1px solid rgba(16,185,129,0.35)",
+    },
+    "Sold Out": {
+      bg: "rgba(107,114,128,0.12)",
+      text: "#6B7280",
+      border: "1px solid rgba(107,114,128,0.3)",
+    },
+  };
+  const s = styles[status];
+  return (
+    <span
+      className="text-xs font-bold px-2.5 py-1 rounded-full"
+      style={{ background: s.bg, color: s.text, border: s.border }}
+    >
+      {status}
+    </span>
+  );
+}
 
 function PropertyCard({
   property,
@@ -25,203 +58,228 @@ function PropertyCard({
   return (
     <button
       type="button"
-      className="group card-lift rounded-xl overflow-hidden cursor-pointer section-reveal text-left w-full"
+      onClick={() => onSelect(property)}
+      className="group text-left w-full rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 bg-white"
       style={{
-        background: "#1A1A1D",
-        border: "1px solid #2C2C30",
-        transitionDelay: `${index * 0.07}s`,
-        transition:
-          "border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease",
+        boxShadow: "0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05)",
+        border: "1px solid #E8ECF0",
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.borderColor = "#C89B3C";
         (e.currentTarget as HTMLButtonElement).style.boxShadow =
-          "0 0 24px rgba(200,155,60,0.15)";
+          "0 12px 40px rgba(0,159,212,0.15), 0 4px 16px rgba(0,0,0,0.08)";
+        (e.currentTarget as HTMLButtonElement).style.borderColor =
+          "rgba(0,159,212,0.3)";
       }}
       onMouseLeave={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.borderColor = "#2C2C30";
-        (e.currentTarget as HTMLButtonElement).style.boxShadow = "";
+        (e.currentTarget as HTMLButtonElement).style.boxShadow =
+          "0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05)";
+        (e.currentTarget as HTMLButtonElement).style.borderColor = "#E8ECF0";
       }}
-      onClick={() => onSelect(property)}
       data-ocid={`properties.item.${index + 1}`}
+      aria-label={`View details for ${property.title}`}
     >
       {/* Image */}
-      <div className="relative h-48 sm:h-52 overflow-hidden">
+      <div className="relative h-52 overflow-hidden">
         <img
           src={property.imageUrl}
           alt={property.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
-        {/* Overlay on hover */}
-        <div
-          className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(15,15,16,0.3), rgba(15,15,16,0.6))",
-          }}
-        />
-        {/* Type badge */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
         <span
-          className="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full"
+          className="absolute top-3 left-3 flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full text-white"
           style={{
-            background: "rgba(200,155,60,0.85)",
-            color: "#0F0F10",
-            fontFamily: "var(--font-display)",
+            background: "rgba(0,159,212,0.9)",
+            backdropFilter: "blur(4px)",
           }}
         >
+          {property.category === "Residential" ? (
+            <Home size={11} strokeWidth={2.5} />
+          ) : (
+            <Building2 size={11} strokeWidth={2.5} />
+          )}
           {property.type}
         </span>
-        {/* Status badge */}
-        <span
-          className="absolute top-3 right-3 text-xs font-semibold px-3 py-1 rounded-full"
-          style={{
-            background: "rgba(76,175,80,0.15)",
-            color: "#4CAF50",
-            border: "1px solid rgba(76,175,80,0.3)",
-          }}
-        >
-          {property.status}
-        </span>
+        <div className="absolute top-3 right-3">
+          <StatusBadge status={property.status} />
+        </div>
       </div>
 
       {/* Content */}
-      <div className="p-5 flex flex-col gap-3">
+      <div className="p-4 sm:p-5 flex flex-col gap-3">
         <h3
-          className="font-bold text-lg leading-snug line-clamp-2"
-          style={{ color: "#F5F5F5", fontFamily: "var(--font-display)" }}
+          className="font-bold text-base sm:text-lg leading-snug line-clamp-2"
+          style={{ color: "#2D3142", fontFamily: "var(--font-display)" }}
         >
           {property.title}
         </h3>
 
         <div
-          className="flex items-center gap-1.5 text-sm"
-          style={{ color: "#9A9A9A" }}
+          className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm"
+          style={{ color: "#6B7280" }}
         >
-          <MapPin size={13} style={{ color: "#C89B3C", flexShrink: 0 }} />
-          <span className="truncate">{property.location}</span>
-        </div>
-
-        <div
-          className="flex items-center gap-1.5 text-sm"
-          style={{ color: "#9A9A9A" }}
-        >
-          <Maximize2 size={13} style={{ color: "#C89B3C", flexShrink: 0 }} />
-          <span>{property.area}</span>
-        </div>
-
-        <div className="flex items-center justify-between mt-1">
-          <span
-            className="font-bold text-xl"
-            style={{ color: "#C89B3C", fontFamily: "var(--font-display)" }}
-          >
-            {property.price}
+          <span className="flex items-center gap-1.5">
+            <MapPin size={13} style={{ color: "#009FD4", flexShrink: 0 }} />
+            <span className="truncate max-w-[120px]">{property.location}</span>
           </span>
-          <div
-            className="flex items-center gap-1 text-sm"
-            style={{ color: "#E2B95B" }}
-          >
-            <TrendingUp size={13} />
-            <span>{property.roi}</span>
-          </div>
+          <span className="flex items-center gap-1.5">
+            <Maximize2 size={13} style={{ color: "#009FD4", flexShrink: 0 }} />
+            {property.area}
+          </span>
+          {property.bedrooms && (
+            <span className="flex items-center gap-1.5">
+              <Bed size={13} style={{ color: "#009FD4", flexShrink: 0 }} />
+              {property.bedrooms}
+            </span>
+          )}
         </div>
 
         <div
-          className="mt-2 w-full btn-gold py-2.5 text-sm font-semibold text-center"
+          className="font-bold text-xl"
+          style={{ color: "#C9A96E", fontFamily: "var(--font-display)" }}
+        >
+          {property.price}
+        </div>
+
+        <div className="flex flex-wrap gap-1.5">
+          {property.amenities.slice(0, 3).map((a) => (
+            <span
+              key={a}
+              className="text-xs px-2.5 py-1 rounded-full font-medium"
+              style={{
+                background: "#F0F7FB",
+                color: "#009FD4",
+                border: "1px solid rgba(0,159,212,0.2)",
+              }}
+            >
+              {a}
+            </span>
+          ))}
+          {property.amenities.length > 3 && (
+            <span
+              className="text-xs px-2.5 py-1 rounded-full font-medium"
+              style={{ background: "#F0F2F5", color: "#6B7280" }}
+            >
+              +{property.amenities.length - 3} more
+            </span>
+          )}
+        </div>
+
+        <button
+          type="button"
+          className="mt-1 w-full py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 border"
+          style={{
+            color: "#009FD4",
+            borderColor: "#009FD4",
+            background: "transparent",
+          }}
+          onMouseEnter={(e) => {
+            const b = e.currentTarget;
+            b.style.background = "#009FD4";
+            b.style.color = "#fff";
+          }}
+          onMouseLeave={(e) => {
+            const b = e.currentTarget;
+            b.style.background = "transparent";
+            b.style.color = "#009FD4";
+          }}
+          tabIndex={-1}
+          aria-hidden="true"
           data-ocid={`properties.view_button.${index + 1}`}
         >
           View Details
-        </div>
+        </button>
       </div>
     </button>
   );
 }
 
 export default function PropertyShowcase() {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState<Filter>("All");
   const [selected, setSelected] = useState<Property | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const filtered =
-    filter === "All" ? PROPERTIES : PROPERTIES.filter((p) => p.type === filter);
+  const filtered = useMemo(
+    () =>
+      filter === "All"
+        ? properties
+        : properties.filter((p) => p.category === filter),
+    [filter],
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) entry.target.classList.add("visible");
+          if (entry.isIntersecting) entry.target.classList.add("prop-visible");
         }
       },
-      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
     );
-    const targets = sectionRef.current?.querySelectorAll(".section-reveal");
-    if (targets) {
-      for (const el of targets) observer.observe(el);
-    }
+    const cards = sectionRef.current?.querySelectorAll(".prop-card");
+    if (cards) for (const el of cards) observer.observe(el);
     return () => observer.disconnect();
-    // Re-observe when filtered list changes so new cards get revealed
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <section
       id="properties"
       className="py-16 sm:py-24 px-4 sm:px-6"
-      style={{ background: "#0F0F10" }}
+      style={{ background: "#F8FAFC" }}
       data-ocid="properties.section"
       ref={sectionRef}
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <div className="flex flex-col items-center text-center gap-5 mb-14 section-reveal">
+        <div className="text-center mb-12">
           <span
-            className="text-xs font-bold tracking-widest uppercase"
-            style={{ color: "#C89B3C", letterSpacing: "0.2em" }}
+            className="inline-block text-xs font-bold tracking-widest uppercase mb-3"
+            style={{ color: "#009FD4", letterSpacing: "0.18em" }}
           >
-            LIVE OPPORTUNITIES
+            Featured Properties
           </span>
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold"
-            style={{ color: "#F5F5F5", fontFamily: "var(--font-display)" }}
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
+            style={{ color: "#2D3142", fontFamily: "var(--font-display)" }}
           >
-            Featured <span className="text-gradient-gold">Properties</span>
+            Explore Our{" "}
+            <span style={{ color: "#009FD4" }}>Featured Properties</span>
           </h2>
-          <div className="gold-line" />
-          <p className="max-w-xl text-base" style={{ color: "#9A9A9A" }}>
-            Curated commercial, hospitality, and industrial properties across
-            Udaipur.
+          <div
+            className="w-16 h-1 rounded-full mx-auto mb-5"
+            style={{ background: "linear-gradient(90deg, #009FD4, #C9A96E)" }}
+          />
+          <p
+            className="max-w-xl mx-auto text-base"
+            style={{ color: "#6B7280" }}
+          >
+            Carefully curated residential and commercial properties across
+            Pune's most sought-after micro-markets.
           </p>
         </div>
 
         {/* Filter tabs */}
         <div
-          className="flex overflow-x-auto gap-2 mb-12 section-reveal pb-2 no-scrollbar"
+          className="flex items-center justify-center flex-wrap gap-2 mb-10"
           data-ocid="properties.filter_tabs"
         >
+          <SlidersHorizontal size={15} style={{ color: "#6B7280" }} />
           {FILTERS.map((f) => (
             <button
               key={f}
               type="button"
               onClick={() => setFilter(f)}
-              className="px-4 sm:px-5 py-2 text-xs font-semibold rounded-full transition-all duration-200 whitespace-nowrap flex-shrink-0"
+              className="px-5 py-2 text-sm font-semibold rounded-full transition-all duration-200"
               style={{
-                background: filter === f ? "#C89B3C" : "#1A1A1D",
-                color: filter === f ? "#0F0F10" : "#9A9A9A",
+                background: filter === f ? "#009FD4" : "#fff",
+                color: filter === f ? "#fff" : "#6B7280",
                 border:
-                  filter === f ? "1px solid #C89B3C" : "1px solid #2C2C30",
-                fontFamily: "var(--font-display)",
+                  filter === f ? "1px solid #009FD4" : "1px solid #E2E8F0",
+                boxShadow:
+                  filter === f ? "0 4px 12px rgba(0,159,212,0.25)" : "none",
               }}
-              onMouseEnter={(e) => {
-                if (filter !== f)
-                  (e.currentTarget as HTMLButtonElement).style.color =
-                    "#C89B3C";
-              }}
-              onMouseLeave={(e) => {
-                if (filter !== f)
-                  (e.currentTarget as HTMLButtonElement).style.color =
-                    "#9A9A9A";
-              }}
-              data-ocid={`properties.filter.${f.toLowerCase().replace(/[^a-z0-9]/g, "_")}`}
+              data-ocid={`properties.filter.${f.toLowerCase()}`}
             >
               {f}
             </button>
@@ -231,29 +289,64 @@ export default function PropertyShowcase() {
         {/* Grid */}
         {filtered.length > 0 ? (
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"
             data-ocid="properties.list"
           >
             {filtered.map((p, i) => (
-              <PropertyCard
+              <div
                 key={p.id}
-                property={p}
-                onSelect={setSelected}
-                index={i}
-              />
+                className="prop-card opacity-0 translate-y-4 transition-all duration-500"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <PropertyCard property={p} onSelect={setSelected} index={i} />
+              </div>
             ))}
           </div>
         ) : (
-          <div className="text-center py-20" data-ocid="properties.empty_state">
-            <p className="text-lg mb-2" style={{ color: "#9A9A9A" }}>
+          <div
+            className="text-center py-20 rounded-2xl"
+            style={{ background: "#fff", border: "1px dashed #E2E8F0" }}
+            data-ocid="properties.empty_state"
+          >
+            <Building2
+              size={40}
+              className="mx-auto mb-3"
+              style={{ color: "#CBD5E1" }}
+            />
+            <p
+              className="text-lg font-semibold mb-2"
+              style={{ color: "#2D3142" }}
+            >
               No properties in this category.
             </p>
-            <p className="text-sm" style={{ color: "#9A9A9A" }}>
-              Contact us for specific requirements.
+            <p className="text-sm" style={{ color: "#6B7280" }}>
+              Contact us for personalized property guidance.
             </p>
           </div>
         )}
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-12">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 text-white"
+            style={{
+              background: "linear-gradient(135deg, #009FD4, #00B4E6)",
+              boxShadow: "0 4px 20px rgba(0,159,212,0.3)",
+            }}
+            data-ocid="properties.consult_button"
+          >
+            Talk to a Property Expert
+          </a>
+        </div>
       </div>
+
+      <style>{`
+        .prop-card.prop-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      `}</style>
 
       {selected && (
         <PropertyModal property={selected} onClose={() => setSelected(null)} />

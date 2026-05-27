@@ -18505,18 +18505,37 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$o = [
-  ["path", { d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16", key: "jecpp" }],
-  ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2", key: "i6l2r4" }]
+const __iconNode$j = [
+  [
+    "path",
+    {
+      d: "m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526",
+      key: "1yiouv"
+    }
+  ],
+  ["circle", { cx: "12", cy: "8", r: "6", key: "1vp47v" }]
 ];
-const Briefcase = createLucideIcon("briefcase", __iconNode$o);
+const Award = createLucideIcon("award", __iconNode$j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$n = [
+const __iconNode$i = [
+  ["path", { d: "M2 4v16", key: "vw9hq8" }],
+  ["path", { d: "M2 8h18a2 2 0 0 1 2 2v10", key: "1dgv2r" }],
+  ["path", { d: "M2 17h20", key: "18nfp3" }],
+  ["path", { d: "M6 8v9", key: "1yriud" }]
+];
+const Bed = createLucideIcon("bed", __iconNode$i);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$h = [
   ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
   ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
   ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
@@ -18525,83 +18544,7 @@ const __iconNode$n = [
   ["path", { d: "M10 14h4", key: "kelpxr" }],
   ["path", { d: "M10 18h4", key: "1ulq68" }]
 ];
-const Building2 = createLucideIcon("building-2", __iconNode$n);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$m = [
-  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
-  ["path", { d: "m19 9-5 5-4-4-3 3", key: "2osh9i" }]
-];
-const ChartLine = createLucideIcon("chart-line", __iconNode$m);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$l = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-const ChevronLeft = createLucideIcon("chevron-left", __iconNode$l);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$k = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$k);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$j = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
-];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$j);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$i = [
-  ["path", { d: "M12 16h.01", key: "1drbdi" }],
-  ["path", { d: "M16 16h.01", key: "1f9h7w" }],
-  [
-    "path",
-    {
-      d: "M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z",
-      key: "1iv0i2"
-    }
-  ],
-  ["path", { d: "M8 16h.01", key: "18s6g9" }]
-];
-const Factory = createLucideIcon("factory", __iconNode$i);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$h = [
-  ["path", { d: "M10 22v-6.57", key: "1wmca3" }],
-  ["path", { d: "M12 11h.01", key: "z322tv" }],
-  ["path", { d: "M12 7h.01", key: "1ivr5q" }],
-  ["path", { d: "M14 15.43V22", key: "1q2vjd" }],
-  ["path", { d: "M15 16a5 5 0 0 0-6 0", key: "o9wqvi" }],
-  ["path", { d: "M16 11h.01", key: "xkw8gn" }],
-  ["path", { d: "M16 7h.01", key: "1kdx03" }],
-  ["path", { d: "M8 11h.01", key: "1dfujw" }],
-  ["path", { d: "M8 7h.01", key: "1vti4s" }],
-  ["rect", { x: "4", y: "2", width: "16", height: "20", rx: "2", key: "1uxh74" }]
-];
-const Hotel = createLucideIcon("hotel", __iconNode$h);
+const Building2 = createLucideIcon("building-2", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18609,6 +18552,82 @@ const Hotel = createLucideIcon("hotel", __iconNode$h);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$g = [
+  ["path", { d: "M8 2v4", key: "1cmpym" }],
+  ["path", { d: "M16 2v4", key: "4m81vk" }],
+  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
+  ["path", { d: "M3 10h18", key: "8toen8" }]
+];
+const Calendar = createLucideIcon("calendar", __iconNode$g);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$f = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$f);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$e = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$e);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$d = [
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+];
+const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$d);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$c = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+];
+const CircleCheck = createLucideIcon("circle-check", __iconNode$c);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$b = [
+  [
+    "path",
+    {
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
+    }
+  ],
+  [
+    "path",
+    {
+      d: "M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66",
+      key: "4oyue0"
+    }
+  ],
+  ["path", { d: "m18 15-2-2", key: "60u0ii" }],
+  ["path", { d: "m15 18-2-2", key: "6p76be" }]
+];
+const HeartHandshake = createLucideIcon("heart-handshake", __iconNode$b);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$a = [
   ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
   [
     "path",
@@ -18618,79 +18637,7 @@ const __iconNode$g = [
     }
   ]
 ];
-const House = createLucideIcon("house", __iconNode$g);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$f = [
-  [
-    "path",
-    {
-      d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
-      key: "1r0f0z"
-    }
-  ],
-  ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
-];
-const MapPin = createLucideIcon("map-pin", __iconNode$f);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$e = [
-  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
-  ["path", { d: "m21 3-7 7", key: "1l2asr" }],
-  ["path", { d: "m3 21 7-7", key: "tjx5ai" }],
-  ["path", { d: "M9 21H3v-6", key: "wtvkvv" }]
-];
-const Maximize2 = createLucideIcon("maximize-2", __iconNode$e);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$d = [
-  ["path", { d: "M4 12h16", key: "1lakjw" }],
-  ["path", { d: "M4 18h16", key: "19g7jn" }],
-  ["path", { d: "M4 6h16", key: "1o0s65" }]
-];
-const Menu = createLucideIcon("menu", __iconNode$d);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$c = [
-  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
-];
-const MessageCircle = createLucideIcon("message-circle", __iconNode$c);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$b = [
-  ["path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", key: "1lielz" }]
-];
-const MessageSquare = createLucideIcon("message-square", __iconNode$b);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$a = [
-  ["polygon", { points: "3 11 22 2 13 21 11 13 3 11", key: "1ltx0t" }]
-];
-const Navigation = createLucideIcon("navigation", __iconNode$a);
+const House = createLucideIcon("house", __iconNode$a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18698,13 +18645,10 @@ const Navigation = createLucideIcon("navigation", __iconNode$a);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$9 = [
-  ["rect", { x: "16", y: "16", width: "6", height: "6", rx: "1", key: "4q2zg0" }],
-  ["rect", { x: "2", y: "16", width: "6", height: "6", rx: "1", key: "8cvhb9" }],
-  ["rect", { x: "9", y: "2", width: "6", height: "6", rx: "1", key: "1egb70" }],
-  ["path", { d: "M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3", key: "1jsf9p" }],
-  ["path", { d: "M12 12V8", key: "2874zd" }]
+  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
+  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
 ];
-const Network = createLucideIcon("network", __iconNode$9);
+const Mail = createLucideIcon("mail", __iconNode$9);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18715,15 +18659,13 @@ const __iconNode$8 = [
   [
     "path",
     {
-      d: "M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z",
-      key: "1a0edw"
+      d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
+      key: "1r0f0z"
     }
   ],
-  ["path", { d: "M12 22V12", key: "d0xqtd" }],
-  ["polyline", { points: "3.29 7 12 12 20.71 7", key: "ousv84" }],
-  ["path", { d: "m7.5 4.27 9 5.15", key: "1c824w" }]
+  ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const Package = createLucideIcon("package", __iconNode$8);
+const MapPin = createLucideIcon("map-pin", __iconNode$8);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18731,6 +18673,29 @@ const Package = createLucideIcon("package", __iconNode$8);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$7 = [
+  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
+  ["path", { d: "m21 3-7 7", key: "1l2asr" }],
+  ["path", { d: "m3 21 7-7", key: "tjx5ai" }],
+  ["path", { d: "M9 21H3v-6", key: "wtvkvv" }]
+];
+const Maximize2 = createLucideIcon("maximize-2", __iconNode$7);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$6 = [
+  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
+];
+const MessageCircle = createLucideIcon("message-circle", __iconNode$6);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$5 = [
   [
     "path",
     {
@@ -18739,39 +18704,7 @@ const __iconNode$7 = [
     }
   ]
 ];
-const Phone = createLucideIcon("phone", __iconNode$7);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$6 = [
-  ["path", { d: "M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z", key: "hou9p0" }],
-  ["path", { d: "M3 6h18", key: "d0wm0j" }],
-  ["path", { d: "M16 10a4 4 0 0 1-8 0", key: "1ltviw" }]
-];
-const ShoppingBag = createLucideIcon("shopping-bag", __iconNode$6);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$5 = [
-  ["path", { d: "m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7", key: "ztvudi" }],
-  ["path", { d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8", key: "1b2hhj" }],
-  ["path", { d: "M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4", key: "2ebpfo" }],
-  ["path", { d: "M2 7h20", key: "1fcdvo" }],
-  [
-    "path",
-    {
-      d: "M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7",
-      key: "6c3vgh"
-    }
-  ]
-];
-const Store = createLucideIcon("store", __iconNode$5);
+const Phone = createLucideIcon("phone", __iconNode$5);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18779,11 +18712,15 @@ const Store = createLucideIcon("store", __iconNode$5);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$4 = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["circle", { cx: "12", cy: "12", r: "6", key: "1vlfrh" }],
-  ["circle", { cx: "12", cy: "12", r: "2", key: "1c9p78" }]
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ]
 ];
-const Target = createLucideIcon("target", __iconNode$4);
+const Shield = createLucideIcon("shield", __iconNode$4);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18791,10 +18728,17 @@ const Target = createLucideIcon("target", __iconNode$4);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$3 = [
-  ["path", { d: "M16 7h6v6", key: "box55l" }],
-  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
+  ["line", { x1: "21", x2: "14", y1: "4", y2: "4", key: "obuewd" }],
+  ["line", { x1: "10", x2: "3", y1: "4", y2: "4", key: "1q6298" }],
+  ["line", { x1: "21", x2: "12", y1: "12", y2: "12", key: "1iu8h1" }],
+  ["line", { x1: "8", x2: "3", y1: "12", y2: "12", key: "ntss68" }],
+  ["line", { x1: "21", x2: "16", y1: "20", y2: "20", key: "14d8ph" }],
+  ["line", { x1: "12", x2: "3", y1: "20", y2: "20", key: "m0wm8r" }],
+  ["line", { x1: "14", x2: "14", y1: "2", y2: "6", key: "14e1ph" }],
+  ["line", { x1: "8", x2: "8", y1: "10", y2: "14", key: "1i6ji0" }],
+  ["line", { x1: "16", x2: "16", y1: "18", y2: "22", key: "1lctlv" }]
 ];
-const TrendingUp = createLucideIcon("trending-up", __iconNode$3);
+const SlidersHorizontal = createLucideIcon("sliders-horizontal", __iconNode$3);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18802,15 +18746,15 @@ const TrendingUp = createLucideIcon("trending-up", __iconNode$3);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$2 = [
-  ["path", { d: "m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8", key: "n7qcjb" }],
   [
     "path",
-    { d: "M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7", key: "d0u48b" }
-  ],
-  ["path", { d: "m2.1 21.8 6.4-6.3", key: "yn04lh" }],
-  ["path", { d: "m19 5-7 7", key: "194lzd" }]
+    {
+      d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
+      key: "r04s7s"
+    }
+  ]
 ];
-const UtensilsCrossed = createLucideIcon("utensils-crossed", __iconNode$2);
+const Star = createLucideIcon("star", __iconNode$2);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18818,18 +18762,12 @@ const UtensilsCrossed = createLucideIcon("utensils-crossed", __iconNode$2);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$1 = [
-  ["path", { d: "M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11", key: "pb2vm6" }],
-  [
-    "path",
-    {
-      d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z",
-      key: "doq5xv"
-    }
-  ],
-  ["path", { d: "M6 13h12", key: "yf64js" }],
-  ["path", { d: "M6 17h12", key: "1jwigz" }]
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
+  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
 ];
-const Warehouse = createLucideIcon("warehouse", __iconNode$1);
+const Users = createLucideIcon("users", __iconNode$1);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18841,555 +18779,38 @@ const __iconNode = [
   ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
 ];
 const X = createLucideIcon("x", __iconNode);
-const BUSINESS_INFO = {
-  phone: "7572905655",
-  whatsapp: "7572905655",
-  address: "Near Ice Factory, road, Udaipur, Rajasthan 313001",
-  ownerName: "Deepak Gahrani"
-};
-const NAV_LINKS = [
-  { label: "Services", href: "#sectors" },
-  { label: "Properties", href: "#properties" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#why" },
-  { label: "Contact", href: "#contact" }
-];
 const TRUST_ITEMS = [
-  "🏢 Commercial Leasing Experts",
-  "📈 Franchise Expansion Consulting",
-  "🏨 Hospitality & Retail Spaces",
-  "🏭 Industrial & Warehouse Properties",
-  "💼 Investment Consulting"
+  "5.0 Rated",
+  "200+ Families Helped",
+  "Transparent Advisory",
+  "Pune Specialists"
 ];
-const SERVICES = [
-  {
-    id: "franchise",
-    name: "Franchise Leasing",
-    icon: "Store",
-    description: "Strategic locations for franchise businesses across Rajasthan",
-    cta: "Explore"
-  },
-  {
-    id: "hotels",
-    name: "Hotels & Restaurants",
-    icon: "Building2",
-    description: "Premium hospitality spaces — lease or acquire",
-    cta: "Explore"
-  },
-  {
-    id: "warehouses",
-    name: "Warehouses",
-    icon: "Warehouse",
-    description: "Industrial and storage facilities for logistics operations",
-    cta: "Explore"
-  },
-  {
-    id: "restaurants",
-    name: "Restaurant Setup",
-    icon: "UtensilsCrossed",
-    description: "Complete F&B venue consulting and space acquisition",
-    cta: "Explore"
-  },
-  {
-    id: "industrial",
-    name: "Industrial Plots",
-    icon: "Factory",
-    description: "Prime industrial land for manufacturing and production",
-    cta: "Explore"
-  },
-  {
-    id: "farmhouses",
-    name: "Farm Houses",
-    icon: "Home",
-    description: "Luxury farm estates for investment and leisure",
-    cta: "Explore"
-  },
-  {
-    id: "commercial",
-    name: "Commercial Leasing",
-    icon: "Briefcase",
-    description: "Premium commercial spaces for businesses and brands",
-    cta: "Explore"
-  }
-];
-const PROPERTIES = [
-  {
-    id: 1,
-    title: "Prime Retail Complex — Hiran Magri",
-    type: "Commercial",
-    location: "Hiran Magri, Udaipur",
-    area: "3,200 sq ft",
-    price: "₹1.8L/mo",
-    roi: "9.2% ROI",
-    description: "A premium retail complex in the heart of Udaipur's busiest commercial hub. Suitable for national brands, showrooms, and franchise operations. Ground floor with high visibility.",
-    features: [
-      "High Footfall Location",
-      "Ample Parking",
-      "Power Backup",
-      "24/7 Security"
-    ],
-    investmentType: "Retail Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-retail.dim_800x600.jpg"
-  },
-  {
-    id: 2,
-    title: "Boutique Hotel Property — Lake View",
-    type: "Hospitality",
-    location: "Lake Pichola Area, Udaipur",
-    area: "8,000 sq ft",
-    price: "₹2.5Cr",
-    roi: "11% ROI",
-    description: "A stunning heritage-style boutique hotel property with lake views. 24 rooms, restaurant space, and event lawn included. Prime tourist destination location.",
-    features: ["Lake View", "24 Rooms", "Restaurant Space", "Event Lawn"],
-    investmentType: "Sale",
-    status: "Available",
-    imageUrl: "/assets/generated/property-hotel.dim_800x600.jpg"
-  },
-  {
-    id: 3,
-    title: "Modern Warehouse — Industrial Zone",
-    type: "Warehouse",
-    location: "RIICO Industrial Area, Udaipur",
-    area: "15,000 sq ft",
-    price: "₹95K/mo",
-    roi: "8.5% ROI",
-    description: "State-of-the-art warehouse with loading docks, fire suppression system, and 24-hour access. Ideal for e-commerce fulfillment, FMCG distribution, or manufacturing.",
-    features: [
-      "Loading Docks",
-      "Fire Suppression",
-      "24Hr Access",
-      "Office Space"
-    ],
-    investmentType: "Warehouse Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-warehouse.dim_800x600.jpg"
-  },
-  {
-    id: 4,
-    title: "Franchise Restaurant Space",
-    type: "F&B",
-    location: "City Center, Udaipur",
-    area: "1,800 sq ft",
-    price: "₹75K/mo",
-    roi: "12% ROI",
-    description: "Ready-to-fit restaurant and franchise space in Udaipur's commercial center. Walk-in cold storage, kitchen infrastructure, and outdoor seating included.",
-    features: [
-      "Kitchen Infrastructure",
-      "Cold Storage",
-      "Outdoor Seating",
-      "High Visibility"
-    ],
-    investmentType: "F&B Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-franchise.dim_800x600.jpg"
-  },
-  {
-    id: 5,
-    title: "Industrial Plot — Nathdwara Road",
-    type: "Industrial",
-    location: "Nathdwara Road, Udaipur",
-    area: "2 Acres",
-    price: "₹4.2Cr",
-    roi: "10% ROI",
-    description: "Premium industrial plot with excellent road connectivity on Nathdwara Road. RIICO approved, utilities available, ideal for manufacturing or logistics hub.",
-    features: [
-      "RIICO Approved",
-      "Road Connectivity",
-      "Utility Ready",
-      "Expandable"
-    ],
-    investmentType: "Land Sale",
-    status: "Available",
-    imageUrl: "/assets/generated/property-industrial.dim_800x600.jpg"
-  },
-  {
-    id: 6,
-    title: "Luxury Farm House Estate",
-    type: "Farm House",
-    location: "Badi Lake Area, Udaipur",
-    area: "1.5 Acres",
-    price: "₹2.8Cr",
-    roi: "8% ROI",
-    description: "Sprawling luxury farmhouse estate near the serene Badi Lake. Beautifully landscaped gardens, private pool, and luxury residence. Perfect for investment or exclusive retreat.",
-    features: [
-      "Private Pool",
-      "Landscaped Gardens",
-      "Lake Proximity",
-      "Security"
-    ],
-    investmentType: "Sale",
-    status: "Available",
-    imageUrl: "/assets/generated/property-hotel.dim_800x600.jpg"
-  },
-  {
-    id: 7,
-    title: "Corporate Office Tower",
-    type: "Commercial",
-    location: "Sector 11, Udaipur",
-    area: "5,400 sq ft",
-    price: "₹1.2L/mo",
-    roi: "9.8% ROI",
-    description: "Modern corporate office space across two floors in an A-grade commercial tower. Suitable for IT companies, consulting firms, or regional headquarters.",
-    features: [
-      "Central AC",
-      "High-Speed Internet",
-      "Conference Rooms",
-      "Cafeteria"
-    ],
-    investmentType: "Office Lease",
-    status: "Available",
-    imageUrl: "/assets/generated/property-retail.dim_800x600.jpg"
-  },
-  {
-    id: 8,
-    title: "Mixed-Use Commercial Complex",
-    type: "Commercial",
-    location: "Sukher, Udaipur",
-    area: "12,000 sq ft",
-    price: "₹3.5Cr",
-    roi: "13% ROI",
-    description: "High-potential mixed-use development in rapidly growing Sukher area. Ground retail, upper floors commercial. Excellent investment with strong rental yield projections.",
-    features: [
-      "Mixed Use Zoning",
-      "High Growth Area",
-      "Rental Yield",
-      "Modern Construction"
-    ],
-    investmentType: "Investment",
-    status: "Available",
-    imageUrl: "/assets/generated/property-warehouse.dim_800x600.jpg"
-  }
-];
-const TESTIMONIALS = [
-  {
-    id: 1,
-    name: "Rajesh Sharma",
-    role: "Franchise Owner",
-    company: "Domino's Franchisee, Udaipur",
-    quote: "Grow Big helped us find the perfect location for our franchise. Their commercial expertise and market knowledge saved us months of searching. Highly recommended for any serious business expansion.",
-    rating: 5,
-    avatar: "RS"
-  },
-  {
-    id: 2,
-    name: "Priya Mehta",
-    role: "Hotel Developer",
-    company: "Meridian Hospitality Group",
-    quote: "We were looking for a boutique hotel property in Udaipur for over a year. Grow Big identified an opportunity that perfectly matched our vision, and the deal was structured flawlessly.",
-    rating: 5,
-    avatar: "PM"
-  },
-  {
-    id: 3,
-    name: "Vikram Singh",
-    role: "Managing Director",
-    company: "SVS Industrial Pvt. Ltd.",
-    quote: "Their understanding of industrial real estate is exceptional. They found us an RIICO-approved plot with all clearances within 3 weeks. A truly professional consultancy.",
-    rating: 5,
-    avatar: "VS"
-  },
-  {
-    id: 4,
-    name: "Anita Joshi",
-    role: "Restaurant Chain Owner",
-    company: "Spice Trail Restaurants",
-    quote: "Deepak's team understands the F&B business deeply. They know what makes a restaurant location work. Our new outlet is performing 40% better than our previous location.",
-    rating: 5,
-    avatar: "AJ"
-  },
-  {
-    id: 5,
-    name: "Suresh Patel",
-    role: "Investment Director",
-    company: "Patel Commercial Ventures",
-    quote: "Grow Big's market insights on Udaipur's growth corridors were spot-on. We invested in a commercial complex they recommended and ROI has exceeded projections.",
-    rating: 5,
-    avatar: "SP"
-  }
-];
-const SECTORS = [
-  {
-    id: "hospitality",
-    name: "Hospitality",
-    description: "Hotels, resorts, and experiential dining venues",
-    stat: "50+ Projects",
-    icon: "Hotel"
-  },
-  {
-    id: "retail",
-    name: "Retail",
-    description: "Premium retail spaces and high-street commercial",
-    stat: "120+ Leases",
-    icon: "ShoppingBag"
-  },
-  {
-    id: "industrial",
-    name: "Industrial",
-    description: "Manufacturing, logistics, and industrial parks",
-    stat: "35+ Deals",
-    icon: "Factory"
-  },
-  {
-    id: "warehousing",
-    name: "Warehousing",
-    description: "Modern storage and fulfillment infrastructure",
-    stat: "80+ Units",
-    icon: "Package"
-  },
-  {
-    id: "franchises",
-    name: "Franchises",
-    description: "End-to-end franchise expansion and site selection",
-    stat: "40+ Brands",
-    icon: "Network"
-  }
-];
-const TIMELINE_STEPS = [
-  {
-    step: 1,
-    title: "Requirement Analysis",
-    description: "Deep-dive into your business model, expansion goals, and specific site requirements."
-  },
-  {
-    step: 2,
-    title: "Opportunity Matching",
-    description: "Curated property shortlist aligned to your strategy, with market data and viability analysis."
-  },
-  {
-    step: 3,
-    title: "Site Evaluation",
-    description: "On-ground assessment of shortlisted properties — footfall, infrastructure, and compliance checks."
-  },
-  {
-    step: 4,
-    title: "Deal Structuring",
-    description: "Negotiation, documentation, legal due diligence, and lease/purchase structuring."
-  },
-  {
-    step: 5,
-    title: "Expansion Execution",
-    description: "Handover coordination, fit-out guidance, and post-deal support to ensure your launch succeeds."
-  }
-];
-const MARKET_INSIGHTS = [
-  {
-    id: "growth",
-    title: "Growth Zones",
-    value: "6",
-    unit: "Active Corridors",
-    description: "Emerging commercial micro-markets in Udaipur",
-    trend: "+18% YoY"
-  },
-  {
-    id: "retail",
-    title: "Retail Demand",
-    value: "340K",
-    unit: "sq ft Vacant",
-    description: "Available premium retail inventory across Udaipur",
-    trend: "High Absorption"
-  },
-  {
-    id: "franchise",
-    title: "Franchise Opportunities",
-    value: "25+",
-    unit: "Brands Seeking",
-    description: "National franchise brands actively seeking Udaipur locations",
-    trend: "Growing"
-  },
-  {
-    id: "industrial",
-    title: "Industrial Expansion",
-    value: "₹850Cr",
-    unit: "Planned Investment",
-    description: "Committed industrial investment in Udaipur region through 2026",
-    trend: "+24% Growth"
-  }
-];
-const ICON_MAP = {
-  Store: /* @__PURE__ */ jsxRuntimeExports.jsx(Store, { size: 22 }),
-  Building2: /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { size: 22 }),
-  Warehouse: /* @__PURE__ */ jsxRuntimeExports.jsx(Warehouse, { size: 22 }),
-  UtensilsCrossed: /* @__PURE__ */ jsxRuntimeExports.jsx(UtensilsCrossed, { size: 22 }),
-  Factory: /* @__PURE__ */ jsxRuntimeExports.jsx(Factory, { size: 22 }),
-  Home: /* @__PURE__ */ jsxRuntimeExports.jsx(House, { size: 22 }),
-  Briefcase: /* @__PURE__ */ jsxRuntimeExports.jsx(Briefcase, { size: 22 })
-};
-function ServiceCard({ service, index: index2 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "button",
-    {
-      type: "button",
-      className: "group card-lift rounded-xl p-4 sm:p-6 flex flex-col gap-4 cursor-pointer section-reveal text-left w-full",
-      style: {
-        background: "#1A1A1D",
-        border: "1px solid #2C2C30",
-        transitionDelay: `${index2 * 0.07}s`
-      },
-      onMouseEnter: (e) => {
-        e.currentTarget.style.borderColor = "#C89B3C";
-        e.currentTarget.style.boxShadow = "0 0 20px rgba(200,155,60,0.15)";
-      },
-      onMouseLeave: (e) => {
-        e.currentTarget.style.borderColor = "#2C2C30";
-        e.currentTarget.style.boxShadow = "";
-      },
-      onClick: () => {
-        const el = document.querySelector("#contact");
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      },
-      "data-ocid": `sectors.card.${index2 + 1}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110",
-            style: { background: "rgba(200,155,60,0.1)", color: "#C89B3C" },
-            children: ICON_MAP[service.icon]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-2 flex-1", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "h3",
-            {
-              className: "font-bold text-lg",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-              children: service.name
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm leading-relaxed", style: { color: "#9A9A9A" }, children: service.description })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            className: "text-sm font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0",
-            style: { color: "#C89B3C", fontFamily: "var(--font-display)" },
-            children: [
-              "Explore",
-              " ",
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "transition-transform duration-200 group-hover:translate-x-1", children: "→" })
-            ]
-          }
-        )
-      ]
-    }
-  );
-}
-function BusinessSectors() {
-  const sectionRef = reactExports.useRef(null);
-  reactExports.useEffect(() => {
-    var _a2;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        }
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
-    );
-    const targets = (_a2 = sectionRef.current) == null ? void 0 : _a2.querySelectorAll(".section-reveal");
-    if (targets) {
-      for (const el of targets) observer.observe(el);
-    }
-    return () => observer.disconnect();
-  }, []);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "section",
-    {
-      id: "sectors",
-      className: "py-16 sm:py-24 px-4 sm:px-6",
-      style: { background: "var(--color-bg)" },
-      "data-ocid": "sectors.section",
-      ref: sectionRef,
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-5 mb-16 section-reveal", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "span",
-            {
-              className: "text-xs font-bold tracking-widest uppercase",
-              style: { color: "#C89B3C", letterSpacing: "0.2em" },
-              children: "WHAT WE DO"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "h2",
-            {
-              className: "text-3xl sm:text-4xl lg:text-5xl font-bold",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-              children: [
-                "Our Business ",
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient-gold", children: "Sectors" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-xl text-base", style: { color: "#9A9A9A" }, children: "Strategic real estate solutions for every commercial expansion need." })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6",
-            "data-ocid": "sectors.list",
-            children: SERVICES.map((service, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(ServiceCard, { service, index: i }, service.id))
-          }
-        )
-      ] })
-    }
-  );
-}
-function CTASection() {
+function ConsultationCTA() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "contact",
-      className: "relative py-20 sm:py-32 px-4 sm:px-6 overflow-hidden",
+      className: "relative overflow-hidden",
       style: {
-        background: "linear-gradient(135deg, #0F0F10 0%, #1A1A1D 50%, #0F0F10 100%)"
+        background: "linear-gradient(110deg, #009FD4 0%, #007EB3 40%, #2D3142 100%)"
       },
       "data-ocid": "contact.section",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "absolute inset-0 flex items-center justify-center pointer-events-none",
-            "aria-hidden": "true",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "div",
-              {
-                style: {
-                  width: "700px",
-                  height: "500px",
-                  background: "radial-gradient(ellipse at center, rgba(200,155,60,0.07) 0%, transparent 70%)",
-                  borderRadius: "50%"
-                }
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute -top-40 -right-40 w-96 h-96 rounded-full opacity-5 pointer-events-none",
-            style: { background: "radial-gradient(circle, #C89B3C, transparent)" },
+            className: "absolute -top-24 -left-24 w-64 h-64 rounded-full pointer-events-none",
+            style: { background: "rgba(255,255,255,0.05)" },
             "aria-hidden": "true"
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "absolute -bottom-40 -left-40 w-96 h-96 rounded-full opacity-5 pointer-events-none",
-            style: { background: "radial-gradient(circle, #E2B95B, transparent)" },
-            "aria-hidden": "true"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute top-0 left-0 right-0 h-[2px] pointer-events-none",
+            className: "absolute bottom-0 right-0 w-96 h-96 rounded-full pointer-events-none",
             style: {
-              background: "linear-gradient(90deg, transparent 0%, #C89B3C 50%, transparent 100%)"
+              background: "radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 70%)",
+              transform: "translate(30%, 30%)"
             },
             "aria-hidden": "true"
           }
@@ -19397,179 +18818,168 @@ function CTASection() {
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "absolute top-1/4 left-0 right-0 h-px opacity-5 pointer-events-none",
+            className: "absolute inset-0 pointer-events-none",
             style: {
-              background: "linear-gradient(90deg, transparent, #C89B3C, transparent)"
+              backgroundImage: "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
+              backgroundSize: "40px 40px"
             },
             "aria-hidden": "true"
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute bottom-1/4 left-0 right-0 h-px opacity-5 pointer-events-none",
-            style: {
-              background: "linear-gradient(90deg, transparent, #C89B3C, transparent)"
-            },
-            "aria-hidden": "true"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-3xl mx-auto text-center flex flex-col gap-10", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-5 section-reveal", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "span",
-              {
-                className: "mx-auto text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full",
-                style: {
-                  color: "#C89B3C",
-                  background: "rgba(200,155,60,0.1)",
-                  border: "1px solid rgba(200,155,60,0.25)",
-                  fontFamily: "var(--font-display)"
-                },
-                children: "GET IN TOUCH"
-              }
-            ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-6 sm:gap-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "span",
+            {
+              className: "text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full",
+              style: {
+                color: "rgba(255,255,255,0.9)",
+                background: "rgba(255,255,255,0.12)",
+                border: "1px solid rgba(255,255,255,0.25)"
+              },
+              children: "GET PERSONALIZED GUIDANCE"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               "h2",
               {
-                className: "text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold",
-                style: {
-                  color: "#F5F5F5",
-                  fontFamily: "var(--font-display)",
-                  lineHeight: 1.15
-                },
+                className: "text-3xl sm:text-4xl lg:text-5xl font-bold text-white",
+                style: { lineHeight: 1.2 },
                 children: [
-                  "Looking to ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient-gold", children: "Expand" }),
+                  "Ready to Find Your",
                   /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                  "Your Business?"
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C9A96E" }, children: "Perfect Property?" })
                 ]
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "p",
               {
-                className: "text-base sm:text-lg max-w-xl mx-auto",
-                style: { color: "#9A9A9A" },
-                children: "Find the right commercial opportunity with strategic real estate guidance."
+                className: "max-w-xl mx-auto text-base sm:text-lg",
+                style: { color: "rgba(255,255,255,0.78)" },
+                children: "Talk to our Pune property experts and get personalized guidance within 24 hours. No pressure, just honest advice."
               }
             )
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "div",
             {
-              className: "flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 section-reveal",
+              className: "flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full",
               "data-ocid": "contact.cta_group",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "a",
+                  "button",
                   {
-                    href: "tel:7572905655",
-                    className: "btn-gold flex items-center justify-center gap-2 w-full sm:w-auto",
-                    "data-ocid": "contact.strategy_button",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 18 }),
-                      "Schedule Strategy Call"
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "a",
-                  {
-                    href: "tel:7572905655",
-                    className: "btn-outline flex items-center justify-center gap-2 w-full sm:w-auto",
-                    "data-ocid": "contact.call_button",
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 18 }),
-                      "Call Now: 7572905655"
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "a",
-                  {
-                    href: "https://wa.me/917572905655",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    className: "flex items-center justify-center gap-2 font-semibold transition-all duration-300 w-full sm:w-auto",
+                    type: "button",
+                    onClick: () => {
+                      var _a2;
+                      (_a2 = document.getElementById("contact")) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+                    },
+                    className: "flex items-center justify-center gap-2 w-full sm:w-auto text-sm font-semibold px-6 py-3.5 rounded-xl transition-all duration-200",
                     style: {
-                      color: "#25D366",
-                      border: "1px solid #25D366",
-                      padding: "0.75rem 1.75rem",
-                      borderRadius: "4px",
-                      fontFamily: "var(--font-display)",
-                      letterSpacing: "0.02em"
+                      background: "#FFFFFF",
+                      color: "#009FD4",
+                      minWidth: "200px"
                     },
                     onMouseEnter: (e) => {
-                      e.currentTarget.style.background = "rgba(37,211,102,0.1)";
-                      e.currentTarget.style.boxShadow = "0 0 18px rgba(37,211,102,0.25)";
+                      e.currentTarget.style.background = "#F0F9FE";
+                      e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.15)";
                     },
                     onMouseLeave: (e) => {
-                      e.currentTarget.style.background = "transparent";
+                      e.currentTarget.style.background = "#FFFFFF";
                       e.currentTarget.style.boxShadow = "none";
+                    },
+                    "data-ocid": "contact.book_consultation_button",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { size: 17 }),
+                      "Book Free Consultation"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: "tel:+917572905655",
+                    className: "flex items-center justify-center gap-2 w-full sm:w-auto text-sm font-semibold px-6 py-3.5 rounded-xl transition-all duration-200",
+                    style: {
+                      color: "#FFFFFF",
+                      border: "1px solid rgba(255,255,255,0.45)",
+                      background: "rgba(255,255,255,0.08)",
+                      minWidth: "200px"
+                    },
+                    onMouseEnter: (e) => {
+                      e.currentTarget.style.background = "rgba(255,255,255,0.15)";
+                      e.currentTarget.style.borderColor = "rgba(255,255,255,0.65)";
+                    },
+                    onMouseLeave: (e) => {
+                      e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                      e.currentTarget.style.borderColor = "rgba(255,255,255,0.45)";
+                    },
+                    "data-ocid": "contact.schedule_visit_button",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 17 }),
+                      "Schedule Site Visit"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: "https://wa.me/917572905655?text=Hi%20DWELL%20Homes%2C%20I%20am%20looking%20for%20property%20guidance%20in%20Pune.",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "flex items-center justify-center gap-2 w-full sm:w-auto text-sm font-semibold px-6 py-3.5 rounded-xl transition-all duration-200",
+                    style: {
+                      color: "#FFFFFF",
+                      border: "1px solid rgba(37,211,102,0.5)",
+                      background: "rgba(37,211,102,0.12)",
+                      minWidth: "200px"
+                    },
+                    onMouseEnter: (e) => {
+                      e.currentTarget.style.background = "rgba(37,211,102,0.22)";
+                      e.currentTarget.style.borderColor = "rgba(37,211,102,0.7)";
+                    },
+                    onMouseLeave: (e) => {
+                      e.currentTarget.style.background = "rgba(37,211,102,0.12)";
+                      e.currentTarget.style.borderColor = "rgba(37,211,102,0.5)";
                     },
                     "data-ocid": "contact.whatsapp_button",
                     children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(MessageSquare, { size: 18 }),
-                      "WhatsApp Us"
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(MessageCircle, { size: 17 }),
+                      "WhatsApp Expert"
                     ]
                   }
                 )
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
             "div",
             {
-              className: "flex flex-wrap justify-center gap-6 pt-6 section-reveal",
-              style: { borderTop: "1px solid #2C2C30" },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "div",
-                  {
-                    className: "flex items-center gap-2 text-sm",
-                    style: { color: "#9A9A9A" },
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 14, style: { color: "#C89B3C", flexShrink: 0 } }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "a",
-                        {
-                          href: "tel:7572905655",
-                          className: "transition-colors duration-200",
-                          style: { color: "#9A9A9A" },
-                          onMouseEnter: (e) => {
-                            e.currentTarget.style.color = "#C89B3C";
-                          },
-                          onMouseLeave: (e) => {
-                            e.currentTarget.style.color = "#9A9A9A";
-                          },
-                          children: "7572905655"
-                        }
-                      )
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "div",
-                  {
-                    className: "flex items-start gap-2 text-sm",
-                    style: { color: "#9A9A9A" },
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        MapPin,
-                        {
-                          size: 14,
-                          style: { color: "#C89B3C", flexShrink: 0, marginTop: "2px" }
-                        }
-                      ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Near Ice Factory, road, Udaipur, Rajasthan 313001" })
-                    ]
-                  }
-                )
-              ]
+              className: "flex flex-wrap items-center justify-center gap-2 sm:gap-4 pt-2",
+              "data-ocid": "contact.trust_strip",
+              children: TRUST_ITEMS.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "span",
+                {
+                  className: "flex items-center gap-2 text-xs sm:text-sm",
+                  style: { color: "rgba(255,255,255,0.65)" },
+                  children: [
+                    i > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "w-1 h-1 rounded-full",
+                        style: { background: "rgba(255,255,255,0.35)" },
+                        "aria-hidden": "true"
+                      }
+                    ),
+                    item
+                  ]
+                },
+                item
+              ))
             }
           )
-        ] })
+        ] }) })
       ]
     }
   );
@@ -19577,358 +18987,567 @@ function CTASection() {
 function FloatingActions() {
   const [waHovered, setWaHovered] = reactExports.useState(false);
   const [callHovered, setCallHovered] = reactExports.useState(false);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      className: "fixed bottom-6 right-6 z-50 flex flex-col gap-3",
-      "data-ocid": "floating.actions",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-          waHovered && /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        className: "fixed right-5 z-50 flex flex-col gap-3 bottom-20 md:bottom-6",
+        "data-ocid": "floating.actions",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
+            callHovered && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-lg pointer-events-none shadow-lg",
+                style: {
+                  background: "#2D3142",
+                  color: "white",
+                  border: "1px solid rgba(0,159,212,0.3)"
+                },
+                children: "Call Us"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "a",
+              {
+                href: "tel:+917572905655",
+                className: "flex items-center justify-center transition-all duration-300",
+                style: {
+                  width: "52px",
+                  height: "52px",
+                  borderRadius: "50%",
+                  background: "#009FD4",
+                  color: "white",
+                  boxShadow: callHovered ? "0 0 24px rgba(0,159,212,0.6), 0 8px 24px rgba(0,0,0,0.3)" : "0 4px 20px rgba(0,159,212,0.35)",
+                  transform: callHovered ? "scale(1.1)" : "scale(1)"
+                },
+                "aria-label": "Call Us",
+                onMouseEnter: () => setCallHovered(true),
+                onMouseLeave: () => setCallHovered(false),
+                "data-ocid": "floating.call_button",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 20 })
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
+            waHovered && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-lg pointer-events-none shadow-lg",
+                style: {
+                  background: "#2D3142",
+                  color: "white",
+                  border: "1px solid rgba(37,211,102,0.3)"
+                },
+                children: "Chat on WhatsApp"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "a",
+              {
+                href: "https://wa.me/917572905655",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "flex items-center justify-center transition-all duration-300",
+                style: {
+                  width: "52px",
+                  height: "52px",
+                  borderRadius: "50%",
+                  background: "#25D366",
+                  color: "white",
+                  boxShadow: waHovered ? "0 0 24px rgba(37,211,102,0.6), 0 8px 24px rgba(0,0,0,0.3)" : "0 4px 20px rgba(37,211,102,0.35)",
+                  transform: waHovered ? "scale(1.1)" : "scale(1)"
+                },
+                "aria-label": "Chat on WhatsApp",
+                onMouseEnter: () => setWaHovered(true),
+                onMouseLeave: () => setWaHovered(false),
+                "data-ocid": "floating.whatsapp_button",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "sr-only", children: "Chat on WhatsApp" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "svg",
+                    {
+                      width: "22",
+                      height: "22",
+                      viewBox: "0 0 24 24",
+                      fill: "white",
+                      "aria-hidden": "true",
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" })
+                    }
+                  )
+                ]
+              }
+            )
+          ] })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        className: "md:hidden fixed bottom-0 left-0 right-0 z-40 flex",
+        style: {
+          background: "white",
+          borderTop: "2px solid #009FD4",
+          paddingBottom: "env(safe-area-inset-bottom, 0px)",
+          height: "60px"
+        },
+        "data-ocid": "floating.mobile_sticky_bar",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "a",
             {
-              className: "absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-lg pointer-events-none",
-              style: {
-                background: "#1A1A1D",
-                color: "#F5F5F5",
-                border: "1px solid #2C2C30",
-                fontFamily: "var(--font-display)"
-              },
-              children: "Chat with us"
+              href: "tel:+917572905655",
+              className: "flex-1 flex items-center justify-center gap-2 text-sm font-bold transition-all duration-200 active:opacity-80",
+              style: { background: "#009FD4", color: "white" },
+              "data-ocid": "floating.mobile_call_button",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 16 }),
+                "Talk to Expert"
+              ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "a",
             {
               href: "https://wa.me/917572905655",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "flex items-center justify-center animate-float transition-all duration-300",
-              style: {
-                width: "56px",
-                height: "56px",
-                borderRadius: "50%",
-                background: "#25D366",
-                color: "#fff",
-                boxShadow: waHovered ? "0 0 24px rgba(37,211,102,0.6), 0 8px 24px rgba(0,0,0,0.4)" : "0 4px 20px rgba(37,211,102,0.35)",
-                transform: waHovered ? "scale(1.12)" : "scale(1)",
-                animationDelay: "0.5s"
-              },
-              "aria-label": "Chat on WhatsApp",
-              onMouseEnter: () => setWaHovered(true),
-              onMouseLeave: () => setWaHovered(false),
-              "data-ocid": "floating.whatsapp_button",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(MessageCircle, { size: 24 })
+              className: "flex-1 flex items-center justify-center gap-2 text-sm font-bold transition-all duration-200 active:opacity-80",
+              style: { background: "#25D366", color: "white" },
+              "data-ocid": "floating.mobile_whatsapp_button",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "svg",
+                  {
+                    width: "16",
+                    height: "16",
+                    viewBox: "0 0 24 24",
+                    fill: "white",
+                    "aria-hidden": "true",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" })
+                  }
+                ),
+                "WhatsApp Us"
+              ]
             }
           )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-          callHovered && /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold px-3 py-1.5 rounded-lg pointer-events-none",
-              style: {
-                background: "#1A1A1D",
-                color: "#F5F5F5",
-                border: "1px solid #2C2C30",
-                fontFamily: "var(--font-display)"
-              },
-              children: "Call us"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "a",
-            {
-              href: "tel:7572905655",
-              className: "flex items-center justify-center animate-float transition-all duration-300",
-              style: {
-                width: "56px",
-                height: "56px",
-                borderRadius: "50%",
-                background: "linear-gradient(135deg, #C89B3C, #E2B95B)",
-                color: "#0F0F10",
-                boxShadow: callHovered ? "0 0 28px rgba(200,155,60,0.7), 0 8px 24px rgba(0,0,0,0.4)" : "0 4px 20px rgba(200,155,60,0.3)",
-                transform: callHovered ? "scale(1.12)" : "scale(1)"
-              },
-              "aria-label": "Call Now",
-              onMouseEnter: () => setCallHovered(true),
-              onMouseLeave: () => setCallHovered(false),
-              "data-ocid": "floating.call_button",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 22 })
-            }
-          )
-        ] })
-      ]
-    }
-  );
+        ]
+      }
+    )
+  ] });
 }
-const SERVICE_LINKS = [
-  "Franchise Leasing",
-  "Hotels & Restaurants",
-  "Warehouses",
-  "Restaurant Setup",
-  "Industrial Plots",
-  "Farm Houses",
-  "Commercial Leasing"
-];
 function Footer() {
   const year = (/* @__PURE__ */ new Date()).getFullYear();
   const utm = encodeURIComponent(
-    typeof window !== "undefined" ? window.location.hostname : "growbig"
+    typeof window !== "undefined" ? window.location.hostname : "dwellhomes"
   );
+  const navLinks = [
+    { label: "Home", id: "hero" },
+    { label: "Properties", id: "properties" },
+    { label: "Commercial", id: "commercial" },
+    { label: "Residential", id: "residential" },
+    { label: "About", id: "about" },
+    { label: "Contact", id: "contact" }
+  ];
+  const serviceAreas = [
+    "Baner",
+    "Wakad",
+    "Warje",
+    "Kothrud",
+    "Hinjewadi",
+    "Aundh",
+    "Bavdhan"
+  ];
   const scrollTo = (id) => {
     var _a2;
-    (_a2 = document.getElementById(id)) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+    return (_a2 = document.getElementById(id)) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "footer",
     {
-      className: "pt-12 sm:pt-16 pb-6 sm:pb-8 px-4 sm:px-6",
-      style: {
-        background: "#0F0F10",
-        borderTop: "2px solid rgba(200,155,60,0.3)"
-      },
+      className: "pt-14 sm:pt-20 pb-6 px-4 sm:px-6",
+      style: { background: "#2D3142" },
       "data-ocid": "footer",
       children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 mb-14 text-center lg:text-left", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-5 items-center lg:items-start", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 mb-12", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
               "img",
               {
-                src: "/assets/images/logo.webp",
-                alt: "Grow Big Leasing & Real Estate",
-                className: "h-12 w-auto",
-                style: { objectFit: "contain", objectPosition: "left" }
+                src: "/assets/images/dwell-logo.jpg",
+                alt: "DWELL Homes & Services",
+                className: "h-10 w-auto rounded-lg",
+                style: {
+                  filter: "brightness(0) invert(1)",
+                  objectFit: "contain"
+                }
               }
-            ),
+            ) }),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "p",
               {
                 className: "text-sm leading-relaxed max-w-xs",
-                style: { color: "#9A9A9A" },
-                children: "Helping Businesses Expand Through Smart Real Estate"
+                style: { color: "rgba(255,255,255,0.6)" },
+                children: "Trusted real estate guidance for families, professionals, and investors across Pune."
               }
             ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                className: "inline-flex items-center gap-3 self-start px-4 py-2.5 rounded-lg",
-                style: {
-                  background: "rgba(200,155,60,0.08)",
-                  border: "1px solid rgba(200,155,60,0.2)"
-                },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "span",
-                    {
-                      style: {
-                        color: "#C89B3C",
-                        fontSize: "16px",
-                        letterSpacing: "2px"
-                      },
-                      children: "★★★★★"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col leading-tight", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "a",
+                {
+                  href: "tel:+917572905655",
+                  className: "flex items-center gap-3 text-sm group",
+                  style: { color: "rgba(255,255,255,0.7)" },
+                  "data-ocid": "footer.phone_link",
+                  children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "span",
                       {
-                        className: "font-bold text-sm",
-                        style: {
-                          color: "#F5F5F5",
-                          fontFamily: "var(--font-display)"
-                        },
-                        children: "5.0"
+                        className: "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
+                        style: { background: "rgba(0,159,212,0.15)" },
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 14, style: { color: "#009FD4" } })
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs", style: { color: "#9A9A9A" }, children: "Google Rating" })
-                  ] })
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "transition-colors duration-200 group-hover:text-white", children: "+91 75729 05655" })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "a",
+                {
+                  href: "mailto:info@dwellhomes.in",
+                  className: "flex items-center gap-3 text-sm group",
+                  style: { color: "rgba(255,255,255,0.7)" },
+                  "data-ocid": "footer.email_link",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
+                        style: { background: "rgba(0,159,212,0.15)" },
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { size: 14, style: { color: "#009FD4" } })
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "transition-colors duration-200 group-hover:text-white", children: "info@dwellhomes.in" })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: "flex items-start gap-3 text-sm",
+                  style: { color: "rgba(255,255,255,0.7)" },
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5",
+                        style: { background: "rgba(0,159,212,0.15)" },
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { size: 14, style: { color: "#009FD4" } })
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "leading-relaxed", children: [
+                      "Baner Road, Pune 411045",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+                      "Maharashtra, India"
+                    ] })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "a",
+              {
+                href: "https://wa.me/917572905655",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 self-start",
+                style: {
+                  background: "#25D366",
+                  color: "white",
+                  boxShadow: "0 4px 16px rgba(37,211,102,0.3)"
+                },
+                "data-ocid": "footer.whatsapp_button",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MessageCircle, { size: 16 }),
+                  "WhatsApp Us"
                 ]
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-6", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "h4",
+                {
+                  className: "text-xs font-bold uppercase tracking-widest mb-4",
+                  style: { color: "#009FD4" },
+                  children: "Quick Links"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2.5", children: navLinks.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
+                {
+                  type: "button",
+                  onClick: () => scrollTo(link.id),
+                  className: "text-sm text-left transition-colors duration-200 hover:text-white",
+                  style: { color: "rgba(255,255,255,0.6)" },
+                  "data-ocid": `footer.nav.${link.label.toLowerCase()}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        style: {
+                          color: "rgba(0,159,212,0.5)",
+                          marginRight: "6px"
+                        },
+                        children: "›"
+                      }
+                    ),
+                    link.label
+                  ]
+                }
+              ) }, link.label)) })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "h4",
+                {
+                  className: "text-xs font-bold uppercase tracking-widest mb-4",
+                  style: { color: "#009FD4" },
+                  children: "Service Areas"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2.5", children: serviceAreas.map((area) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "li",
+                {
+                  className: "text-sm",
+                  style: { color: "rgba(255,255,255,0.6)" },
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        style: {
+                          color: "rgba(201,169,110,0.5)",
+                          marginRight: "6px"
+                        },
+                        children: "›"
+                      }
+                    ),
+                    area
+                  ]
+                },
+                area
+              )) })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "h4",
+              {
+                className: "text-xs font-bold uppercase tracking-widest mb-4",
+                style: { color: "#009FD4" },
+                children: "Find Us"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "rounded-xl overflow-hidden",
+                style: { border: "1px solid rgba(0,159,212,0.25)" },
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "iframe",
+                  {
+                    title: "DWELL Homes & Services — Pune",
+                    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242243.27534897658!2d73.6882979!3d18.5243616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1699999999999",
+                    width: "100%",
+                    height: "200",
+                    style: { border: 0, display: "block" },
+                    allowFullScreen: true,
+                    loading: "lazy",
+                    referrerPolicy: "no-referrer-when-downgrade"
+                  }
+                )
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "p",
               {
-                className: "text-xs leading-relaxed max-w-xs",
-                style: { color: "#9A9A9A" },
-                children: "Udaipur's leading commercial expansion consultancy — specializing in franchise leasing, hospitality, industrial, and investment real estate."
+                className: "text-xs mt-3 leading-relaxed",
+                style: { color: "rgba(255,255,255,0.5)" },
+                children: "Serving all major residential and commercial corridors across Pune."
               }
             )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4 items-center lg:items-start", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "h4",
-              {
-                className: "font-bold text-sm uppercase tracking-widest mb-2",
-                style: { color: "#C89B3C", fontFamily: "var(--font-display)" },
-                children: "Our Services"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2.5", children: SERVICE_LINKS.map((name) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                onClick: () => scrollTo("sectors"),
-                className: "text-sm text-left transition-colors duration-200",
-                style: { color: "#9A9A9A" },
-                onMouseEnter: (e) => {
-                  e.currentTarget.style.color = "#C89B3C";
-                },
-                onMouseLeave: (e) => {
-                  e.currentTarget.style.color = "#9A9A9A";
-                },
-                "data-ocid": `footer.service.${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "span",
-                    {
-                      style: {
-                        color: "rgba(200,155,60,0.4)",
-                        marginRight: "8px"
-                      },
-                      children: "›"
-                    }
-                  ),
-                  name
-                ]
-              }
-            ) }, name)) })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4 items-center lg:items-start", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "h4",
-              {
-                className: "font-bold text-sm uppercase tracking-widest mb-2",
-                style: { color: "#C89B3C", fontFamily: "var(--font-display)" },
-                children: "Get In Touch"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  className: "flex items-start gap-3 text-sm",
-                  style: { color: "#9A9A9A" },
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      MapPin,
-                      {
-                        size: 15,
-                        style: { color: "#C89B3C", flexShrink: 0, marginTop: "2px" }
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "leading-relaxed", children: BUSINESS_INFO.address })
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "a",
-                {
-                  href: `tel:${BUSINESS_INFO.phone}`,
-                  className: "flex items-center gap-3 text-sm transition-colors duration-200",
-                  style: { color: "#9A9A9A" },
-                  onMouseEnter: (e) => {
-                    e.currentTarget.style.color = "#C89B3C";
-                  },
-                  onMouseLeave: (e) => {
-                    e.currentTarget.style.color = "#9A9A9A";
-                  },
-                  "data-ocid": "footer.phone_link",
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 15, style: { color: "#C89B3C", flexShrink: 0 } }),
-                    BUSINESS_INFO.phone
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "a",
-                {
-                  href: `https://wa.me/91${BUSINESS_INFO.whatsapp}`,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  className: "flex items-center gap-3 text-sm transition-colors duration-200",
-                  style: { color: "#9A9A9A" },
-                  onMouseEnter: (e) => {
-                    e.currentTarget.style.color = "#25D366";
-                  },
-                  onMouseLeave: (e) => {
-                    e.currentTarget.style.color = "#9A9A9A";
-                  },
-                  "data-ocid": "footer.whatsapp_link",
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      MessageCircle,
-                      {
-                        size: 15,
-                        style: { color: "#25D366", flexShrink: 0 }
-                      }
-                    ),
-                    "WhatsApp: ",
-                    BUSINESS_INFO.whatsapp
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs", style: { color: "#9A9A9A" }, children: [
-                "Proprietor:",
-                " ",
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#F5F5F5" }, children: BUSINESS_INFO.ownerName })
-              ] })
-            ] })
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-xs",
-            style: { borderTop: "1px solid #2C2C30", color: "#9A9A9A" },
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+            className: "pt-6",
+            style: { borderTop: "1px solid rgba(255,255,255,0.08)" },
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-center justify-between gap-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs", style: { color: "rgba(255,255,255,0.4)" }, children: [
                 "© ",
                 year,
-                " Grow Big Leasing & Real Estate. All Rights Reserved."
+                " DWELL Homes & Services. All Rights Reserved."
               ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Udaipur, Rajasthan" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "a",
-                {
-                  href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${utm}`,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  className: "transition-colors duration-200",
-                  style: { color: "#9A9A9A" },
-                  onMouseEnter: (e) => {
-                    e.currentTarget.style.color = "#C89B3C";
-                  },
-                  onMouseLeave: (e) => {
-                    e.currentTarget.style.color = "#9A9A9A";
-                  },
-                  children: "Built with love using caffeine.ai"
-                }
-              )
-            ]
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold", style: { color: "#009FD4" }, children: "Trusted Real Estate Guidance Across Pune" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: "https://www.instagram.com/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "aria-label": "Instagram",
+                    className: "transition-colors duration-200 hover:text-white",
+                    style: { color: "rgba(255,255,255,0.4)" },
+                    "data-ocid": "footer.social.instagram",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "sr-only", children: "Instagram" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "svg",
+                        {
+                          width: "18",
+                          height: "18",
+                          viewBox: "0 0 24 24",
+                          fill: "none",
+                          stroke: "currentColor",
+                          strokeWidth: "2",
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          "aria-hidden": "true",
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "2", y: "2", width: "20", height: "20", rx: "5", ry: "5" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "12", cy: "12", r: "4" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "circle",
+                              {
+                                cx: "17.5",
+                                cy: "6.5",
+                                r: "1",
+                                fill: "currentColor",
+                                stroke: "none"
+                              }
+                            )
+                          ]
+                        }
+                      )
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: "https://www.facebook.com/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "aria-label": "Facebook",
+                    className: "transition-colors duration-200 hover:text-white",
+                    style: { color: "rgba(255,255,255,0.4)" },
+                    "data-ocid": "footer.social.facebook",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "sr-only", children: "Facebook" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "svg",
+                        {
+                          width: "18",
+                          height: "18",
+                          viewBox: "0 0 24 24",
+                          fill: "currentColor",
+                          "aria-hidden": "true",
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" })
+                        }
+                      )
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: "https://www.linkedin.com/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "aria-label": "LinkedIn",
+                    className: "transition-colors duration-200 hover:text-white",
+                    style: { color: "rgba(255,255,255,0.4)" },
+                    "data-ocid": "footer.social.linkedin",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "sr-only", children: "LinkedIn" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "svg",
+                        {
+                          width: "18",
+                          height: "18",
+                          viewBox: "0 0 24 24",
+                          fill: "currentColor",
+                          "aria-hidden": "true",
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "4", cy: "4", r: "2" })
+                          ]
+                        }
+                      )
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "a",
+                  {
+                    href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${utm}`,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "text-xs transition-colors duration-200 hover:text-white",
+                    style: { color: "rgba(255,255,255,0.35)" },
+                    children: "Built with love using caffeine.ai"
+                  }
+                )
+              ] })
+            ] })
           }
         )
       ] })
     }
   );
 }
-function GrowthTimeline() {
+const VALUES = [
+  {
+    icon: Shield,
+    title: "Trust Over Transactions",
+    desc: "We never push a property that isn't right for you. Our reputation is built on honest advice."
+  },
+  {
+    icon: MapPin,
+    title: "Deep Local Expertise",
+    desc: "Years of navigating Pune's micro-markets — Baner, Wakad, Kothrud, Hinjewadi, and beyond."
+  },
+  {
+    icon: HeartHandshake,
+    title: "Human-Centered Service",
+    desc: "Every family has a unique story. We listen first and recommend second — always."
+  }
+];
+function AboutSection() {
   const sectionRef = reactExports.useRef(null);
-  const stepRefs = reactExports.useRef([]);
-  const headingRef = reactExports.useRef(null);
+  const leftRef = reactExports.useRef(null);
+  const rightRef = reactExports.useRef(null);
+  const valueRefs = reactExports.useRef([]);
   reactExports.useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0) translateX(0)";
           }
         }
       },
       { threshold: 0.1 }
     );
-    if (headingRef.current) observer.observe(headingRef.current);
-    for (const el of stepRefs.current) {
+    if (leftRef.current) observer.observe(leftRef.current);
+    if (rightRef.current) observer.observe(rightRef.current);
+    for (const el of valueRefs.current) {
       if (el) observer.observe(el);
     }
     return () => observer.disconnect();
@@ -19936,1070 +19555,1195 @@ function GrowthTimeline() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "section",
     {
-      id: "process",
+      id: "about",
       ref: sectionRef,
       className: "py-16 sm:py-24 px-4 sm:px-6",
-      style: { background: "var(--color-bg)" },
-      "data-ocid": "process.section",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
+      style: { background: "#ffffff" },
+      "data-ocid": "about.section",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
-            ref: headingRef,
-            className: "flex flex-col items-center text-center gap-4 mb-20 section-reveal",
+            ref: leftRef,
+            className: "relative rounded-2xl overflow-hidden",
+            style: {
+              opacity: 0,
+              transform: "translateX(-28px)",
+              transition: "opacity 0.6s ease, transform 0.6s ease",
+              minHeight: "420px",
+              background: "linear-gradient(145deg, #009FD4 0%, #00B4E6 40%, #007aaa 80%, #005f8a 100%)"
+            },
+            "data-ocid": "about.visual",
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
-                  {
-                    className: "text-xs font-bold tracking-[0.2em] uppercase",
-                    style: { color: "#C89B3C" },
-                    children: "HOW IT WORKS"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "h2",
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
                 {
-                  className: "text-3xl sm:text-4xl lg:text-5xl font-black",
+                  className: "absolute inset-0",
                   style: {
-                    color: "#F5F5F5",
-                    fontFamily: "var(--font-display)",
-                    lineHeight: 1.1
-                  },
-                  children: [
-                    "Our ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient-gold", children: "Growth Process" })
-                  ]
+                    backgroundImage: "linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)",
+                    backgroundSize: "32px 32px"
+                  }
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "p",
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 flex flex-col items-center justify-center gap-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "w-24 h-24 rounded-2xl flex items-center justify-center",
+                    style: {
+                      background: "rgba(255,255,255,0.15)",
+                      backdropFilter: "blur(8px)",
+                      border: "1.5px solid rgba(255,255,255,0.3)"
+                    },
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "svg",
+                      {
+                        viewBox: "0 0 64 64",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        className: "w-12 h-12",
+                        "aria-hidden": "true",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "path",
+                            {
+                              d: "M8 28L32 8L56 28V56H40V40H24V56H8V28Z",
+                              fill: "rgba(255,255,255,0.9)"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "rect",
+                            {
+                              x: "27",
+                              y: "40",
+                              width: "10",
+                              height: "16",
+                              fill: "rgba(0,159,212,0.6)"
+                            }
+                          )
+                        ]
+                      }
+                    )
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center px-6", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "p",
+                    {
+                      className: "text-white font-black text-2xl leading-tight",
+                      style: {
+                        fontFamily: "var(--font-display)",
+                        textShadow: "0 2px 8px rgba(0,0,0,0.2)"
+                      },
+                      children: [
+                        "Guiding Pune",
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+                        "Families Home"
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white/70 text-sm mt-2 font-medium", children: "Since Day One" })
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
                 {
-                  className: "max-w-xl text-base",
-                  style: { color: "#9A9A9A", lineHeight: 1.7 },
-                  children: "A structured 5-step approach to finding, evaluating, and executing the right commercial opportunity for your business."
+                  className: "absolute bottom-6 right-6 rounded-xl px-4 py-3 flex items-center gap-2",
+                  style: {
+                    background: "rgba(255,255,255,0.18)",
+                    backdropFilter: "blur(12px)",
+                    border: "1px solid rgba(255,255,255,0.35)"
+                  },
+                  "data-ocid": "about.trust-badge",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { size: 16, color: "#C9A96E", fill: "#C9A96E" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white font-semibold text-sm", children: "5.0 ★ Rated" })
+                  ]
                 }
               )
             ]
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "hidden lg:block", "data-ocid": "process.timeline", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative flex items-center justify-between px-12 mb-0", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "div",
-              {
-                className: "absolute left-12 right-12 top-1/2 h-px",
-                style: {
-                  background: "linear-gradient(to right, rgba(200,155,60,0.1), rgba(200,155,60,0.5), rgba(200,155,60,0.5), rgba(200,155,60,0.5), rgba(200,155,60,0.1))"
-                }
-              }
-            ),
-            TIMELINE_STEPS.slice(0, -1).map((step, i) => {
-              const positions = [16.6, 33.3, 50, 66.6];
-              return /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            ref: rightRef,
+            className: "flex flex-col gap-7",
+            style: {
+              opacity: 0,
+              transform: "translateX(28px)",
+              transition: "opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s"
+            },
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "inline-flex items-center gap-2 self-start", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
                 {
-                  className: "absolute top-1/2 -translate-y-1/2 -translate-x-1/2",
+                  className: "px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase",
                   style: {
-                    left: `${positions[i]}%`,
-                    color: "rgba(200,155,60,0.6)",
-                    zIndex: 2
+                    background: "rgba(201,169,110,0.12)",
+                    color: "#C9A96E",
+                    border: "1px solid rgba(201,169,110,0.3)"
                   },
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { size: 14, strokeWidth: 2.5 })
-                },
-                step.step
-              );
-            }),
-            TIMELINE_STEPS.map((step, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "div",
-              {
-                className: "relative z-10 flex items-center justify-center",
-                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
+                  "data-ocid": "about.badge",
+                  children: "Our Story"
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "h2",
+                {
+                  className: "text-3xl sm:text-4xl font-black leading-tight",
+                  style: { color: "#2D3142", fontFamily: "var(--font-display)" },
+                  children: [
+                    "Guiding Pune Families Home",
+                    " ",
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#009FD4" }, children: "Since Day One" })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
                   {
-                    className: "w-14 h-14 rounded-full flex items-center justify-center font-black text-xl transition-all duration-300 hover:scale-110",
-                    style: {
-                      background: "linear-gradient(135deg, #C89B3C, #E2B95B)",
-                      color: "#0F0F10",
-                      fontFamily: "var(--font-display)",
-                      boxShadow: "0 0 20px rgba(200,155,60,0.35)"
-                    },
-                    "data-ocid": `process.step.${i + 1}`,
-                    children: step.step
+                    className: "text-base leading-relaxed",
+                    style: { color: "#5A6072" },
+                    children: "DWELL was founded on one simple belief: every family deserves honest, expert guidance when making the most important financial decision of their lives. Buying or renting a property isn't just a transaction — it's a chapter in your life story."
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    className: "text-base leading-relaxed",
+                    style: { color: "#5A6072" },
+                    children: "We combine deep knowledge of Pune's residential and commercial market with a genuinely client-first approach. We don't just show properties — we understand your goals, your timeline, your budget, and your lifestyle, so every recommendation we make is truly right for you."
                   }
                 )
-              },
-              step.step
-            ))
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative grid grid-cols-5 gap-4 mt-0", children: TIMELINE_STEPS.map((step, i) => {
-            const isAbove = i % 2 === 0;
-            return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                ref: (el) => {
-                  stepRefs.current[i] = el;
-                },
-                className: `section-reveal flex flex-col gap-3 ${isAbove ? "-mt-52 mb-0" : "mt-8"}`,
-                style: { animationDelay: `${i * 0.15}s` },
-                children: [
-                  !isAbove && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2", children: VALUES.map((val, i) => {
+                const Icon2 = val.icon;
+                return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    ref: (el) => {
+                      valueRefs.current[i] = el;
+                    },
+                    className: "flex flex-col gap-2 p-4 rounded-xl",
+                    style: {
+                      background: "#F0F2F5",
+                      opacity: 0,
+                      transform: "translateY(16px)",
+                      transition: `opacity 0.5s ease ${0.35 + i * 0.1}s, transform 0.5s ease ${0.35 + i * 0.1}s`
+                    },
+                    "data-ocid": `about.value.${i + 1}`,
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "w-9 h-9 rounded-full flex items-center justify-center",
+                          style: { background: "rgba(0,159,212,0.12)" },
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { size: 16, style: { color: "#009FD4" } })
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "font-bold text-sm leading-tight",
+                          style: {
+                            color: "#2D3142",
+                            fontFamily: "var(--font-display)"
+                          },
+                          children: val.title
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "text-xs leading-relaxed",
+                          style: { color: "#5A6072" },
+                          children: val.desc
+                        }
+                      )
+                    ]
+                  },
+                  val.title
+                );
+              }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "p",
+                {
+                  className: "text-sm italic leading-relaxed pt-1",
+                  style: {
+                    color: "#8a90a2",
+                    borderLeft: "3px solid rgba(0,159,212,0.3)",
+                    paddingLeft: "12px"
+                  },
+                  children: "Our advisors bring years of on-ground experience in Pune's most sought-after micro-markets — so you're always guided by someone who truly knows the area."
+                }
+              )
+            ]
+          }
+        )
+      ] }) })
+    }
+  );
+}
+const propertyCards = [
+  {
+    type: "Luxury Apartment",
+    location: "Baner, Pune",
+    price: "₹1.2 Cr",
+    tag: "Residential",
+    tagColor: "#009FD4",
+    badge: "Ready to Move"
+  },
+  {
+    type: "Commercial Space",
+    location: "Hinjewadi, Pune",
+    price: "₹85 L",
+    tag: "Commercial",
+    tagColor: "#C9A96E",
+    badge: "Premium Location"
+  },
+  {
+    type: "Premium Villa",
+    location: "Kothrud, Pune",
+    price: "₹2.4 Cr",
+    tag: "Residential",
+    tagColor: "#009FD4",
+    badge: "Pre-Launch"
+  }
+];
+const trustIndicators = [
+  "5.0 Rated Property Advisory",
+  "Residential & Commercial Expertise",
+  "Transparent Consultation",
+  "Trusted Across Pune"
+];
+function HeroSection() {
+  const [visible, setVisible] = reactExports.useState(false);
+  reactExports.useEffect(() => {
+    const t = setTimeout(() => setVisible(true), 80);
+    return () => clearTimeout(t);
+  }, []);
+  const scrollTo = (id) => {
+    var _a2;
+    (_a2 = document.querySelector(id)) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "section",
+    {
+      id: "home",
+      className: "relative min-h-screen flex items-center overflow-hidden pt-20",
+      style: {
+        background: "linear-gradient(135deg, #F8F9FA 0%, #EEF2F7 50%, #E8EEF5 100%)",
+        fontFamily: "var(--font-body)"
+      },
+      "data-ocid": "hero.section",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute top-10 right-0 w-96 h-96 rounded-full opacity-20 pointer-events-none",
+            style: {
+              background: "radial-gradient(circle, #009FD4 0%, transparent 70%)",
+              transform: "translate(30%, -20%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute bottom-0 left-0 w-80 h-80 rounded-full opacity-10 pointer-events-none",
+            style: {
+              background: "radial-gradient(circle, #C9A96E 0%, transparent 70%)",
+              transform: "translate(-30%, 20%)"
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col lg:flex-row items-center gap-10 lg:gap-16", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: `w-full lg:w-1/2 space-y-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap items-center gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "span",
+                    {
+                      "data-ocid": "hero.rating_badge",
+                      className: "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-white",
+                      style: { backgroundColor: "#009FD4" },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "\\u2605" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "5.0 Google Rated" })
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: "inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium text-white",
+                      style: { backgroundColor: "#10B981" },
+                      children: "\\u2713 Verified Advisory"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h1",
+                  {
+                    "data-ocid": "hero.headline",
+                    className: "font-bold leading-tight tracking-tight",
+                    style: {
+                      fontFamily: "var(--font-display)",
+                      fontSize: "clamp(2rem, 5vw, 3.5rem)",
+                      color: "#2D3142",
+                      lineHeight: 1.1
+                    },
+                    children: [
+                      "Smart Property Decisions",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#009FD4" }, children: "Begin With" }),
+                      " Trusted Guidance"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    "data-ocid": "hero.subheadline",
+                    className: "text-lg leading-relaxed",
+                    style: { color: "#6B7280", maxWidth: "32rem" },
+                    children: "Helping families, professionals, and investors across Pune discover residential and commercial properties with transparency, expertise, and personalized consultation."
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    "data-ocid": "hero.cta_group",
+                    className: `flex flex-wrap gap-3 transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`,
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "button",
+                        {
+                          type: "button",
+                          "data-ocid": "hero.primary_button",
+                          onClick: () => scrollTo("#properties"),
+                          className: "px-6 py-3.5 rounded-xl text-white font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5",
+                          style: {
+                            backgroundColor: "#009FD4",
+                            fontFamily: "var(--font-display)",
+                            minWidth: "160px"
+                          },
+                          children: "Explore Properties"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "button",
+                        {
+                          type: "button",
+                          "data-ocid": "hero.secondary_button",
+                          onClick: () => scrollTo("#contact"),
+                          className: "px-6 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 hover:-translate-y-0.5 border-2",
+                          style: {
+                            borderColor: "#009FD4",
+                            color: "#009FD4",
+                            backgroundColor: "transparent",
+                            fontFamily: "var(--font-display)",
+                            minWidth: "160px"
+                          },
+                          onMouseEnter: (e) => {
+                            e.currentTarget.style.backgroundColor = "rgba(0,159,212,0.08)";
+                          },
+                          onMouseLeave: (e) => {
+                            e.currentTarget.style.backgroundColor = "transparent";
+                          },
+                          children: "Book Consultation"
+                        }
+                      )
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    "data-ocid": "hero.trust_indicators",
+                    className: `grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`,
+                    children: trustIndicators.map((indicator) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "div",
+                      {
+                        className: "flex items-center gap-2 text-sm",
+                        style: { color: "#2D3142" },
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "span",
+                            {
+                              className: "flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs font-bold",
+                              style: { backgroundColor: "#10B981" },
+                              children: "\\u2713"
+                            }
+                          ),
+                          indicator
+                        ]
+                      },
+                      indicator
+                    ))
+                  }
+                )
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: `w-full lg:w-1/2 relative transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative rounded-2xl overflow-hidden shadow-2xl", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "img",
+                    {
+                      src: "/assets/generated/dwell-hero-property.dim_800x600.jpg",
+                      alt: "Premium properties in Pune",
+                      className: "w-full h-64 sm:h-80 lg:h-96 object-cover"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "div",
                     {
-                      className: "w-px h-8 mx-auto",
+                      className: "absolute inset-0",
                       style: {
-                        background: "linear-gradient(to bottom, rgba(200,155,60,0.5), rgba(200,155,60,0.1))"
+                        background: "linear-gradient(to top, rgba(45,49,66,0.5) 0%, transparent 60%)"
                       }
                     }
                   ),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs(
                     "div",
                     {
-                      className: "p-4 rounded-xl transition-all duration-300 hover:scale-[1.02] cursor-default",
+                      "data-ocid": "hero.trust_badge",
+                      className: "absolute top-4 right-4 backdrop-blur-md rounded-xl px-3 py-2 border flex items-center gap-2",
                       style: {
-                        background: "rgba(26,26,29,0.9)",
-                        border: "1px solid #2C2C30"
+                        backgroundColor: "rgba(255,255,255,0.92)",
+                        borderColor: "rgba(255,255,255,0.6)",
+                        boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
                       },
                       children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              className: "text-lg font-bold",
+                              style: {
+                                color: "#009FD4",
+                                fontFamily: "var(--font-display)"
+                              },
+                              children: "5.0 \\u2605"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs", style: { color: "#6B7280" }, children: "Google Reviews" })
+                        ] }),
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
-                          "h3",
+                          "div",
                           {
-                            className: "font-bold text-sm mb-1",
-                            style: {
-                              color: "#F5F5F5",
-                              fontFamily: "var(--font-display)"
-                            },
-                            children: step.title
+                            className: "w-px h-8 self-center",
+                            style: { backgroundColor: "#E5E7EB" }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              className: "text-lg font-bold",
+                              style: {
+                                color: "#2D3142",
+                                fontFamily: "var(--font-display)"
+                              },
+                              children: "100+"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs", style: { color: "#6B7280" }, children: "Happy Clients" })
+                        ] })
+                      ]
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3", children: propertyCards.map((card, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    "data-ocid": `hero.property_card.${i + 1}`,
+                    className: "rounded-xl p-4 border transition-all duration-200 hover:-translate-y-1 hover:shadow-lg cursor-pointer",
+                    style: {
+                      backgroundColor: "rgba(255,255,255,0.88)",
+                      backdropFilter: "blur(12px)",
+                      borderColor: "rgba(255,255,255,0.7)",
+                      boxShadow: "0 2px 16px rgba(0,0,0,0.06)"
+                    },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-1 mb-2", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            className: "text-xs font-semibold px-2 py-0.5 rounded-full text-white",
+                            style: { backgroundColor: card.tagColor },
+                            children: card.tag
                           }
                         ),
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
-                          "p",
+                          "span",
                           {
-                            className: "text-xs leading-relaxed",
-                            style: { color: "#9A9A9A" },
-                            children: step.description
+                            className: "text-xs px-2 py-0.5 rounded-full font-medium",
+                            style: {
+                              backgroundColor: "rgba(16,185,129,0.12)",
+                              color: "#10B981"
+                            },
+                            children: card.badge
                           }
                         )
-                      ]
-                    }
-                  ),
-                  isAbove && /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "div",
-                    {
-                      className: "w-px h-8 mx-auto",
-                      style: {
-                        background: "linear-gradient(to bottom, rgba(200,155,60,0.1), rgba(200,155,60,0.5))"
-                      }
-                    }
-                  )
-                ]
-              },
-              step.step
-            );
-          }) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "flex flex-col gap-0 lg:hidden",
-            style: { paddingLeft: "0" },
-            "data-ocid": "process.timeline.mobile",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "absolute left-[27px] top-6 bottom-6 w-px",
-                  style: {
-                    background: "linear-gradient(to bottom, rgba(200,155,60,0.6), rgba(200,155,60,0.05))"
-                  }
-                }
-              ),
-              TIMELINE_STEPS.map((step, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  ref: (el) => {
-                    stepRefs.current[5 + i] = el;
-                  },
-                  className: "relative flex gap-4 pb-8 last:pb-0 section-reveal",
-                  style: { animationDelay: `${i * 0.15}s` },
-                  "data-ocid": `process.step.mobile.${i + 1}`,
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-shrink-0 relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "div",
-                      {
-                        className: "w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center font-black text-base sm:text-lg",
-                        style: {
-                          background: "linear-gradient(135deg, #C89B3C, #E2B95B)",
-                          color: "#0F0F10",
-                          fontFamily: "var(--font-display)",
-                          boxShadow: "0 0 16px rgba(200,155,60,0.3)"
-                        },
-                        children: step.step
-                      }
-                    ) }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                      "div",
-                      {
-                        className: "flex-1 rounded-xl p-4 sm:p-5",
-                        style: {
-                          background: "rgba(26,26,29,0.9)",
-                          border: "1px solid #2C2C30",
-                          marginTop: "10px"
-                        },
-                        children: [
-                          /* @__PURE__ */ jsxRuntimeExports.jsx(
-                            "h3",
-                            {
-                              className: "font-bold text-sm mb-2",
-                              style: {
-                                color: "#F5F5F5",
-                                fontFamily: "var(--font-display)"
-                              },
-                              children: step.title
-                            }
-                          ),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx(
-                            "p",
-                            {
-                              className: "text-sm leading-relaxed",
-                              style: { color: "#9A9A9A" },
-                              children: step.description
-                            }
-                          )
-                        ]
-                      }
-                    )
-                  ]
-                },
-                step.step
-              ))
-            ] })
-          }
-        )
-      ] })
-    }
-  );
-}
-function HeroSection() {
-  const trustItems = [...TRUST_ITEMS, ...TRUST_ITEMS, ...TRUST_ITEMS];
-  const scrollTo = (id) => {
-    const el = document.querySelector(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "section",
-    {
-      id: "hero",
-      className: "relative flex flex-col overflow-hidden",
-      style: { minHeight: "100dvh" },
-      "data-ocid": "hero.section",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute inset-0",
-            style: {
-              backgroundImage: "linear-gradient(to bottom, rgba(15,15,16,0.65) 0%, rgba(15,15,16,0.45) 50%, rgba(15,15,16,0.92) 100%), url(/assets/generated/hero-cinematic.dim_1920x1080.jpg)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat"
-            }
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute inset-0 animate-gold-pulse",
-            style: {
-              background: "radial-gradient(ellipse 80% 60% at 20% 50%, rgba(200,155,60,0.07) 0%, transparent 70%), radial-gradient(ellipse 60% 40% at 80% 30%, rgba(226,185,91,0.05) 0%, transparent 70%)",
-              pointerEvents: "none"
-            }
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "absolute top-0 left-0 right-0 h-[2px]",
-            style: {
-              background: "linear-gradient(90deg, transparent 0%, #C89B3C 30%, #E2B95B 50%, #C89B3C 70%, transparent 100%)",
-              zIndex: 10
-            }
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 flex-1 flex items-center justify-center pt-24 pb-8", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl w-full mx-auto px-4 sm:px-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl flex flex-col gap-6", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              className: "inline-flex items-center gap-2 px-4 py-2 rounded-full self-start animate-fade-in-up",
-              style: {
-                background: "rgba(200,155,60,0.1)",
-                border: "1px solid rgba(200,155,60,0.35)",
-                animationDelay: "0.1s",
-                opacity: 0
-              },
-              "data-ocid": "hero.rating_badge",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
-                  {
-                    style: {
-                      color: "#C89B3C",
-                      fontSize: "0.9rem",
-                      letterSpacing: "0.1em"
-                    },
-                    children: "★★★★★"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
-                  {
-                    className: "text-xs font-bold tracking-wider uppercase",
-                    style: { color: "#E2B95B", fontFamily: "var(--font-display)" },
-                    children: "5.0"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
-                  {
-                    className: "text-xs font-medium",
-                    style: {
-                      color: "rgba(154,154,154,0.85)",
-                      fontFamily: "var(--font-display)"
-                    },
-                    children: "Google Rating"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
-                  {
-                    className: "hidden sm:inline text-xs",
-                    style: { color: "rgba(44,44,48,0.9)" },
-                    children: "|"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "span",
-                  {
-                    className: "hidden sm:inline text-xs font-medium",
-                    style: {
-                      color: "rgba(154,154,154,0.7)",
-                      fontFamily: "var(--font-display)"
-                    },
-                    children: "Udaipur's Premier Commercial Consultancy"
-                  }
-                )
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "h1",
-            {
-              className: "text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.05] tracking-tight animate-fade-in-up",
-              style: {
-                fontFamily: "var(--font-display)",
-                color: "#F5F5F5",
-                animationDelay: "0.25s",
-                opacity: 0
-              },
-              "data-ocid": "hero.headline",
-              children: [
-                "Real Estate That ",
-                /* @__PURE__ */ jsxRuntimeExports.jsx("br", { className: "hidden sm:block" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient-gold", children: "Helps Businesses" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                "Grow."
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "animate-fade-in-up",
-              style: { animationDelay: "0.4s", opacity: 0 },
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  style: {
-                    width: "72px",
-                    height: "3px",
-                    background: "linear-gradient(90deg, #C89B3C, #E2B95B)",
-                    borderRadius: "2px"
-                  }
-                }
-              )
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "p",
-            {
-              className: "text-base sm:text-xl leading-relaxed max-w-2xl animate-fade-in-up",
-              style: {
-                color: "rgba(154,154,154,0.9)",
-                animationDelay: "0.45s",
-                opacity: 0,
-                fontFamily: "var(--font-body)"
-              },
-              "data-ocid": "hero.subheadline",
-              children: "Commercial leasing, franchise expansion, hospitality spaces, industrial properties, and investment consulting."
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              className: "flex flex-col sm:flex-row items-stretch sm:items-center gap-3 animate-fade-in-up",
-              style: { animationDelay: "0.6s", opacity: 0 },
-              "data-ocid": "hero.cta_group",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "button",
-                  {
-                    type: "button",
-                    onClick: () => scrollTo("#contact"),
-                    className: "btn-gold text-center",
-                    "data-ocid": "hero.primary_button",
-                    children: "Book Consultation"
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "button",
-                  {
-                    type: "button",
-                    onClick: () => scrollTo("#properties"),
-                    className: "btn-outline text-center",
-                    "data-ocid": "hero.secondary_button",
-                    children: "Explore Opportunities"
-                  }
-                )
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "flex flex-wrap gap-2 sm:gap-4 animate-fade-in-up",
-              style: { animationDelay: "0.75s", opacity: 0 },
-              children: [
-                { value: "200+", label: "Deals Closed" },
-                { value: "40+", label: "Brands Served" },
-                { value: "15+", label: "Years in Udaipur" }
-              ].map((stat) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  className: "flex items-center gap-2 px-4 py-2 rounded",
-                  style: {
-                    background: "rgba(26,26,29,0.7)",
-                    border: "1px solid rgba(44,44,48,0.6)",
-                    backdropFilter: "blur(8px)"
-                  },
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "span",
-                      {
-                        className: "text-base font-black",
-                        style: {
-                          color: "#C89B3C",
-                          fontFamily: "var(--font-display)"
-                        },
-                        children: stat.value
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "span",
-                      {
-                        className: "text-xs font-medium",
-                        style: {
-                          color: "#9A9A9A",
-                          fontFamily: "var(--font-display)"
-                        },
-                        children: stat.label
-                      }
-                    )
-                  ]
-                },
-                stat.label
-              ))
-            }
-          )
-        ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "relative z-10 flex justify-center pb-6 animate-float",
-            style: { marginTop: "auto" },
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                onClick: () => scrollTo("#sectors"),
-                "aria-label": "Scroll down",
-                className: "flex flex-col items-center gap-1 group",
-                style: { background: "none", border: "none", cursor: "pointer" },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "span",
-                    {
-                      className: "text-xs font-medium tracking-widest uppercase group-hover:text-[#C89B3C] transition-colors duration-300",
-                      style: {
-                        color: "rgba(154,154,154,0.5)",
-                        fontFamily: "var(--font-display)"
-                      },
-                      children: "Scroll"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "svg",
-                    {
-                      width: "20",
-                      height: "20",
-                      viewBox: "0 0 20 20",
-                      fill: "none",
-                      role: "img",
-                      "aria-label": "Scroll down",
-                      className: "group-hover:translate-y-1 transition-transform duration-300",
-                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "path",
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
                         {
-                          d: "M10 4v12M4 10l6 6 6-6",
-                          stroke: "rgba(200,155,60,0.6)",
-                          strokeWidth: "1.5",
-                          strokeLinecap: "round",
-                          strokeLinejoin: "round"
+                          className: "font-semibold text-sm",
+                          style: {
+                            color: "#2D3142",
+                            fontFamily: "var(--font-display)"
+                          },
+                          children: card.type
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs mt-0.5", style: { color: "#6B7280" }, children: [
+                        "\\ud83d\\udccd ",
+                        card.location
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "p",
+                        {
+                          className: "text-sm font-bold mt-2",
+                          style: {
+                            color: "#009FD4",
+                            fontFamily: "var(--font-display)"
+                          },
+                          children: card.price
                         }
                       )
-                    }
-                  )
-                ]
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            className: "relative z-10 w-full overflow-hidden",
-            style: {
-              borderTop: "1px solid rgba(44,44,48,0.5)",
-              background: "rgba(15,15,16,0.75)",
-              backdropFilter: "blur(8px)",
-              padding: "14px 0"
-            },
-            "data-ocid": "hero.trust_strip",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "absolute inset-y-0 left-0 w-24 z-10 pointer-events-none",
-                  style: {
-                    background: "linear-gradient(to right, rgba(15,15,16,0.95), transparent)"
-                  }
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "absolute inset-y-0 right-0 w-24 z-10 pointer-events-none",
-                  style: {
-                    background: "linear-gradient(to left, rgba(15,15,16,0.95), transparent)"
-                  }
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex animate-marquee whitespace-nowrap", children: trustItems.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "span",
-                {
-                  className: "inline-flex items-center gap-3 mx-8 text-xs sm:text-sm font-medium",
-                  style: { color: "#9A9A9A", fontFamily: "var(--font-display)" },
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "span",
-                      {
-                        style: {
-                          color: "#C89B3C",
-                          fontSize: "0.5rem",
-                          display: "inline-block"
-                        },
-                        children: "◆"
-                      }
-                    ),
-                    item
-                  ]
-                },
-                `${i}-${item}`
-              )) })
-            ]
-          }
-        )
+                    ]
+                  },
+                  `${card.type}-${card.location}`
+                )) })
+              ]
+            }
+          )
+        ] }) })
       ]
     }
   );
 }
-const iconMap = {
-  Hotel: /* @__PURE__ */ jsxRuntimeExports.jsx(Hotel, { size: 36 }),
-  ShoppingBag: /* @__PURE__ */ jsxRuntimeExports.jsx(ShoppingBag, { size: 36 }),
-  Factory: /* @__PURE__ */ jsxRuntimeExports.jsx(Factory, { size: 36 }),
-  Package: /* @__PURE__ */ jsxRuntimeExports.jsx(Package, { size: 36 }),
-  Network: /* @__PURE__ */ jsxRuntimeExports.jsx(Network, { size: 36 })
-};
-function SectorCard({ sector }) {
+const WHY_CARDS = [
+  {
+    id: "trusted-advisory",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "#009FD4",
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("polyline", { points: "9 12 11 14 15 10" })
+        ]
+      }
+    ),
+    title: "Trusted Property Advisory",
+    description: "Honest, unbiased guidance you can rely on. We represent your interests, not the developer's — ensuring every recommendation is made for your benefit."
+  },
+  {
+    id: "residential-commercial",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "#009FD4",
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "13", y: "11", width: "5", height: "5", rx: "1" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M9 11h6" })
+        ]
+      }
+    ),
+    title: "Residential & Commercial",
+    description: "Deep expertise across both residential apartments and commercial spaces — whether you're buying a family home or setting up an office in Pune."
+  },
+  {
+    id: "transparent-consultation",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "#009FD4",
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "12", cy: "12", r: "10" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("line", { x1: "12", y1: "8", x2: "12", y2: "12" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("line", { x1: "12", y1: "16", x2: "12.01", y2: "16" })
+        ]
+      }
+    ),
+    title: "Transparent Consultation",
+    description: "No hidden costs, no surprise fees, no pressure tactics. Our consultation process is open, clear, and always aligned with your timeline and budget."
+  },
+  {
+    id: "client-centered",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "svg",
+      {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "#009FD4",
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": "true",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" })
+      }
+    ),
+    title: "Client-Centered Approach",
+    description: "Your needs, priorities, and budget come first — always. We listen before we suggest, and we never push a property that doesn't fit your life."
+  },
+  {
+    id: "property-matching",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "#009FD4",
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "11", cy: "11", r: "8" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("line", { x1: "21", y1: "21", x2: "16.65", y2: "16.65" })
+        ]
+      }
+    ),
+    title: "Personalized Property Matching",
+    description: "We curate properties based on YOUR specific criteria — location, budget, size, lifestyle, investment goals — so every shortlist is genuinely relevant."
+  },
+  {
+    id: "space-planning",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "svg",
+      {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "#009FD4",
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("line", { x1: "3", y1: "9", x2: "21", y2: "9" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("line", { x1: "9", y1: "21", x2: "9", y2: "9" })
+        ]
+      }
+    ),
+    title: "Space Planning Guidance",
+    description: "Unique to DWELL — we help you visualize how a space works for your lifestyle before you commit. Smart space optimization so you never overpay for the wrong layout."
+  }
+];
+function WhyCard({ card, index: index2 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
-      className: "glass rounded-2xl p-5 sm:p-8 flex flex-col gap-4 sm:gap-5 card-lift glow-gold-hover flex-shrink-0",
-      style: { width: "clamp(240px, 80vw, 320px)" },
-      "data-ocid": `experience.card.${sector.id}`,
+      className: "group relative flex flex-col gap-4 rounded-2xl p-6 bg-white transition-all duration-300",
+      style: {
+        border: "1px solid #E0F4FB",
+        transitionDelay: `${index2 * 0.05}s`
+      },
+      onMouseEnter: (e) => {
+        const el = e.currentTarget;
+        el.style.transform = "translateY(-4px)";
+        el.style.boxShadow = "0 12px 32px rgba(0,159,212,0.12)";
+        el.style.borderColor = "#93D9EF";
+      },
+      onMouseLeave: (e) => {
+        const el = e.currentTarget;
+        el.style.transform = "translateY(0)";
+        el.style.boxShadow = "none";
+        el.style.borderColor = "#E0F4FB";
+      },
+      "data-ocid": `why-us.card.${index2 + 1}`,
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "w-16 h-16 rounded-xl flex items-center justify-center",
-            style: { background: "rgba(200,155,60,0.12)", color: "#C89B3C" },
-            children: iconMap[sector.icon]
+            className: "w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0",
+            style: { background: "rgba(0,159,212,0.08)" },
+            children: card.icon
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "h3",
-            {
-              className: "font-bold text-xl",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-              children: sector.name
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm leading-relaxed", style: { color: "#9A9A9A" }, children: sector.description })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "span",
-          {
-            className: "inline-block text-xs font-bold px-3 py-1.5 rounded-full",
-            style: {
-              background: "rgba(200,155,60,0.15)",
-              color: "#C89B3C",
-              border: "1px solid rgba(200,155,60,0.3)",
-              fontFamily: "var(--font-display)",
-              letterSpacing: "0.03em"
-            },
-            children: sector.stat
-          }
-        ) })
-      ]
-    }
-  );
-}
-function IndustrySectors() {
-  const [activeIndex, setActiveIndex] = reactExports.useState(0);
-  const intervalRef = reactExports.useRef(null);
-  const total = SECTORS.length;
-  reactExports.useEffect(() => {
-    const startAuto2 = () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-      intervalRef.current = setInterval(() => {
-        setActiveIndex((a) => (a + 1) % total);
-      }, 3e3);
-    };
-    startAuto2();
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [total]);
-  const startAuto = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(() => {
-      setActiveIndex((a) => (a + 1) % total);
-    }, 3e3);
-  };
-  const handlePrev = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    setActiveIndex((a) => (a - 1 + total) % total);
-    startAuto();
-  };
-  const handleNext = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    setActiveIndex((a) => (a + 1) % total);
-    startAuto();
-  };
-  const handleDot = (i) => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    setActiveIndex(i);
-    startAuto();
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "section",
-    {
-      id: "experience",
-      className: "py-24 px-6 overflow-hidden",
-      style: { background: "#0A0A0B" },
-      "data-ocid": "experience.section",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-4 mb-16 section-reveal", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "span",
-            {
-              className: "text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full",
-              style: {
-                color: "#C89B3C",
-                background: "rgba(200,155,60,0.1)",
-                border: "1px solid rgba(200,155,60,0.25)",
-                fontFamily: "var(--font-display)"
-              },
-              children: "INDUSTRY EXPERTISE"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "h2",
-            {
-              className: "text-3xl sm:text-4xl lg:text-5xl font-bold",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-              children: "Sectors We Serve"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-xl text-base", style: { color: "#9A9A9A" }, children: "Deep domain knowledge across Udaipur's most dynamic commercial sectors." })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative section-reveal", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "button",
-              onClick: handlePrev,
-              className: "absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center transition-all duration-300 glow-gold-hover",
-              style: {
-                left: "4px",
-                background: "#1A1A1D",
-                border: "1px solid #2C2C30",
-                color: "#C89B3C"
-              },
-              "aria-label": "Previous sector",
-              "data-ocid": "experience.prev_button",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { size: 20 })
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "button",
-              onClick: handleNext,
-              className: "absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center transition-all duration-300 glow-gold-hover",
-              style: {
-                right: "4px",
-                background: "#1A1A1D",
-                border: "1px solid #2C2C30",
-                color: "#C89B3C"
-              },
-              "aria-label": "Next sector",
-              "data-ocid": "experience.next_button",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { size: 20 })
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-hidden px-12 sm:px-14", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "flex gap-6 transition-transform duration-500 ease-in-out",
-              style: {
-                transform: `translateX(calc(-${activeIndex} * (clamp(240px, 80vw, 320px) + 24px)))`
-              },
-              "data-ocid": "experience.carousel",
-              children: SECTORS.map((sector) => /* @__PURE__ */ jsxRuntimeExports.jsx(SectorCard, { sector }, sector.id))
-            }
-          ) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center gap-2 mt-10", children: SECTORS.map((sector, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "button",
-          {
-            type: "button",
-            onClick: () => handleDot(i),
-            className: "rounded-full transition-all duration-300",
-            style: {
-              width: i === activeIndex ? "28px" : "8px",
-              height: "8px",
-              background: i === activeIndex ? "linear-gradient(90deg,#C89B3C,#E2B95B)" : "#2C2C30"
-            },
-            "aria-label": `Go to sector ${i + 1}`,
-            "data-ocid": `experience.dot.${i + 1}`
-          },
-          sector.id
-        )) })
-      ] })
-    }
-  );
-}
-function LocationMap() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-16 sm:py-24 px-4 sm:px-6 bg-[#0F0F10] section-reveal", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-5xl mx-auto", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-10", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F5F5F5] mb-3", children: [
-        "Find Us in ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#C89B3C]", children: "Udaipur" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[#9A9A9A] text-base sm:text-lg", children: "Near Ice Factory, Road, Udaipur, Rajasthan 313001" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl overflow-hidden border border-[#C89B3C]/30 shadow-[0_0_30px_rgba(200,155,60,0.15)] mb-8", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "iframe",
-      {
-        title: "Grow Big Leasing & Real Estate Location",
-        src: "https://maps.google.com/maps?q=Near+Ice+Factory+Udaipur+Rajasthan+313001&t=&z=15&ie=UTF8&iwloc=&output=embed",
-        className: "w-full h-64 sm:h-80 lg:h-96 border-0",
-        allowFullScreen: true,
-        loading: "lazy",
-        referrerPolicy: "no-referrer-when-downgrade"
-      }
-    ) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        "a",
-        {
-          href: "tel:7572905655",
-          className: "flex items-center gap-2 text-[#9A9A9A] hover:text-[#C89B3C] transition-colors duration-300",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-4 h-4 text-[#C89B3C]" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm sm:text-base", children: "7572905655" })
-          ]
-        }
-      ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-[#9A9A9A]", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 text-[#C89B3C]" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm sm:text-base", children: "Udaipur, Rajasthan" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        "a",
-        {
-          href: "https://maps.google.com/maps?q=Near+Ice+Factory+Udaipur+Rajasthan+313001",
-          target: "_blank",
-          rel: "noopener noreferrer",
-          className: "flex items-center gap-2 btn-gold px-5 py-2.5 rounded-full text-sm font-semibold",
-          "data-ocid": "location.directions_button",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Navigation, { className: "w-4 h-4" }),
-            "Get Directions"
-          ]
-        }
-      )
-    ] })
-  ] }) });
-}
-function useCountUp(target, active, duration = 1800) {
-  const [count, setCount] = reactExports.useState(0);
-  reactExports.useEffect(() => {
-    if (!active) return;
-    let current = 0;
-    const step = target / (duration / 16);
-    const timer = setInterval(() => {
-      current += step;
-      if (current >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, 16);
-    return () => clearInterval(timer);
-  }, [target, active, duration]);
-  return count;
-}
-function parseValue(raw) {
-  const match = raw.match(/^([^\d]*)(\d+(?:\.\d+)?)([^\d]*)$/);
-  if (!match) return { prefix: "", num: 0, suffix: raw };
-  return {
-    prefix: match[1],
-    num: Number.parseFloat(match[2]),
-    suffix: match[3]
-  };
-}
-function InsightCard({
-  insight,
-  index: index2
-}) {
-  const [visible, setVisible] = reactExports.useState(false);
-  const ref = reactExports.useRef(null);
-  const { prefix: prefix2, num, suffix: suffix2 } = parseValue(insight.value);
-  const count = useCountUp(num, visible);
-  reactExports.useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          obs.disconnect();
-        }
-      },
-      { threshold: 0.4 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      ref,
-      className: "rounded-xl overflow-hidden card-lift",
-      style: {
-        background: "#1A1A1D",
-        border: "1px solid #2C2C30",
-        transitionDelay: `${index2 * 0.08}s`,
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(24px)",
-        transition: "opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease"
-      },
-      "data-ocid": `insights.card.${index2 + 1}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "h-1 w-full",
-            style: { background: "linear-gradient(90deg, #C89B3C, #E2B95B)" }
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 flex flex-col gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "span",
-            {
-              className: "self-start flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-full",
-              style: {
-                background: "rgba(74,222,128,0.1)",
-                color: "#4ADE80",
-                border: "1px solid rgba(74,222,128,0.25)"
-              },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { size: 11 }),
-                insight.trend
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-0.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "span",
-              {
-                className: "text-3xl sm:text-5xl font-bold text-gradient-gold",
-                style: { fontFamily: "var(--font-display)", lineHeight: 1.1 },
-                children: [
-                  prefix2,
-                  count,
-                  suffix2
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-medium", style: { color: "#9A9A9A" }, children: insight.unit })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              className: "flex flex-col gap-1 pt-3",
-              style: { borderTop: "1px solid #2C2C30" },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "h3",
-                  {
-                    className: "font-bold text-sm",
-                    style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-                    children: insight.title
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs leading-relaxed", style: { color: "#9A9A9A" }, children: insight.description })
-              ]
-            }
-          )
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold", style: { color: "#2D3142" }, children: card.title }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm leading-relaxed", style: { color: "#64748B" }, children: card.description })
         ] })
       ]
     }
   );
 }
-function MarketInsights() {
+function WhyChooseUs() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "section",
     {
-      id: "insights",
+      id: "why-us",
       className: "py-16 sm:py-24 px-4 sm:px-6",
-      style: { background: "#0A0A0B" },
-      "data-ocid": "insights.section",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-4 mb-16 section-reveal", children: [
+      style: { background: "#FFFFFF" },
+      "data-ocid": "why-us.section",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-3 mb-12 sm:mb-16", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "span",
             {
-              className: "text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full",
+              className: "text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full",
               style: {
-                color: "#C89B3C",
-                background: "rgba(200,155,60,0.1)",
-                border: "1px solid rgba(200,155,60,0.25)",
-                fontFamily: "var(--font-display)"
+                color: "#009FD4",
+                background: "rgba(0,159,212,0.08)",
+                border: "1px solid rgba(0,159,212,0.2)"
               },
-              children: "MARKET INTELLIGENCE"
+              children: "WHY CHOOSE DWELL"
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "h2",
             {
-              className: "text-3xl sm:text-4xl lg:text-5xl font-bold",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-              children: "Udaipur Commercial Overview"
+              className: "text-3xl sm:text-4xl font-bold",
+              style: { color: "#2D3142", lineHeight: 1.25 },
+              children: "Why Families & Professionals Choose DWELL"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-xl text-base", style: { color: "#9A9A9A" }, children: "Real-time commercial real estate insights for Udaipur's fastest-growing zones." })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-xl text-base", style: { color: "#64748B" }, children: "We don't just find properties — we guide you to make smarter, more confident real estate decisions." })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6",
-            "data-ocid": "insights.grid",
-            children: MARKET_INSIGHTS.map((insight, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(InsightCard, { insight, index: i }, insight.id))
+            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6",
+            "data-ocid": "why-us.grid",
+            children: WHY_CARDS.map((card, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(WhyCard, { card, index: i }, card.id))
           }
         )
       ] })
     }
   );
 }
+function LocationMap() {
+  return null;
+}
+const PUNE_AREAS = [
+  {
+    id: "baner",
+    name: "Baner",
+    insight: "Premium residential hub with excellent connectivity to IT parks and top schools.",
+    tag: "Trending",
+    tagColor: "#10B981",
+    tagBg: "rgba(16,185,129,0.1)"
+  },
+  {
+    id: "wakad",
+    name: "Wakad",
+    insight: "Rapidly growing IT corridor with strong rental demand and new residential projects.",
+    tag: "High Demand",
+    tagColor: "#009FD4",
+    tagBg: "rgba(0,159,212,0.1)"
+  },
+  {
+    id: "warje",
+    name: "Warje",
+    insight: "Affordable family zone with improving infrastructure and good civic amenities.",
+    tag: "Affordable",
+    tagColor: "#C9A96E",
+    tagBg: "rgba(201,169,110,0.1)"
+  },
+  {
+    id: "kothrud",
+    name: "Kothrud",
+    insight: "Established residential neighborhood loved by families for its culture and connectivity.",
+    tag: "Established",
+    tagColor: "#6366F1",
+    tagBg: "rgba(99,102,241,0.1)"
+  },
+  {
+    id: "hinjewadi",
+    name: "Hinjewadi",
+    insight: "Pune's premier IT hub — prime commercial zones and investor-grade residential options.",
+    tag: "IT Hub",
+    tagColor: "#009FD4",
+    tagBg: "rgba(0,159,212,0.1)"
+  },
+  {
+    id: "aundh",
+    name: "Aundh",
+    insight: "Upscale family neighborhood with premium apartments, restaurants, and lifestyle amenities.",
+    tag: "Premium",
+    tagColor: "#C9A96E",
+    tagBg: "rgba(201,169,110,0.1)"
+  },
+  {
+    id: "bavdhan",
+    name: "Bavdhan",
+    insight: "Emerging premium zone with rapid development and strong long-term appreciation potential.",
+    tag: "Emerging",
+    tagColor: "#10B981",
+    tagBg: "rgba(16,185,129,0.1)"
+  }
+];
+function PuneMarketAuthority() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "section",
+    {
+      id: "pune-market",
+      className: "py-16 sm:py-24 px-4 sm:px-6",
+      style: {
+        background: "linear-gradient(160deg, #E6F7FD 0%, #F7FBFE 50%, #FFFFFF 100%)"
+      },
+      "data-ocid": "pune-market.section",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-3 mb-12 sm:mb-16", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "span",
+            {
+              className: "text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full",
+              style: {
+                color: "#009FD4",
+                background: "rgba(0,159,212,0.08)",
+                border: "1px solid rgba(0,159,212,0.2)"
+              },
+              children: "PUNE MARKET EXPERTISE"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "h2",
+            {
+              className: "text-3xl sm:text-4xl font-bold",
+              style: { color: "#2D3142", lineHeight: 1.25 },
+              children: "Deep Understanding of Pune's Evolving Property Market"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-2xl text-base", style: { color: "#64748B" }, children: "DWELL has cultivated hands-on expertise across Pune's key residential and commercial zones — so you get hyper-local guidance, not generic advice." })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5",
+            "data-ocid": "pune-market.grid",
+            children: [
+              PUNE_AREAS.map((area, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: "bg-white rounded-xl p-5 flex flex-col gap-3 transition-all duration-300 cursor-default",
+                  style: {
+                    border: "1px solid rgba(0,159,212,0.12)",
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.04)"
+                  },
+                  onMouseEnter: (e) => {
+                    const el = e.currentTarget;
+                    el.style.transform = "translateY(-3px)";
+                    el.style.boxShadow = "0 8px 24px rgba(0,159,212,0.1)";
+                    el.style.borderColor = "rgba(0,159,212,0.3)";
+                  },
+                  onMouseLeave: (e) => {
+                    const el = e.currentTarget;
+                    el.style.transform = "translateY(0)";
+                    el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
+                    el.style.borderColor = "rgba(0,159,212,0.12)";
+                  },
+                  "data-ocid": `pune-market.card.${i + 1}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-2", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-bold", style: { color: "#009FD4" }, children: area.name }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          className: "text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0",
+                          style: {
+                            color: area.tagColor,
+                            background: area.tagBg,
+                            border: `1px solid ${area.tagColor}40`
+                          },
+                          children: area.tag
+                        }
+                      )
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "p",
+                      {
+                        className: "text-sm leading-relaxed",
+                        style: { color: "#64748B" },
+                        children: area.insight
+                      }
+                    )
+                  ]
+                },
+                area.id
+              )),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: "relative flex flex-col items-center justify-center gap-3 rounded-xl p-5 sm:col-span-2 lg:col-span-1",
+                  style: {
+                    background: "linear-gradient(135deg, #009FD4 0%, #007EB3 100%)",
+                    minHeight: "140px"
+                  },
+                  "data-ocid": "pune-market.explore_card",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "div",
+                      {
+                        className: "absolute inset-0 rounded-xl pointer-events-none",
+                        style: {
+                          background: "radial-gradient(ellipse at 70% 30%, rgba(255,255,255,0.12) 0%, transparent 60%)"
+                        },
+                        "aria-hidden": "true"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "p",
+                      {
+                        className: "text-white text-center text-sm font-medium relative z-10",
+                        style: { opacity: 0.9 },
+                        children: "Explore properties in these areas with DWELL's guidance"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "a",
+                      {
+                        href: "#contact",
+                        className: "relative z-10 text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200",
+                        style: {
+                          background: "rgba(255,255,255,0.15)",
+                          border: "1px solid rgba(255,255,255,0.4)",
+                          color: "#FFFFFF"
+                        },
+                        onMouseEnter: (e) => {
+                          e.currentTarget.style.background = "rgba(255,255,255,0.25)";
+                        },
+                        onMouseLeave: (e) => {
+                          e.currentTarget.style.background = "rgba(255,255,255,0.15)";
+                        },
+                        "data-ocid": "pune-market.explore_button",
+                        children: "Book Area Consultation"
+                      }
+                    )
+                  ]
+                }
+              )
+            ]
+          }
+        )
+      ] })
+    }
+  );
+}
+const NAV_LINKS = [
+  { label: "Home", href: "#home" },
+  { label: "Properties", href: "#properties" },
+  { label: "Commercial", href: "#commercial" },
+  { label: "Residential", href: "#residential" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" }
+];
+const properties = [
+  {
+    id: 1,
+    title: "Skyline Residences — Baner",
+    type: "2 & 3 BHK Apartments",
+    category: "Residential",
+    location: "Baner, Pune",
+    area: "1,050 – 1,680 sq ft",
+    bedrooms: "2–3 BHK",
+    price: "₹82 Lakhs onwards",
+    status: "Featured",
+    description: "Premium gated community in the heart of Baner with lush landscaped gardens, modern clubhouse, and excellent connectivity to IT corridors. Spacious sun-drenched apartments with premium finishes.",
+    amenities: [
+      "Clubhouse",
+      "Swimming Pool",
+      "Gym",
+      "24/7 Security",
+      "Power Backup",
+      "Kids Play Area"
+    ],
+    imageUrl: "/assets/generated/dwell-gated-community.dim_800x560.jpg"
+  },
+  {
+    id: 2,
+    title: "Prestige Green Villas — Wakad",
+    type: "Independent Villa",
+    category: "Residential",
+    location: "Wakad, Pune",
+    area: "2,400 sq ft",
+    bedrooms: "4 BHK",
+    price: "₹1.85 Crores",
+    status: "Available",
+    description: "Elegant independent villas with private gardens and premium interiors in the sought-after Wakad locale. Ideal for families wanting space, privacy, and proximity to Hinjewadi IT Park.",
+    amenities: [
+      "Private Garden",
+      "Covered Parking",
+      "Home Automation",
+      "Solar Panels",
+      "CCTV"
+    ],
+    imageUrl: "/assets/generated/dwell-luxury-villa.dim_800x560.jpg"
+  },
+  {
+    id: 3,
+    title: "Boulevard Heights — Kothrud",
+    type: "3 BHK Apartment",
+    category: "Residential",
+    location: "Kothrud, Pune",
+    area: "1,450 sq ft",
+    bedrooms: "3 BHK",
+    price: "₹1.15 Crores",
+    status: "Featured",
+    description: "Thoughtfully designed 3 BHK apartments in Kothrud with panoramic city views. Walking distance to schools, hospitals, and civic amenities. Ideal for established families.",
+    amenities: [
+      "Terrace Garden",
+      "Indoor Games",
+      "Yoga Deck",
+      "EV Charging",
+      "Visitor Parking"
+    ],
+    imageUrl: "/assets/generated/dwell-residential-apt.dim_800x560.jpg"
+  },
+  {
+    id: 4,
+    title: "Serene Living — Aundh",
+    type: "2 BHK Apartment",
+    category: "Residential",
+    location: "Aundh, Pune",
+    area: "980 sq ft",
+    bedrooms: "2 BHK",
+    price: "₹78 Lakhs",
+    status: "Available",
+    description: "Modern 2 BHK apartments in prime Aundh location, perfect for IT professionals and young families. Quality construction, excellent ventilation, and convenient access to malls and business districts.",
+    amenities: [
+      "Gym",
+      "Kids Pool",
+      "Co-working Space",
+      "Jogging Track",
+      "Security"
+    ],
+    imageUrl: "/assets/generated/dwell-apartment-interior.dim_800x560.jpg"
+  },
+  {
+    id: 5,
+    title: "Trade Hub Commercial — Hinjewadi",
+    type: "Office Space",
+    category: "Commercial",
+    location: "Hinjewadi, Pune",
+    area: "800 – 5,000 sq ft",
+    price: "₹55 – ₹65 / sq ft / mo",
+    status: "Available",
+    description: "Grade-A commercial office spaces in Pune's leading IT hub. Flexible configurations from startup suites to full-floor enterprise setups. Excellent ITES infrastructure and transport access.",
+    amenities: [
+      "Central AC",
+      "High-Speed Internet",
+      "Conference Rooms",
+      "Cafeteria",
+      "Parking",
+      "24/7 Access"
+    ],
+    imageUrl: "/assets/generated/dwell-commercial-office.dim_800x560.jpg"
+  },
+  {
+    id: 6,
+    title: "Retail Plaza — Bavdhan",
+    type: "Retail / Commercial",
+    category: "Commercial",
+    location: "Bavdhan, Pune",
+    area: "450 – 2,200 sq ft",
+    price: "₹1.20 Crores onwards",
+    status: "Featured",
+    description: "Premium retail and commercial units in the rapidly developing Bavdhan micro-market. High footfall catchment, ideal for F&B, showrooms, clinics, and services. Strong rental appreciation potential.",
+    amenities: [
+      "High Footfall",
+      "Ample Parking",
+      "Power Backup",
+      "CCTV",
+      "Loading Zone"
+    ],
+    imageUrl: "/assets/generated/dwell-commercial-retail.dim_800x560.jpg"
+  }
+];
 function Navbar() {
   const [scrolled, setScrolled] = reactExports.useState(false);
-  const [menuOpen, setMenuOpen] = reactExports.useState(false);
+  const [mobileOpen, setMobileOpen] = reactExports.useState(false);
   reactExports.useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const handleNavClick = reactExports.useCallback((href) => {
-    setMenuOpen(false);
+    setMobileOpen(false);
     const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    el == null ? void 0 : el.scrollIntoView({ behavior: "smooth" });
   }, []);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "header",
     {
+      "data-ocid": "navbar",
       className: "fixed top-0 left-0 right-0 z-50",
       style: {
-        transition: "background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease, padding 0.3s ease",
-        background: scrolled ? "rgba(15,15,16,0.88)" : "transparent",
-        backdropFilter: scrolled ? "blur(18px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(18px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(44,44,48,0.8)" : "1px solid transparent",
-        padding: scrolled ? "10px 0" : "18px 0"
+        transition: "background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease",
+        background: scrolled ? "rgba(255,255,255,0.92)" : "rgba(255,255,255,0.4)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
+        borderBottom: scrolled ? "1px solid rgba(229,231,235,0.9)" : "1px solid rgba(229,231,235,0.3)",
+        boxShadow: scrolled ? "0 1px 20px rgba(0,0,0,0.06)" : "none"
       },
-      "data-ocid": "navbar",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-6 flex items-center justify-between gap-8", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-16 lg:h-20", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "button",
             {
               type: "button",
-              onClick: () => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              },
-              className: "flex items-center shrink-0",
+              "data-ocid": "navbar.logo",
+              onClick: () => handleNavClick("#home"),
+              className: "flex items-center flex-shrink-0",
               style: {
                 background: "none",
                 border: "none",
                 cursor: "pointer",
                 padding: 0
               },
-              "data-ocid": "navbar.logo",
+              "aria-label": "DWELL Homes & Services",
               children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "img",
                 {
-                  src: "/assets/images/logo.webp",
-                  alt: "Grow Big Leasing & Real Estate",
-                  className: "h-10 w-auto object-contain",
-                  style: { transition: "opacity 0.3s ease" }
+                  src: "/assets/images/dwell-logo.jpg",
+                  alt: "DWELL Homes & Services",
+                  className: "h-10 w-auto object-contain rounded"
                 }
               )
             }
@@ -21007,146 +20751,137 @@ function Navbar() {
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "nav",
             {
-              className: "hidden md:flex items-center gap-8 flex-1 justify-center",
-              "data-ocid": "navbar.nav",
+              className: "hidden lg:flex items-center gap-1",
+              "aria-label": "Main navigation",
               children: NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                 "button",
                 {
                   type: "button",
                   onClick: () => handleNavClick(link.href),
-                  className: "relative text-sm font-medium tracking-wide group",
+                  "data-ocid": `navbar.link.${link.label.toLowerCase()}`,
+                  className: "relative px-4 py-2 text-sm font-medium transition-colors duration-200 group rounded",
                   style: {
-                    color: "#9A9A9A",
-                    fontFamily: "var(--font-display)",
-                    transition: "color 0.25s ease",
+                    color: "#2D3142",
                     background: "none",
                     border: "none",
                     cursor: "pointer",
-                    padding: "4px 0"
+                    fontFamily: "var(--font-display)"
                   },
                   onMouseEnter: (e) => {
-                    e.currentTarget.style.color = "#C89B3C";
+                    e.currentTarget.style.color = "#009FD4";
                   },
                   onMouseLeave: (e) => {
-                    e.currentTarget.style.color = "#9A9A9A";
+                    e.currentTarget.style.color = "#2D3142";
                   },
-                  "data-ocid": `navbar.link.${link.label.toLowerCase()}`,
                   children: [
                     link.label,
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "span",
                       {
-                        className: "absolute bottom-0 left-0 w-0 h-[1px] group-hover:w-full",
-                        style: {
-                          background: "linear-gradient(90deg, #C89B3C, #E2B95B)",
-                          transition: "width 0.3s ease"
-                        }
+                        className: "absolute bottom-0 left-4 right-4 h-0.5 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left",
+                        style: { backgroundColor: "#009FD4" }
                       }
                     )
                   ]
                 },
-                link.label
+                link.href
               ))
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden lg:flex items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
             "button",
             {
               type: "button",
-              onClick: () => handleNavClick("#contact"),
-              className: "hidden md:block btn-gold text-sm shrink-0",
               "data-ocid": "navbar.cta_button",
+              onClick: () => handleNavClick("#contact"),
+              className: "px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5",
+              style: {
+                backgroundColor: "#009FD4",
+                fontFamily: "var(--font-display)"
+              },
               children: "Book Consultation"
             }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "button",
             {
               type: "button",
-              onClick: () => setMenuOpen((o) => !o),
-              className: "md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center",
-              style: {
-                color: "#C89B3C",
-                background: "none",
-                border: "none",
-                cursor: "pointer"
-              },
-              "aria-label": menuOpen ? "Close menu" : "Open menu",
               "data-ocid": "navbar.hamburger",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "span",
-                {
-                  style: {
-                    display: "block",
-                    transition: "transform 0.3s ease, opacity 0.3s ease"
-                  },
-                  children: menuOpen ? /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 24 }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { size: 24 })
-                }
-              )
+              "aria-label": mobileOpen ? "Close menu" : "Open menu",
+              "aria-expanded": mobileOpen,
+              onClick: () => setMobileOpen((o) => !o),
+              className: "lg:hidden flex flex-col justify-center items-center w-11 h-11 gap-1.5 rounded-lg transition-colors hover:bg-black/5",
+              style: { background: "none", border: "none", cursor: "pointer" },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: `block h-0.5 w-6 rounded-full transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`,
+                    style: { backgroundColor: "#2D3142" }
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: `block h-0.5 w-6 rounded-full transition-all duration-300 ${mobileOpen ? "opacity-0 scale-x-0" : ""}`,
+                    style: { backgroundColor: "#2D3142" }
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "span",
+                  {
+                    className: `block h-0.5 w-6 rounded-full transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`,
+                    style: { backgroundColor: "#2D3142" }
+                  }
+                )
+              ]
             }
           )
-        ] }),
+        ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "md:hidden overflow-hidden",
-            style: {
-              maxHeight: menuOpen ? "400px" : "0",
-              transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-              background: "rgba(15,15,16,0.97)",
-              backdropFilter: "blur(20px)",
-              WebkitBackdropFilter: "blur(20px)"
-            },
             "data-ocid": "navbar.mobile_menu",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                style: {
-                  borderTop: "1px solid rgba(44,44,48,0.8)",
-                  padding: "1.25rem 1.5rem 1.5rem",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.25rem"
+            className: `lg:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`,
+            style: {
+              background: "rgba(255,255,255,0.97)",
+              backdropFilter: "blur(16px)",
+              borderTop: "1px solid rgba(229,231,235,0.8)"
+            },
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-4 py-4 space-y-1", children: [
+              NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  onClick: () => handleNavClick(link.href),
+                  "data-ocid": `navbar.mobile.${link.label.toLowerCase()}`,
+                  className: "w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-black/5",
+                  style: {
+                    color: "#2D3142",
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    fontFamily: "var(--font-display)"
+                  },
+                  children: link.label
                 },
-                children: [
-                  NAV_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "button",
-                    {
-                      type: "button",
-                      onClick: () => handleNavClick(link.href),
-                      className: "text-left text-base font-medium transition-colors duration-200 py-4 w-full",
-                      style: {
-                        color: "#9A9A9A",
-                        fontFamily: "var(--font-display)",
-                        background: "none",
-                        border: "none",
-                        cursor: "pointer",
-                        borderBottom: "1px solid rgba(44,44,48,0.4)"
-                      },
-                      onMouseEnter: (e) => {
-                        e.currentTarget.style.color = "#C89B3C";
-                      },
-                      onMouseLeave: (e) => {
-                        e.currentTarget.style.color = "#9A9A9A";
-                      },
-                      "data-ocid": `navbar.mobile.${link.label.toLowerCase()}`,
-                      children: link.label
-                    },
-                    link.label
-                  )),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "button",
-                    {
-                      type: "button",
-                      onClick: () => handleNavClick("#contact"),
-                      className: "btn-gold text-sm mt-4 text-center w-full",
-                      "data-ocid": "navbar.mobile.cta_button",
-                      children: "Book Consultation"
-                    }
-                  )
-                ]
-              }
-            )
+                link.href
+              )),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": "navbar.mobile.cta_button",
+                  onClick: () => handleNavClick("#contact"),
+                  className: "w-full px-4 py-3.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:opacity-90",
+                  style: {
+                    backgroundColor: "#009FD4",
+                    fontFamily: "var(--font-display)"
+                  },
+                  children: "Book Consultation"
+                }
+              ) })
+            ] })
           }
         )
       ]
@@ -21154,7 +20889,10 @@ function Navbar() {
   );
 }
 function PropertyModal({ property, onClose }) {
+  const closeRef = reactExports.useRef(null);
   reactExports.useEffect(() => {
+    var _a2;
+    (_a2 = closeRef.current) == null ? void 0 : _a2.focus();
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
     };
@@ -21165,17 +20903,41 @@ function PropertyModal({ property, onClose }) {
       document.body.style.overflow = "";
     };
   }, [onClose]);
+  const statusColors = {
+    Featured: {
+      bg: "rgba(201,169,110,0.12)",
+      text: "#C9A96E",
+      border: "1px solid rgba(201,169,110,0.4)"
+    },
+    Available: {
+      bg: "rgba(16,185,129,0.10)",
+      text: "#10B981",
+      border: "1px solid rgba(16,185,129,0.35)"
+    },
+    "Sold Out": {
+      bg: "rgba(107,114,128,0.10)",
+      text: "#6B7280",
+      border: "1px solid rgba(107,114,128,0.3)"
+    }
+  };
+  const sc = statusColors[property.status];
+  const whatsappMsg = encodeURIComponent(
+    `Hi DWELL Homes, I'm interested in ${property.title} (${property.location}). Please share more details.`
+  );
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
+    "dialog",
     {
-      className: "fixed inset-0 z-[100] flex items-center justify-center p-4",
+      open: true,
+      className: "fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-transparent",
+      "aria-modal": "true",
+      "aria-label": property.title,
       "data-ocid": "property_modal.dialog",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute inset-0",
-            style: { background: "rgba(0,0,0,0.80)", backdropFilter: "blur(8px)" },
+            style: { background: "rgba(0,0,0,0.60)", backdropFilter: "blur(6px)" },
             onClick: onClose,
             onKeyDown: (e) => e.key === "Escape" && onClose(),
             role: "button",
@@ -21186,14 +20948,31 @@ function PropertyModal({ property, onClose }) {
         /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
-            className: "relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl z-10",
+            className: "relative w-full sm:max-w-3xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto rounded-t-3xl sm:rounded-2xl z-10",
             style: {
-              background: "#1A1A1D",
-              border: "1px solid #2C2C30",
-              animation: "fadeInUp 0.3s ease"
+              background: "#fff",
+              boxShadow: "0 24px 80px rgba(0,0,0,0.25)",
+              animation: "modalIn 0.3s cubic-bezier(0.34,1.56,0.64,1)"
             },
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative h-64 overflow-hidden rounded-t-2xl flex-shrink-0", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  ref: closeRef,
+                  onClick: onClose,
+                  className: "absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110",
+                  style: {
+                    background: "rgba(255,255,255,0.95)",
+                    boxShadow: "0 2px 12px rgba(0,0,0,0.12)",
+                    color: "#2D3142"
+                  },
+                  "aria-label": "Close modal",
+                  "data-ocid": "property_modal.close_button",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 18, strokeWidth: 2.5 })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative h-56 sm:h-72 overflow-hidden rounded-t-3xl sm:rounded-t-2xl flex-shrink-0", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "img",
                   {
@@ -21202,239 +20981,269 @@ function PropertyModal({ property, onClose }) {
                     className: "w-full h-full object-cover"
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "span",
                   {
-                    className: "absolute inset-0",
+                    className: "absolute bottom-4 left-4 flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full text-white",
                     style: {
-                      background: "linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(15,15,16,0.7))"
-                    }
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "button",
-                  {
-                    type: "button",
-                    onClick: onClose,
-                    className: "absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110",
-                    style: {
-                      background: "rgba(15,15,16,0.70)",
-                      color: "#F5F5F5",
-                      border: "1px solid rgba(200,155,60,0.3)"
+                      background: "rgba(0,159,212,0.9)",
+                      backdropFilter: "blur(4px)"
                     },
-                    "aria-label": "Close modal",
-                    "data-ocid": "property_modal.close_button",
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 18 })
+                    children: [
+                      property.category === "Residential" ? /* @__PURE__ */ jsxRuntimeExports.jsx(House, { size: 12, strokeWidth: 2.5 }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { size: 12, strokeWidth: 2.5 }),
+                      property.category
+                    ]
                   }
                 )
               ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 sm:p-6 flex flex-col gap-5 sm:gap-6", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap items-center gap-2", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "span",
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-5 sm:p-7 flex flex-col gap-5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap items-start gap-3", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 min-w-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "h2",
                     {
-                      className: "text-xs font-bold px-3 py-1 rounded-full",
-                      style: {
-                        background: "rgba(200,155,60,0.15)",
-                        color: "#C89B3C",
-                        border: "1px solid rgba(200,155,60,0.35)",
-                        fontFamily: "var(--font-display)"
-                      },
-                      children: property.type
+                      className: "text-2xl sm:text-3xl font-black leading-tight",
+                      style: { color: "#2D3142", fontFamily: "var(--font-display)" },
+                      children: property.title
                     }
-                  ),
+                  ) }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "span",
                     {
-                      className: "text-xs font-semibold px-3 py-1 rounded-full",
-                      style: {
-                        background: "rgba(76,175,80,0.15)",
-                        color: "#4CAF50",
-                        border: "1px solid rgba(76,175,80,0.3)"
-                      },
+                      className: "text-xs font-bold px-3 py-1.5 rounded-full flex-shrink-0",
+                      style: { background: sc.bg, color: sc.text, border: sc.border },
                       children: property.status
                     }
                   )
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "h2",
-                  {
-                    className: "text-2xl sm:text-3xl font-black leading-tight",
-                    style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
-                    children: property.title
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", style: { color: "#9A9A9A" }, children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { size: 15, style: { color: "#C89B3C" } }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm", children: property.location })
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3", children: [
-                  {
-                    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Maximize2, { size: 14 }),
-                    label: "Area",
-                    value: property.area
-                  },
-                  {
-                    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { size: 14 }),
-                    label: "Price",
-                    value: property.price
-                  },
-                  {
-                    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { size: 14 }),
-                    label: "ROI",
-                    value: property.roi
-                  },
-                  {
-                    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { size: 14 }),
-                    label: "Investment Type",
-                    value: property.investmentType
-                  }
-                ].map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   "div",
                   {
-                    className: "flex flex-col gap-1.5 p-3 rounded-xl",
-                    style: {
-                      background: "rgba(44,44,48,0.5)",
-                      border: "1px solid rgba(44,44,48,0.8)"
-                    },
+                    className: "text-2xl sm:text-3xl font-black",
+                    style: { color: "#009FD4", fontFamily: "var(--font-display)" },
+                    children: property.price
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "grid grid-cols-2 sm:grid-cols-3 gap-3",
+                    style: { borderTop: "1px solid #F0F2F5", paddingTop: "16px" },
                     children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                        "div",
-                        {
-                          className: "flex items-center gap-1.5 text-xs",
-                          style: { color: "#9A9A9A" },
-                          children: [
-                            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C89B3C" }, children: item.icon }),
-                            item.label
-                          ]
-                        }
-                      ),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "span",
-                        {
-                          className: "font-bold text-sm",
-                          style: {
-                            color: "#F5F5F5",
-                            fontFamily: "var(--font-display)"
-                          },
-                          children: item.value
-                        }
-                      )
-                    ]
-                  },
-                  item.label
-                )) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base leading-relaxed", style: { color: "#9A9A9A" }, children: property.description }),
+                      {
+                        icon: /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { size: 14 }),
+                        label: "Location",
+                        value: property.location
+                      },
+                      {
+                        icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Maximize2, { size: 14 }),
+                        label: "Area",
+                        value: property.area
+                      },
+                      property.bedrooms ? {
+                        icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Bed, { size: 14 }),
+                        label: "Configuration",
+                        value: property.bedrooms
+                      } : {
+                        icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { size: 14 }),
+                        label: "Type",
+                        value: property.type
+                      }
+                    ].map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "div",
+                      {
+                        className: "flex flex-col gap-1.5 p-3 rounded-xl",
+                        style: { background: "#F8FAFC", border: "1px solid #EEF2F6" },
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                            "div",
+                            {
+                              className: "flex items-center gap-1.5 text-xs font-medium",
+                              style: { color: "#6B7280" },
+                              children: [
+                                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#009FD4" }, children: item.icon }),
+                                item.label
+                              ]
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "span",
+                            {
+                              className: "font-bold text-sm leading-tight",
+                              style: {
+                                color: "#2D3142",
+                                fontFamily: "var(--font-display)"
+                              },
+                              children: item.value
+                            }
+                          )
+                        ]
+                      },
+                      item.label
+                    ))
+                  }
+                ),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "h4",
                     {
-                      className: "font-semibold text-sm mb-3",
-                      style: {
-                        color: "#E2B95B",
-                        fontFamily: "var(--font-display)",
-                        letterSpacing: "0.05em"
-                      },
-                      children: "KEY FEATURES"
+                      className: "text-xs font-bold uppercase tracking-widest mb-2",
+                      style: { color: "#009FD4", letterSpacing: "0.12em" },
+                      children: "About This Property"
                     }
                   ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-2", children: property.features.map((f) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                    "div",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
                     {
-                      className: "flex items-center gap-2 text-sm",
-                      style: { color: "#9A9A9A" },
+                      className: "text-sm sm:text-base leading-relaxed",
+                      style: { color: "#6B7280" },
+                      children: property.description
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "h4",
+                    {
+                      className: "text-xs font-bold uppercase tracking-widest mb-3",
+                      style: { color: "#009FD4", letterSpacing: "0.12em" },
+                      children: "Amenities & Features"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: property.amenities.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "span",
+                    {
+                      className: "flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-full font-medium",
+                      style: {
+                        background: "#F0F7FB",
+                        color: "#2D3142",
+                        border: "1px solid rgba(0,159,212,0.2)"
+                      },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
                           CircleCheck,
                           {
-                            size: 14,
-                            style: { color: "#C89B3C", flexShrink: 0 }
+                            size: 12,
+                            style: { color: "#10B981", flexShrink: 0 }
                           }
                         ),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: f })
+                        a
                       ]
                     },
-                    f
+                    a
                   )) })
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   "div",
                   {
-                    className: "rounded-xl p-5 flex flex-col gap-4",
+                    className: "rounded-2xl p-5",
                     style: {
-                      background: "rgba(200,155,60,0.05)",
-                      border: "1px solid rgba(200,155,60,0.15)"
+                      background: "linear-gradient(135deg, #F0F9FF, #EFF6FF)",
+                      border: "1px solid rgba(0,159,212,0.15)"
                     },
                     children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "h4",
+                        "p",
                         {
-                          className: "font-bold text-base text-center",
-                          style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
+                          className: "font-bold text-base text-center mb-4",
+                          style: { color: "#2D3142", fontFamily: "var(--font-display)" },
                           children: "Interested in this property?"
                         }
                       ),
                       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row gap-3", children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                          "a",
+                          "button",
                           {
-                            href: "tel:7572905655",
-                            className: "flex-1 btn-gold flex items-center justify-center gap-2 text-sm py-3",
-                            "data-ocid": "property_modal.call_button",
+                            type: "button",
+                            onClick: () => {
+                              var _a2;
+                              onClose();
+                              (_a2 = document.getElementById("contact")) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+                            },
+                            className: "flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-200",
+                            style: {
+                              background: "linear-gradient(135deg, #009FD4, #00B4E6)",
+                              boxShadow: "0 4px 12px rgba(0,159,212,0.3)"
+                            },
+                            "data-ocid": "property_modal.book_visit_button",
                             children: [
                               /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { size: 15 }),
-                              "Call Us Now"
+                              "Book Site Visit"
                             ]
                           }
                         ),
                         /* @__PURE__ */ jsxRuntimeExports.jsxs(
                           "a",
                           {
-                            href: "https://wa.me/917572905655",
+                            href: `https://wa.me/917572905655?text=${whatsappMsg}`,
                             target: "_blank",
                             rel: "noopener noreferrer",
-                            className: "flex-1 btn-outline flex items-center justify-center gap-2 text-sm py-3",
+                            className: "flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold transition-all duration-200",
+                            style: {
+                              background: "#25D366",
+                              color: "#fff",
+                              boxShadow: "0 4px 12px rgba(37,211,102,0.3)"
+                            },
                             "data-ocid": "property_modal.whatsapp_button",
                             children: [
-                              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                                "svg",
-                                {
-                                  viewBox: "0 0 24 24",
-                                  width: "15",
-                                  height: "15",
-                                  fill: "currentColor",
-                                  role: "img",
-                                  "aria-label": "WhatsApp",
-                                  children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" })
-                                }
-                              ),
-                              "Chat on WhatsApp"
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(MessageCircle, { size: 15 }),
+                              "WhatsApp Inquiry"
                             ]
                           }
                         )
-                      ] }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-center", style: { color: "#9A9A9A" }, children: "Or visit us at Near Ice Factory, road, Udaipur, Rajasthan 313001" })
+                      ] })
                     ]
                   }
                 )
               ] })
             ]
           }
-        )
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("style", { children: `
+        @keyframes modalIn {
+          from { opacity: 0; transform: scale(0.95) translateY(10px); }
+          to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @media (max-width: 639px) {
+          @keyframes modalIn {
+            from { opacity: 0; transform: translateY(100%); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+        }
+      ` })
       ]
     }
   );
 }
-const FILTERS = [
-  "All",
-  "Commercial",
-  "Hospitality",
-  "Warehouse",
-  "F&B",
-  "Industrial",
-  "Farm House"
-];
+const FILTERS = ["All", "Residential", "Commercial"];
+function StatusBadge({ status }) {
+  const styles = {
+    Featured: {
+      bg: "rgba(201,169,110,0.15)",
+      text: "#C9A96E",
+      border: "1px solid rgba(201,169,110,0.4)"
+    },
+    Available: {
+      bg: "rgba(16,185,129,0.12)",
+      text: "#10B981",
+      border: "1px solid rgba(16,185,129,0.35)"
+    },
+    "Sold Out": {
+      bg: "rgba(107,114,128,0.12)",
+      text: "#6B7280",
+      border: "1px solid rgba(107,114,128,0.3)"
+    }
+  };
+  const s = styles[status];
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "span",
+    {
+      className: "text-xs font-bold px-2.5 py-1 rounded-full",
+      style: { background: s.bg, color: s.text, border: s.border },
+      children: status
+    }
+  );
+}
 function PropertyCard({
   property,
   onSelect,
@@ -21444,124 +21253,137 @@ function PropertyCard({
     "button",
     {
       type: "button",
-      className: "group card-lift rounded-xl overflow-hidden cursor-pointer section-reveal text-left w-full",
+      onClick: () => onSelect(property),
+      className: "group text-left w-full rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 bg-white",
       style: {
-        background: "#1A1A1D",
-        border: "1px solid #2C2C30",
-        transitionDelay: `${index2 * 0.07}s`,
-        transition: "border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease"
+        boxShadow: "0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05)",
+        border: "1px solid #E8ECF0"
       },
       onMouseEnter: (e) => {
-        e.currentTarget.style.borderColor = "#C89B3C";
-        e.currentTarget.style.boxShadow = "0 0 24px rgba(200,155,60,0.15)";
+        e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,159,212,0.15), 0 4px 16px rgba(0,0,0,0.08)";
+        e.currentTarget.style.borderColor = "rgba(0,159,212,0.3)";
       },
       onMouseLeave: (e) => {
-        e.currentTarget.style.borderColor = "#2C2C30";
-        e.currentTarget.style.boxShadow = "";
+        e.currentTarget.style.boxShadow = "0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05)";
+        e.currentTarget.style.borderColor = "#E8ECF0";
       },
-      onClick: () => onSelect(property),
       "data-ocid": `properties.item.${index2 + 1}`,
+      "aria-label": `View details for ${property.title}`,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative h-48 sm:h-52 overflow-hidden", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative h-52 overflow-hidden", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
               src: property.imageUrl,
               alt: property.title,
-              className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110",
+              className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
               loading: "lazy"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100",
-              style: {
-                background: "linear-gradient(to bottom, rgba(15,15,16,0.3), rgba(15,15,16,0.6))"
-              }
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "span",
             {
-              className: "absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full",
+              className: "absolute top-3 left-3 flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full text-white",
               style: {
-                background: "rgba(200,155,60,0.85)",
-                color: "#0F0F10",
-                fontFamily: "var(--font-display)"
+                background: "rgba(0,159,212,0.9)",
+                backdropFilter: "blur(4px)"
               },
-              children: property.type
+              children: [
+                property.category === "Residential" ? /* @__PURE__ */ jsxRuntimeExports.jsx(House, { size: 11, strokeWidth: 2.5 }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { size: 11, strokeWidth: 2.5 }),
+                property.type
+              ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "span",
-            {
-              className: "absolute top-3 right-3 text-xs font-semibold px-3 py-1 rounded-full",
-              style: {
-                background: "rgba(76,175,80,0.15)",
-                color: "#4CAF50",
-                border: "1px solid rgba(76,175,80,0.3)"
-              },
-              children: property.status
-            }
-          )
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 right-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge, { status: property.status }) })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-5 flex flex-col gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 sm:p-5 flex flex-col gap-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "h3",
             {
-              className: "font-bold text-lg leading-snug line-clamp-2",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
+              className: "font-bold text-base sm:text-lg leading-snug line-clamp-2",
+              style: { color: "#2D3142", fontFamily: "var(--font-display)" },
               children: property.title
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "div",
             {
-              className: "flex items-center gap-1.5 text-sm",
-              style: { color: "#9A9A9A" },
+              className: "flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm",
+              style: { color: "#6B7280" },
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { size: 13, style: { color: "#C89B3C", flexShrink: 0 } }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "truncate", children: property.location })
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { size: 13, style: { color: "#009FD4", flexShrink: 0 } }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "truncate max-w-[120px]", children: property.location })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Maximize2, { size: 13, style: { color: "#009FD4", flexShrink: 0 } }),
+                  property.area
+                ] }),
+                property.bedrooms && /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Bed, { size: 13, style: { color: "#009FD4", flexShrink: 0 } }),
+                  property.bedrooms
+                ] })
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
             "div",
             {
-              className: "flex items-center gap-1.5 text-sm",
-              style: { color: "#9A9A9A" },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Maximize2, { size: 13, style: { color: "#C89B3C", flexShrink: 0 } }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: property.area })
-              ]
+              className: "font-bold text-xl",
+              style: { color: "#C9A96E", fontFamily: "var(--font-display)" },
+              children: property.price
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mt-1", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-1.5", children: [
+            property.amenities.slice(0, 3).map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
               "span",
               {
-                className: "font-bold text-xl",
-                style: { color: "#C89B3C", fontFamily: "var(--font-display)" },
-                children: property.price
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
+                className: "text-xs px-2.5 py-1 rounded-full font-medium",
+                style: {
+                  background: "#F0F7FB",
+                  color: "#009FD4",
+                  border: "1px solid rgba(0,159,212,0.2)"
+                },
+                children: a
+              },
+              a
+            )),
+            property.amenities.length > 3 && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "span",
               {
-                className: "flex items-center gap-1 text-sm",
-                style: { color: "#E2B95B" },
+                className: "text-xs px-2.5 py-1 rounded-full font-medium",
+                style: { background: "#F0F2F5", color: "#6B7280" },
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { size: 13 }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: property.roi })
+                  "+",
+                  property.amenities.length - 3,
+                  " more"
                 ]
               }
             )
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
+            "button",
             {
-              className: "mt-2 w-full btn-gold py-2.5 text-sm font-semibold text-center",
+              type: "button",
+              className: "mt-1 w-full py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 border",
+              style: {
+                color: "#009FD4",
+                borderColor: "#009FD4",
+                background: "transparent"
+              },
+              onMouseEnter: (e) => {
+                const b = e.currentTarget;
+                b.style.background = "#009FD4";
+                b.style.color = "#fff";
+              },
+              onMouseLeave: (e) => {
+                const b = e.currentTarget;
+                b.style.background = "transparent";
+                b.style.color = "#009FD4";
+              },
+              tabIndex: -1,
+              "aria-hidden": "true",
               "data-ocid": `properties.view_button.${index2 + 1}`,
               children: "View Details"
             }
@@ -21575,21 +21397,22 @@ function PropertyShowcase() {
   const [filter, setFilter] = reactExports.useState("All");
   const [selected, setSelected] = reactExports.useState(null);
   const sectionRef = reactExports.useRef(null);
-  const filtered = filter === "All" ? PROPERTIES : PROPERTIES.filter((p) => p.type === filter);
+  const filtered = reactExports.useMemo(
+    () => filter === "All" ? properties : properties.filter((p) => p.category === filter),
+    [filter]
+  );
   reactExports.useEffect(() => {
     var _a2;
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) entry.target.classList.add("visible");
+          if (entry.isIntersecting) entry.target.classList.add("prop-visible");
         }
       },
-      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
     );
-    const targets = (_a2 = sectionRef.current) == null ? void 0 : _a2.querySelectorAll(".section-reveal");
-    if (targets) {
-      for (const el of targets) observer.observe(el);
-    }
+    const cards = (_a2 = sectionRef.current) == null ? void 0 : _a2.querySelectorAll(".prop-card");
+    if (cards) for (const el of cards) observer.observe(el);
     return () => observer.disconnect();
   }, []);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -21597,93 +21420,141 @@ function PropertyShowcase() {
     {
       id: "properties",
       className: "py-16 sm:py-24 px-4 sm:px-6",
-      style: { background: "#0F0F10" },
+      style: { background: "#F8FAFC" },
       "data-ocid": "properties.section",
       ref: sectionRef,
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-5 mb-14 section-reveal", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-12", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "span",
               {
-                className: "text-xs font-bold tracking-widest uppercase",
-                style: { color: "#C89B3C", letterSpacing: "0.2em" },
-                children: "LIVE OPPORTUNITIES"
+                className: "inline-block text-xs font-bold tracking-widest uppercase mb-3",
+                style: { color: "#009FD4", letterSpacing: "0.18em" },
+                children: "Featured Properties"
               }
             ),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               "h2",
               {
-                className: "text-3xl sm:text-4xl lg:text-5xl font-bold",
-                style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
+                className: "text-3xl sm:text-4xl lg:text-5xl font-bold mb-4",
+                style: { color: "#2D3142", fontFamily: "var(--font-display)" },
                 children: [
-                  "Featured ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient-gold", children: "Properties" })
+                  "Explore Our",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#009FD4" }, children: "Featured Properties" })
                 ]
               }
             ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-xl text-base", style: { color: "#9A9A9A" }, children: "Curated commercial, hospitality, and industrial properties across Udaipur." })
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "w-16 h-1 rounded-full mx-auto mb-5",
+                style: { background: "linear-gradient(90deg, #009FD4, #C9A96E)" }
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                className: "max-w-xl mx-auto text-base",
+                style: { color: "#6B7280" },
+                children: "Carefully curated residential and commercial properties across Pune's most sought-after micro-markets."
+              }
+            )
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "div",
             {
-              className: "flex overflow-x-auto gap-2 mb-12 section-reveal pb-2 no-scrollbar",
+              className: "flex items-center justify-center flex-wrap gap-2 mb-10",
               "data-ocid": "properties.filter_tabs",
-              children: FILTERS.map((f) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  type: "button",
-                  onClick: () => setFilter(f),
-                  className: "px-4 sm:px-5 py-2 text-xs font-semibold rounded-full transition-all duration-200 whitespace-nowrap flex-shrink-0",
-                  style: {
-                    background: filter === f ? "#C89B3C" : "#1A1A1D",
-                    color: filter === f ? "#0F0F10" : "#9A9A9A",
-                    border: filter === f ? "1px solid #C89B3C" : "1px solid #2C2C30",
-                    fontFamily: "var(--font-display)"
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SlidersHorizontal, { size: 15, style: { color: "#6B7280" } }),
+                FILTERS.map((f) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    type: "button",
+                    onClick: () => setFilter(f),
+                    className: "px-5 py-2 text-sm font-semibold rounded-full transition-all duration-200",
+                    style: {
+                      background: filter === f ? "#009FD4" : "#fff",
+                      color: filter === f ? "#fff" : "#6B7280",
+                      border: filter === f ? "1px solid #009FD4" : "1px solid #E2E8F0",
+                      boxShadow: filter === f ? "0 4px 12px rgba(0,159,212,0.25)" : "none"
+                    },
+                    "data-ocid": `properties.filter.${f.toLowerCase()}`,
+                    children: f
                   },
-                  onMouseEnter: (e) => {
-                    if (filter !== f)
-                      e.currentTarget.style.color = "#C89B3C";
-                  },
-                  onMouseLeave: (e) => {
-                    if (filter !== f)
-                      e.currentTarget.style.color = "#9A9A9A";
-                  },
-                  "data-ocid": `properties.filter.${f.toLowerCase().replace(/[^a-z0-9]/g, "_")}`,
-                  children: f
-                },
-                f
-              ))
+                  f
+                ))
+              ]
             }
           ),
           filtered.length > 0 ? /* @__PURE__ */ jsxRuntimeExports.jsx(
             "div",
             {
-              className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6",
+              className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6",
               "data-ocid": "properties.list",
               children: filtered.map((p, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                PropertyCard,
+                "div",
                 {
-                  property: p,
-                  onSelect: setSelected,
-                  index: i
+                  className: "prop-card opacity-0 translate-y-4 transition-all duration-500",
+                  style: { transitionDelay: `${i * 80}ms` },
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyCard, { property: p, onSelect: setSelected, index: i })
                 },
                 p.id
               ))
             }
-          ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center py-20", "data-ocid": "properties.empty_state", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg mb-2", style: { color: "#9A9A9A" }, children: "No properties in this category." }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm", style: { color: "#9A9A9A" }, children: "Contact us for specific requirements." })
-          ] })
+          ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: "text-center py-20 rounded-2xl",
+              style: { background: "#fff", border: "1px dashed #E2E8F0" },
+              "data-ocid": "properties.empty_state",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Building2,
+                  {
+                    size: 40,
+                    className: "mx-auto mb-3",
+                    style: { color: "#CBD5E1" }
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    className: "text-lg font-semibold mb-2",
+                    style: { color: "#2D3142" },
+                    children: "No properties in this category."
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm", style: { color: "#6B7280" }, children: "Contact us for personalized property guidance." })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-center mt-12", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: "#contact",
+              className: "inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 text-white",
+              style: {
+                background: "linear-gradient(135deg, #009FD4, #00B4E6)",
+                boxShadow: "0 4px 20px rgba(0,159,212,0.3)"
+              },
+              "data-ocid": "properties.consult_button",
+              children: "Talk to a Property Expert"
+            }
+          ) })
         ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("style", { children: `
+        .prop-card.prop-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      ` }),
         selected && /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyModal, { property: selected, onClose: () => setSelected(null) })
       ]
     }
   );
-}
-function Stars() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-0.5", children: [1, 2, 3, 4, 5].map((i) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C89B3C", fontSize: "15px" }, children: "★" }, i)) });
 }
 function Testimonials() {
   const [active, setActive] = reactExports.useState(0);
@@ -21692,19 +21563,63 @@ function Testimonials() {
   const intervalRef = reactExports.useRef(null);
   const isHoveredRef = reactExports.useRef(isHovered);
   isHoveredRef.current = isHovered;
+  const testimonials = [
+    {
+      id: 1,
+      quote: "DWELL guided us through our first home purchase in Baner like true advisors. Their transparency made the entire process stress-free.",
+      name: "Rohan & Priya Sharma",
+      type: "Homebuyer",
+      avatar: "RS"
+    },
+    {
+      id: 2,
+      quote: "Relocated from Bangalore and DWELL made finding a Wakad apartment seamless. They understood exactly what we needed and delivered.",
+      name: "Vikram Nair",
+      type: "IT Professional",
+      avatar: "VN"
+    },
+    {
+      id: 3,
+      quote: "Found the perfect office space in Hinjewadi with DWELL's help. Their commercial expertise is unmatched in Pune.",
+      name: "Suhas Deshpande",
+      type: "Commercial Client",
+      avatar: "SD"
+    },
+    {
+      id: 4,
+      quote: "Transparent from day one — absolutely no pressure tactics. DWELL truly puts the client's interest first. A rare find.",
+      name: "Meena & Rahul Joshi",
+      type: "Family Homebuyer",
+      avatar: "MJ"
+    },
+    {
+      id: 5,
+      quote: "I've recommended DWELL to my entire team at work. The quality of guidance and follow-through is exceptional.",
+      name: "Anjali Patil",
+      type: "IT Professional",
+      avatar: "AP"
+    },
+    {
+      id: 6,
+      quote: "Best decision to consult DWELL before buying. They helped us avoid costly mistakes and find a property we truly love.",
+      name: "Devendra & Sujata Kulkarni",
+      type: "Property Investor",
+      avatar: "DK"
+    }
+  ];
   reactExports.useEffect(() => {
-    const startAuto = () => {
+    const tick = () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
       intervalRef.current = setInterval(() => {
         if (isHoveredRef.current) return;
         setAnimating(true);
         setTimeout(() => {
-          setActive((a) => (a + 1) % TESTIMONIALS.length);
+          setActive((a) => (a + 1) % testimonials.length);
           setAnimating(false);
         }, 280);
-      }, 2500);
+      }, 3e3);
     };
-    startAuto();
+    tick();
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
@@ -21714,57 +21629,167 @@ function Testimonials() {
     if (intervalRef.current) clearInterval(intervalRef.current);
     setAnimating(true);
     setTimeout(() => {
-      setActive((a) => (a + dir + TESTIMONIALS.length) % TESTIMONIALS.length);
+      setActive((a) => (a + dir + testimonials.length) % testimonials.length);
       setAnimating(false);
     }, 250);
-    if (intervalRef.current) clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       if (isHoveredRef.current) return;
       setAnimating(true);
       setTimeout(() => {
-        setActive((a) => (a + 1) % TESTIMONIALS.length);
+        setActive((a) => (a + 1) % testimonials.length);
         setAnimating(false);
       }, 280);
-    }, 2500);
+    }, 3e3);
   };
-  const t = TESTIMONIALS[active];
+  const t = testimonials[active];
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "section",
     {
       id: "testimonials",
       className: "py-16 sm:py-24 px-4 sm:px-6",
-      style: { background: "var(--color-bg)" },
+      style: { background: "#F0F2F5" },
       "data-ocid": "testimonials.section",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-5xl mx-auto", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-4 mb-16 section-reveal", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "span",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center text-center gap-3 mb-12", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
             {
-              className: "text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full",
+              className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest",
               style: {
-                color: "#C89B3C",
-                background: "rgba(200,155,60,0.1)",
-                border: "1px solid rgba(200,155,60,0.25)",
-                fontFamily: "var(--font-display)"
+                background: "rgba(0,159,212,0.1)",
+                border: "1px solid rgba(0,159,212,0.25)",
+                color: "#009FD4"
               },
-              children: "CLIENT STORIES"
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "★" }),
+                " CLIENT STORIES"
+              ]
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "h2",
             {
               className: "text-3xl sm:text-4xl lg:text-5xl font-bold",
-              style: { color: "#F5F5F5", fontFamily: "var(--font-display)" },
+              style: { color: "#2D3142" },
               children: "What Our Clients Say"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "max-w-xl text-base", style: { color: "#9A9A9A" }, children: "Real results from real businesses who expanded with Grow Big." })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: "flex items-center gap-3 px-5 py-2.5 rounded-full mt-1",
+              style: {
+                background: "white",
+                boxShadow: "0 2px 16px rgba(0,0,0,0.08)",
+                border: "1px solid rgba(201,169,110,0.3)"
+              },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("svg", { width: "20", height: "20", viewBox: "0 0 24 24", "aria-hidden": "true", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z",
+                      fill: "#4285F4"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z",
+                      fill: "#34A853"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z",
+                      fill: "#FBBC05"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z",
+                      fill: "#EA4335"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-0.5", children: [1, 2, 3, 4, 5].map((i) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C9A96E", fontSize: "15px" }, children: "★" }, i)) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-bold text-sm", style: { color: "#2D3142" }, children: "5.0" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs", style: { color: "#6b7280" }, children: "Google Rating" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base max-w-lg", style: { color: "#6b7280" }, children: "Real stories from real families and professionals across Pune." })
         ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden lg:grid grid-cols-3 gap-5 mb-10", children: testimonials.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            className: "text-left w-full rounded-2xl p-6 transition-all duration-300 cursor-pointer",
+            style: {
+              background: "rgba(255,255,255,0.8)",
+              backdropFilter: "blur(12px)",
+              WebkitBackdropFilter: "blur(12px)",
+              border: "1px solid rgba(255,255,255,0.6)",
+              boxShadow: active === item.id - 1 ? "0 8px 32px rgba(0,159,212,0.18), 0 2px 8px rgba(0,0,0,0.06)" : "0 2px 16px rgba(0,0,0,0.06)",
+              borderBottom: active === item.id - 1 ? "3px solid #009FD4" : "3px solid transparent"
+            },
+            onClick: () => setActive(item.id - 1),
+            "data-ocid": `testimonials.card.${item.id}`,
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-0.5 mb-3", children: [1, 2, 3, 4, 5].map((i) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C9A96E", fontSize: "14px" }, children: "★" }, i)) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "p",
+                {
+                  className: "text-sm leading-relaxed italic mb-4",
+                  style: { color: "#4b5563" },
+                  children: [
+                    "“",
+                    item.quote,
+                    "”"
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0",
+                    style: {
+                      background: "linear-gradient(135deg,#009FD4,#0080aa)",
+                      color: "white"
+                    },
+                    children: item.avatar
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "font-bold text-sm",
+                      style: { color: "#2D3142" },
+                      children: item.name
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "text-xs mt-0.5 font-medium",
+                      style: { color: "#009FD4" },
+                      children: item.type
+                    }
+                  )
+                ] })
+              ] })
+            ]
+          },
+          item.id
+        )) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
-            className: "section-reveal",
+            className: "lg:hidden",
             onMouseEnter: () => setIsHovered(true),
             onMouseLeave: () => setIsHovered(false),
             "data-ocid": "testimonials.carousel",
@@ -21772,34 +21797,25 @@ function Testimonials() {
               /* @__PURE__ */ jsxRuntimeExports.jsxs(
                 "div",
                 {
-                  className: "relative rounded-2xl p-6 sm:p-10 glow-gold-hover",
+                  className: "rounded-2xl p-6 sm:p-8",
                   style: {
-                    background: "#1A1A1D",
-                    border: "1px solid #2C2C30",
-                    borderLeft: "4px solid #C89B3C",
+                    background: "rgba(255,255,255,0.85)",
+                    backdropFilter: "blur(16px)",
+                    WebkitBackdropFilter: "blur(16px)",
+                    border: "1px solid rgba(255,255,255,0.6)",
+                    boxShadow: "0 4px 32px rgba(0,0,0,0.08)",
+                    borderBottom: "3px solid #009FD4",
                     opacity: animating ? 0 : 1,
-                    transform: animating ? "translateY(12px)" : "translateY(0)",
+                    transform: animating ? "translateY(10px)" : "translateY(0)",
                     transition: "opacity 0.28s ease, transform 0.28s ease"
                   },
                   children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "div",
-                      {
-                        className: "absolute top-6 right-8 text-8xl leading-none select-none",
-                        style: {
-                          color: "rgba(200,155,60,0.12)",
-                          fontFamily: "Georgia, serif"
-                        },
-                        "aria-hidden": "true",
-                        children: "“"
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stars, {}) }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-0.5 mb-3", children: [1, 2, 3, 4, 5].map((i) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C9A96E", fontSize: "16px" }, children: "★" }, i)) }),
                     /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "blockquote",
                       {
-                        className: "text-sm sm:text-lg leading-relaxed mb-6 sm:mb-8 italic relative z-10",
-                        style: { color: "#F5F5F5" },
+                        className: "text-base sm:text-lg leading-relaxed italic mb-6",
+                        style: { color: "#4b5563" },
                         "data-ocid": "testimonials.active_quote",
                         children: [
                           "“",
@@ -21808,72 +21824,52 @@ function Testimonials() {
                         ]
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
                         "div",
                         {
                           className: "w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0",
                           style: {
-                            background: "linear-gradient(135deg,#C89B3C,#E2B95B)",
-                            color: "#0F0F10",
-                            fontFamily: "var(--font-display)"
+                            background: "linear-gradient(135deg,#009FD4,#0080aa)",
+                            color: "white"
                           },
                           children: t.avatar
                         }
                       ),
                       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-bold", style: { color: "#2D3142" }, children: t.name }),
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
                           "div",
                           {
-                            className: "font-bold text-sm",
-                            style: {
-                              color: "#F5F5F5",
-                              fontFamily: "var(--font-display)"
-                            },
-                            children: t.name
+                            className: "text-sm font-medium mt-0.5",
+                            style: { color: "#009FD4" },
+                            children: t.type
                           }
-                        ),
-                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs mt-0.5", style: { color: "#9A9A9A" }, children: [
-                          t.role,
-                          " • ",
-                          t.company
-                        ] })
+                        )
                       ] })
                     ] })
                   ]
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mt-8", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-2", children: TESTIMONIALS.map((testimonial, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mt-6", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-2", children: testimonials.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "button",
                   {
                     type: "button",
                     onClick: () => {
                       if (intervalRef.current) clearInterval(intervalRef.current);
-                      setAnimating(true);
-                      setTimeout(() => {
-                        setActive(i);
-                        setAnimating(false);
-                      }, 250);
-                      intervalRef.current = setInterval(() => {
-                        if (isHoveredRef.current) return;
-                        setAnimating(true);
-                        setTimeout(() => {
-                          setActive((a) => (a + 1) % TESTIMONIALS.length);
-                          setAnimating(false);
-                        }, 280);
-                      }, 2500);
+                      setActive(i);
                     },
                     className: "rounded-full transition-all duration-300",
                     style: {
                       width: i === active ? "28px" : "8px",
                       height: "8px",
-                      background: i === active ? "linear-gradient(90deg,#C89B3C,#E2B95B)" : "#2C2C30"
+                      background: i === active ? "#009FD4" : "rgba(0,159,212,0.25)"
                     },
                     "aria-label": `Go to testimonial ${i + 1}`,
                     "data-ocid": `testimonials.dot.${i + 1}`
                   },
-                  testimonial.id
+                  item.id
                 )) }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -21881,11 +21877,12 @@ function Testimonials() {
                     {
                       type: "button",
                       onClick: () => go(-1),
-                      className: "w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 glow-gold-hover",
+                      className: "w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200",
                       style: {
-                        background: "rgba(44,44,48,0.6)",
-                        border: "1px solid #2C2C30",
-                        color: "#C89B3C"
+                        background: "white",
+                        border: "1px solid rgba(0,159,212,0.3)",
+                        color: "#009FD4",
+                        boxShadow: "0 2px 8px rgba(0,0,0,0.06)"
                       },
                       "aria-label": "Previous testimonial",
                       "data-ocid": "testimonials.prev_button",
@@ -21897,11 +21894,12 @@ function Testimonials() {
                     {
                       type: "button",
                       onClick: () => go(1),
-                      className: "w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 glow-gold-hover",
+                      className: "w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200",
                       style: {
-                        background: "rgba(44,44,48,0.6)",
-                        border: "1px solid #2C2C30",
-                        color: "#C89B3C"
+                        background: "#009FD4",
+                        border: "none",
+                        color: "white",
+                        boxShadow: "0 2px 12px rgba(0,159,212,0.3)"
                       },
                       "aria-label": "Next testimonial",
                       "data-ocid": "testimonials.next_button",
@@ -21917,267 +21915,337 @@ function Testimonials() {
     }
   );
 }
-const AUTHORITY_POINTS = [
+const LEFT_ADVANTAGES = [
   {
-    icon: TrendingUp,
-    title: "Expansion-Focused Consulting",
-    desc: "We think like business strategists, not property dealers. Every recommendation is aligned to your growth goals."
+    icon: House,
+    title: "Space Optimization Expertise",
+    desc: "We analyze your actual space needs before recommending any property — room layout, natural light, vastu, storage, and future-proofing."
   },
   {
-    icon: Building2,
-    title: "Commercial Leasing Expertise",
-    desc: "Deep expertise in commercial, industrial, and hospitality real estate across Udaipur and Rajasthan."
+    icon: CircleCheckBig,
+    title: "Transparent Advisory",
+    desc: "No hidden fees, no pressure tactics, no rushed closings. Just honest guidance aligned 100% with your best interest."
   },
   {
-    icon: Target,
-    title: "Brand Growth Strategy",
-    desc: "We understand what a brand needs to succeed — footfall, visibility, infrastructure, and competitive positioning."
+    icon: Users,
+    title: "Client-First Matching",
+    desc: "We understand your lifestyle, commute, budget, and family needs before suggesting a single property."
+  }
+];
+const RIGHT_ADVANTAGES = [
+  {
+    title: "Property Matching",
+    desc: "Data-driven shortlisting — only properties that genuinely fit your brief."
   },
   {
-    icon: ChartLine,
-    title: "Investment Opportunities",
-    desc: "Access to exclusive off-market properties and investment-grade commercial assets."
+    title: "Commercial + Residential",
+    desc: "Full-spectrum expertise from family homes to office spaces."
+  },
+  {
+    title: "Smarter Decisions",
+    desc: "Backed by deep, current knowledge of Pune's evolving property market."
   }
 ];
 const STATS = [
-  { value: "200+", label: "Deals Closed" },
-  { value: "8+", label: "Years Active" },
-  { value: "100%", label: "Satisfaction" }
+  {
+    value: "200+",
+    label: "Families Guided",
+    icon: void 0
+  },
+  { value: "5.0", label: "Google Rating", icon: Star },
+  {
+    value: "100%",
+    label: "Transparent Process",
+    icon: void 0
+  }
 ];
-function WhyGrowBig() {
+function ConsultationAdvantage() {
   const sectionRef = reactExports.useRef(null);
-  const leftRef = reactExports.useRef(null);
+  const itemRefs = reactExports.useRef([]);
   const headingRef = reactExports.useRef(null);
-  const pointRefs = reactExports.useRef([]);
   reactExports.useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
           }
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.12 }
     );
-    if (leftRef.current) observer.observe(leftRef.current);
     if (headingRef.current) observer.observe(headingRef.current);
-    for (const el of pointRefs.current) {
+    for (const el of itemRefs.current) {
       if (el) observer.observe(el);
     }
     return () => observer.disconnect();
   }, []);
+  const fadeInStyle = {
+    opacity: 0,
+    transform: "translateY(24px)",
+    transition: "opacity 0.55s ease, transform 0.55s ease"
+  };
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "section",
     {
-      id: "why",
+      id: "about-advisory",
       ref: sectionRef,
       className: "py-16 sm:py-24 px-4 sm:px-6",
-      style: { background: "#0A0A0B" },
-      "data-ocid": "why.section",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            ref: leftRef,
-            className: "relative hidden lg:flex flex-col items-center justify-center section-reveal",
-            "data-ocid": "why.visual",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-80 h-80 flex items-center justify-center", children: [
-                [1, 2, 3, 4].map((ring) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    className: "absolute rounded-full animate-gold-pulse",
-                    style: {
-                      width: `${ring * 72}px`,
-                      height: `${ring * 72}px`,
-                      border: `1px solid rgba(200,155,60,${0.3 - ring * 0.06})`,
-                      animationDelay: `${ring * 0.4}s`
-                    }
-                  },
-                  ring
-                )),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 flex items-center justify-center gap-4 overflow-hidden rounded-full", children: [
-                  "left-outer",
-                  "left-inner",
-                  "center",
-                  "right-inner",
-                  "right-outer"
-                ].map((pos, i) => {
-                  const opacityVal = [0.15, 0.35, 0.7, 0.35, 0.15][i];
-                  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "div",
-                    {
-                      className: "rounded-full",
-                      style: {
-                        width: "1px",
-                        height: "60%",
-                        background: `linear-gradient(to bottom, transparent, rgba(200,155,60,${opacityVal}), transparent)`,
-                        animation: `goldLinePulse ${2 + i * 0.3}s ease-in-out infinite alternate`,
-                        animationDelay: `${i * 0.25}s`
-                      }
-                    },
-                    pos
-                  );
-                }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    className: "relative z-10 w-28 h-28 rounded-full flex items-center justify-center",
-                    style: {
-                      background: "linear-gradient(135deg, rgba(200,155,60,0.15), rgba(226,185,91,0.08))",
-                      border: "1px solid rgba(200,155,60,0.4)",
-                      boxShadow: "0 0 40px rgba(200,155,60,0.15), inset 0 0 20px rgba(200,155,60,0.05)"
-                    },
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "span",
-                      {
-                        className: "text-5xl font-black text-gradient-gold",
-                        style: {
-                          fontFamily: "var(--font-display)",
-                          letterSpacing: "-0.04em"
-                        },
-                        children: "GB"
-                      }
-                    )
-                  }
-                )
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "flex gap-8 mt-10 pt-8",
-                  style: { borderTop: "1px solid rgba(200,155,60,0.2)" },
-                  children: STATS.map((stat) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "div",
-                      {
-                        className: "text-2xl font-black text-gradient-gold",
-                        style: { fontFamily: "var(--font-display)" },
-                        children: stat.value
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "div",
-                      {
-                        className: "text-xs mt-1",
-                        style: { color: "#9A9A9A", letterSpacing: "0.08em" },
-                        children: stat.label.toUpperCase()
-                      }
-                    )
-                  ] }, stat.label))
-                }
-              )
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-6 sm:gap-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              ref: headingRef,
-              className: "section-reveal flex flex-col gap-4",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "gold-line" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "span",
-                    {
-                      className: "text-xs font-bold tracking-[0.2em] uppercase",
-                      style: { color: "#C89B3C" },
-                      children: "WHY CHOOSE US"
-                    }
-                  )
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "h2",
-                  {
-                    className: "text-2xl sm:text-3xl sm:text-3xl lg:text-5xl font-black",
-                    style: {
-                      color: "#F5F5F5",
-                      fontFamily: "var(--font-display)",
-                      lineHeight: 1.1
-                    },
-                    children: [
-                      "Why ",
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient-gold", children: "Grow Big?" })
-                    ]
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "p",
-                  {
-                    className: "text-base max-w-md",
-                    style: { color: "#9A9A9A", lineHeight: 1.7 },
-                    children: "Not a brokerage. A commercial expansion consultancy with the expertise to help your business find the right space, at the right terms."
-                  }
-                )
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative flex flex-col", children: [
+      style: { background: "#F0F2F5" },
+      "data-ocid": "advisory.section",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "mb-12 sm:mb-16", style: fadeInStyle, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
-                className: "absolute left-[21px] top-12 bottom-12 w-px",
-                style: {
-                  background: "linear-gradient(to bottom, rgba(200,155,60,0.5), rgba(200,155,60,0.05))"
-                }
+                className: "w-8 h-0.5 rounded-full",
+                style: { background: "#009FD4" }
               }
             ),
-            AUTHORITY_POINTS.map((point, i) => {
-              const Icon2 = point.icon;
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "span",
+              {
+                className: "text-xs font-semibold tracking-widest uppercase",
+                style: { color: "#009FD4" },
+                children: "Our Advisory Edge"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "h2",
+            {
+              className: "text-3xl sm:text-4xl font-black leading-tight",
+              style: { color: "#2D3142", fontFamily: "var(--font-display)" },
+              children: [
+                "More Than Property Deals —",
+                " ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#009FD4" }, children: "Expert Real Estate Guidance" })
+              ]
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-3 flex flex-col gap-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                ref: (el) => {
+                  itemRefs.current[0] = el;
+                },
+                style: { ...fadeInStyle, transitionDelay: "0.05s" },
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    className: "text-lg sm:text-xl font-semibold leading-relaxed",
+                    style: { color: "#2D3142" },
+                    children: "DWELL is not a broker who shows you flats and collects commission. We are your property advisor — the expert in your corner who helps you understand the market, evaluate your options objectively, and make a decision you'll feel confident about for years to come."
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col gap-6", children: LEFT_ADVANTAGES.map((item, i) => {
+              const Icon2 = item.icon;
               return /* @__PURE__ */ jsxRuntimeExports.jsxs(
                 "div",
                 {
                   ref: (el) => {
-                    pointRefs.current[i] = el;
+                    itemRefs.current[i + 1] = el;
                   },
-                  className: "group flex gap-5 py-5 section-reveal",
-                  style: { animationDelay: `${i * 0.12}s` },
-                  "data-ocid": `why.point.${i + 1}`,
+                  className: "flex gap-4 group",
+                  style: {
+                    ...fadeInStyle,
+                    transitionDelay: `${(i + 1) * 0.1 + 0.05}s`
+                  },
+                  "data-ocid": `advisory.advantage.${i + 1}`,
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "div",
                       {
-                        className: "relative z-10 w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(200,155,60,0.4)]",
+                        className: "flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110",
                         style: {
-                          background: "linear-gradient(135deg, rgba(200,155,60,0.15), rgba(200,155,60,0.05))",
-                          border: "1px solid rgba(200,155,60,0.35)",
-                          color: "#C89B3C"
+                          background: "linear-gradient(135deg, #009FD4, #00B4E6)",
+                          boxShadow: "0 4px 14px rgba(0,159,212,0.3)"
                         },
-                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { size: 18 })
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { size: 18, color: "#fff", strokeWidth: 2 })
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1 pt-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1 pt-0.5", children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
                         "h3",
                         {
-                          className: "font-bold text-sm transition-colors duration-200 group-hover:text-[#E2B95B]",
+                          className: "font-bold text-base",
                           style: {
-                            color: "#F5F5F5",
+                            color: "#2D3142",
                             fontFamily: "var(--font-display)"
                           },
-                          children: point.title
+                          children: item.title
                         }
                       ),
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
                         "p",
                         {
                           className: "text-sm leading-relaxed",
-                          style: { color: "#9A9A9A" },
-                          children: point.desc
+                          style: { color: "#5A6072" },
+                          children: item.desc
                         }
                       )
                     ] })
                   ]
                 },
-                point.title
+                item.title
               );
-            })
-          ] })
+            }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "lg:col-span-2",
+              ref: (el) => {
+                itemRefs.current[4] = el;
+              },
+              style: { ...fadeInStyle, transitionDelay: "0.35s" },
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: "rounded-2xl p-6 sm:p-8",
+                  style: {
+                    background: "linear-gradient(145deg, rgba(0,159,212,0.08), rgba(0,180,230,0.04))",
+                    border: "1.5px solid rgba(0,159,212,0.2)",
+                    boxShadow: "0 8px 40px rgba(0,159,212,0.1), 0 2px 8px rgba(0,0,0,0.06)",
+                    backdropFilter: "blur(12px)"
+                  },
+                  "data-ocid": "advisory.stats-card",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "div",
+                      {
+                        className: "flex justify-between gap-2 pb-6 mb-6",
+                        style: { borderBottom: "1px solid rgba(0,159,212,0.18)" },
+                        children: STATS.map((stat) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                          "div",
+                          {
+                            className: "flex flex-col items-center text-center",
+                            children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+                                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                  "span",
+                                  {
+                                    className: "text-2xl font-black",
+                                    style: {
+                                      color: "#009FD4",
+                                      fontFamily: "var(--font-display)"
+                                    },
+                                    children: stat.value
+                                  }
+                                ),
+                                stat.icon && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                  stat.icon,
+                                  {
+                                    size: 14,
+                                    style: { color: "#C9A96E" },
+                                    fill: "#C9A96E"
+                                  }
+                                )
+                              ] }),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                "span",
+                                {
+                                  className: "text-xs mt-0.5 font-medium",
+                                  style: { color: "#5A6072" },
+                                  children: stat.label
+                                }
+                              )
+                            ]
+                          },
+                          stat.label
+                        ))
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-5", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "h4",
+                        {
+                          className: "text-sm font-bold uppercase tracking-wider",
+                          style: { color: "#009FD4" },
+                          children: "What sets us apart"
+                        }
+                      ),
+                      RIGHT_ADVANTAGES.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "div",
+                        {
+                          className: "flex gap-3",
+                          "data-ocid": `advisory.right-advantage.${i + 1}`,
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              "div",
+                              {
+                                className: "flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5",
+                                style: { background: "rgba(0,159,212,0.15)" },
+                                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                  "div",
+                                  {
+                                    className: "w-2 h-2 rounded-full",
+                                    style: { background: "#009FD4" }
+                                  }
+                                )
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                "p",
+                                {
+                                  className: "font-semibold text-sm",
+                                  style: {
+                                    color: "#2D3142",
+                                    fontFamily: "var(--font-display)"
+                                  },
+                                  children: item.title
+                                }
+                              ),
+                              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                "p",
+                                {
+                                  className: "text-xs leading-relaxed mt-0.5",
+                                  style: { color: "#5A6072" },
+                                  children: item.desc
+                                }
+                              )
+                            ] })
+                          ]
+                        },
+                        item.title
+                      ))
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "div",
+                      {
+                        className: "mt-6 rounded-xl px-4 py-3",
+                        style: {
+                          background: "linear-gradient(90deg, rgba(0,159,212,0.15), rgba(0,180,230,0.05))",
+                          borderLeft: "3px solid #009FD4"
+                        },
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { size: 14, style: { color: "#009FD4" } }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "p",
+                            {
+                              className: "text-xs font-medium",
+                              style: { color: "#2D3142" },
+                              children: "Serving families and professionals across Pune"
+                            }
+                          )
+                        ] })
+                      }
+                    )
+                  ]
+                }
+              )
+            }
+          )
         ] })
-      ] }) })
+      ] })
     }
   );
 }
@@ -22191,7 +22259,7 @@ function App() {
           }
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
     const revealEls = document.querySelectorAll(".section-reveal");
     for (const el of revealEls) observer.observe(el);
@@ -22201,19 +22269,22 @@ function App() {
     "div",
     {
       className: "min-h-screen",
-      style: { backgroundColor: "var(--color-bg)", color: "var(--color-text)" },
+      style: { backgroundColor: "#F8F9FA", color: "#2D3142" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(BusinessSectors, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyShowcase, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(WhyGrowBig, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(GrowthTimeline, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(IndustrySectors, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Testimonials, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(MarketInsights, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CTASection, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(LocationMap, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "home", children: /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "properties", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyShowcase, {}) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "commercial", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ConsultationAdvantage, {}) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "residential", children: /* @__PURE__ */ jsxRuntimeExports.jsx(WhyChooseUs, {}) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "about", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(PuneMarketAuthority, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Testimonials, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(AboutSection, {})
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(ConsultationCTA, {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(LocationMap, {})
+        ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingActions, {})
       ]
